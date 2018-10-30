@@ -108,6 +108,10 @@ a {
   background-color: setColor(9.5);
 }
 
+img {
+  @include grayscale;
+}
+
 
 .dynamic-box {
   @include animated-box;
