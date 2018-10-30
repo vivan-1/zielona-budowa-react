@@ -365,5 +365,5 @@ iframe {
 /* Pagers */
 
 .pager li>a, .pager li>span {
-  border-radius: 0 !important;
+  @include border-radius(0);
 }

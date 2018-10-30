@@ -298,6 +298,10 @@ iframe {
 
 /* Pagers */
 .pager li > a, .pager li > span {
-  border-radius: 0 !important; }
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 /*# sourceMappingURL=main.css.map */
