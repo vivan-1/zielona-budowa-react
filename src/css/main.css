@@ -1,36 +1,240 @@
-/*
-Error: Invalid CSS after "}": expected selector or at-rule, was "/* MAIN P"
-        on line 262 of main.scss
+/*** GENERAL STYLES ***/
+html {
+  height: 100%; }
 
-257:   color: setColor(4);
-258:   font-size: 80%;
-259:   margin-top: 20px;
-260: }
-261: 
-262: /* MAIN P
+body {
+  font-style: "Dosis", sans-serif !important;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%; }
+  body ::-moz-selection {
+    background: #333333;
+    color: #000; }
+  body ::selection {
+    background: #333333;
+    color: #000; }
 
-Backtrace:
-main.scss:262
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.5/bin/scss:13:in `<top (required)>'
-C:/Ruby23-x64/bin/scss:22:in `load'
-C:/Ruby23-x64/bin/scss:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected selector or at-rule, was \"/* MAIN P\"\A         on line 262 of main.scss\A \A 257:   color: setColor(4);\A 258:   font-size: 80%;\A 259:   margin-top: 20px;\A 260: }\A 261: \A 262: /* MAIN P"; }
+/* highlighting animation */
+@keyframes focusOnLink {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #f2f2f2; } }
+a {
+  text-decoration: none !important;
+  color: #4d4d4d !important; }
+  a:link {
+    color: #4d4d4d !important;
+    text-decoration: none !important; }
+  a:visited {
+    color: #4d4d4d !important;
+    text-decoration: none !important; }
+  a:hover {
+    color: #000;
+    background-color: #f2f2f2 !important;
+    text-decoration: none !important;
+    animation-name: focusOnLink;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out; }
+  a:focus {
+    color: #000 !important;
+    text-decoration: none !important; }
+  a:active {
+    color: #000 !important;
+    text-decoration: none !important; }
+
+.routerLink {
+  text-decoration: none !important; }
+
+.small-text {
+  font-size: 80%; }
+
+.activated-link {
+  color: #000 !important;
+  background-color: #f2f2f2; }
+
+img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  z-index: -9999999999999999999999999;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out; }
+  img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    z-index: -9999999999999999999999999;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out; }
+
+iframe {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  z-index: -9999999999999999999999999;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out; }
+  iframe:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    z-index: -9999999999999999999999999;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out; }
+  iframe:focus {
+    -webkit-filter: grayscale(0%); }
+
+.dynamic-box {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin: 10px; }
+@keyframes focusOnBox {
+  from {
+    background-color: #b3b3b3; }
+  to {
+    background-color: gray; } }
+  .dynamic-box:hover {
+    background-color: gray;
+    animation-name: focusOnBox;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out; }
+
+/*** SPINNER STYLES ***/
+.loaderContainer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.displayNone {
+  display: none; }
+
+/*** SECTION-SPECIFIC STYLES ***/
+/* NAVBAR */
+.navbar-brand {
+  padding-top: 4px; }
+
+#nav-links {
+  margin-bottom: 20px; }
+
+.nav-section-name {
+  padding: 10px 15px;
+  color: #666666;
+  font-size: 80%;
+  margin-top: 20px; }
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+  color: #333333; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000;
+  background-color: #fff; }
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: #666666; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #666666; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333333; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000; } }
+#top-navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000 !important;
+  background-color: #fff !important;
+  text-align: right; }
+
+/* MAIN CONTAINER */
+#main-container {
+  height: 100%;
+  padding: 0 !important; }
+
+/* Menu panel */
+#menu-panel {
+  border-right: 1px solid #000;
+  height: 100%;
+  min-width: 180px;
+  font-size: 110%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center; }
+
+#main-logo {
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  width: 150px; }
+
+#menu-panel-text {
+  text-align: left;
+  display: inline-block; }
+
+#links {
+  margin: 40px 0; }
+
+#footer {
+  font-size: 100% !important; }
+
+.section-name {
+  color: #666666;
+  font-size: 80%;
+  margin-top: 20px; }
+
+/* MAIN PANEL */
+#main-panel {
+  height: 100%;
+  overflow: hidden;
+  padding: 60px 0 20px 0;
+  background-size: cover;
+  background-position: center center; }
+
+#main-panel-container {
+  height: 90%;
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+#main-panel-footer {
+  height: 10%;
+  padding-top: 0 !important;
+  margin-top: 0 !important; }
+
+.pager {
+  margin: 10px 15px !important; }
+
+/*# sourceMappingURL=main.css.map */

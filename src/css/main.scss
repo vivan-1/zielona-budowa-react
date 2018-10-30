@@ -260,3 +260,32 @@ iframe {
 }
 
 /* MAIN PANEL */
+
+#main-panel {
+  height: 100%;
+  //width: 72%;
+  //float: left;
+  overflow: hidden;
+  padding: 60px 0 20px 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+#main-panel-container {
+  height: 90%;
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#main-panel-footer {
+  height: 10%;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.pager {
+  margin: 10px 15px !important;
+}
