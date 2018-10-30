@@ -27,7 +27,7 @@ class Home extends Component {
 
     //set dynamic page title
     componentWillMount() {
-        document.title = "Mulberry English - Język angielski dla firm i osób indywidualnych - Katarzyna Łasocha-Nowak - Poznań";
+        document.title = "Zielona Budowa - pracownia architektoniczna";
     }
 
     componentDidMount() {
