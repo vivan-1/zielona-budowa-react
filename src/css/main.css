@@ -10,10 +10,10 @@ body {
   height: 100%; }
   body ::-moz-selection {
     background: #333333;
-    color: #000; }
+    color: white; }
   body ::selection {
     background: #333333;
-    color: #000; }
+    color: white; }
 
 /* highlighting animation */
 @keyframes focusOnLink {

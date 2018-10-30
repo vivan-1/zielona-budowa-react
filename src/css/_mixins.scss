@@ -10,11 +10,11 @@
 @mixin set-selection {
   ::-moz-selection {
     background: setColor(2);
-    color: setColor(0);
+    color: setColor(10);
   }
   ::selection {
     background: setColor(2);
-    color: setColor(0);
+    color: setColor(10);
   }
 }
 
