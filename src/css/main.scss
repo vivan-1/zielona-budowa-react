@@ -18,31 +18,82 @@ body {
   @include set-selection;
 }
 
+//a {
+//  color: setColor(0);
+//  text-decoration: none;
+//  cursor: pointer;
+//
+//  &:link {
+//    color: setColor(0) !important;
+//    text-decoration: none !important;
+//  }
+//
+//  &:visited {
+//    color: setColor(0) !important;
+//    text-decoration: none !important;
+//  }
+//
+//  &:hover {
+//    color: setColor(0) !important;
+//    text-decoration: none !important;
+//  }
+//
+//  &:active {
+//    color: setColor(0) !important;
+//    text-decoration: none !important;
+//  }
+//
+//}
+
+/* highlighting animation */
+
+@keyframes focusOnLink {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: setColor(9.5);
+  }
+}
+
 a {
-  color: setColor(0);
-  text-decoration: none;
-  cursor: pointer;
+
+  text-decoration: none !important;
+  color: setColor(3) !important;
 
   &:link {
-    color: setColor(0) !important;
+    color: setColor(3) !important;
     text-decoration: none !important;
   }
 
   &:visited {
-    color: setColor(0) !important;
+    color: setColor(3) !important;
     text-decoration: none !important;
   }
 
   &:hover {
-    color: setColor(0) !important;
+    color: $mainColor;
+    background-color: setColor(9.5) !important;
+    text-decoration: none !important;
+    animation-name: focusOnLink;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+  }
+
+  &:focus {
+    color: $mainColor !important;
     text-decoration: none !important;
   }
 
   &:active {
-    color: setColor(0) !important;
+    color: $mainColor !important;
     text-decoration: none !important;
   }
+}
 
+.small-text {
+  font-size: 80%;
 }
 
 .routerLink {
