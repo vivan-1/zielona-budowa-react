@@ -1,0 +1,63 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+/*** GENERAL STYLES ***/
+
+body {
+
+}
+
+a {
+  color: setColor(-4);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:link {
+    color: setColor(-4);
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: setColor(-4);
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: setColor(-5);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: setColor(-4);
+    text-decoration: none;
+  }
+
+}
+
+.routerLink {
+  text-decoration: none;
+}
+
+
+.dynamic-box {
+  @include animated-box;
+}
+
+/*** SPINNER STYLES ***/
+.loaderContainer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.displayNone {
+  display: none;
+}

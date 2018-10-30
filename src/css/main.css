@@ -1,0 +1,55 @@
+/*** GENERAL STYLES ***/
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+  a:link {
+    color: black;
+    text-decoration: none; }
+  a:visited {
+    color: black;
+    text-decoration: none; }
+  a:hover {
+    color: black;
+    text-decoration: none; }
+  a:active {
+    color: black;
+    text-decoration: none; }
+
+.routerLink {
+  text-decoration: none; }
+
+.dynamic-box {
+  border: 2px solid #9d0059;
+  padding: 10px;
+  text-align: center;
+  margin: 10px; }
+@keyframes focusOnBox {
+  from {
+    background-color: white; }
+  to {
+    background-color: #ff9dd5; } }
+  .dynamic-box:hover {
+    background-color: #ff9dd5;
+    animation-name: focusOnBox;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out; }
+
+/*** SPINNER STYLES ***/
+.loaderContainer {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
+.displayNone {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
