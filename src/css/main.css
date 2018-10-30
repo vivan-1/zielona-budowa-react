@@ -17,7 +17,7 @@ a {
     text-decoration: none !important; }
 
 .routerLink {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .dynamic-box {
   border: 2px solid #000;

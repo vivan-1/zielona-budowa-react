@@ -1,12 +1,24 @@
 // *** THEME COLOUR *** //
 
 $themeColor: #000;
+$mainColor: #000;
+$backgroundColor: #fff;
+$highlightingColor: #19644b; //to delete if not used
+
 
 // *** FONTS *** //
 
-$regularFont: 'Lato', sans-serif;
-$fancyFont: 'Fugaz One', cursive;
+$mainFont: 'Dosis', sans-serif;
+//$fancyFont: 'Fugaz One', cursive;
 
+// *** DIMENSIONS *** //
+
+$textWidth: 550px;
+
+// *** BORDERS *** //
+
+$borderDefault: 1px solid $mainColor;
+$borderFancy: 4px dashed setColor(6.5);
 
 //// *** SCREEN WIDTH BREAKPOINTS *** //
 //
