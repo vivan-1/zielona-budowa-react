@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Image} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
-import Navbar from "./Navbar";
+import NavigationBar from "./NavigationBar";
 import MenuPanel from "./MenuPanel";
 import MainPanel from "./MainPanel";
 
@@ -41,27 +41,27 @@ class Home extends Component {
     render() {
 
 
-        let containerClass = ""; //specifies the class of the container holding the main content
-        let loaderClass = ""; //specifies the class of the container holding the spinner
-
-        if (this.state.loading) {
-            containerClass = "displayNone"; //hides the tile content when loading
-            loaderClass = "loaderContainer"; //shows the loader when loading
-        } else {
-            containerClass = "contentContainer"; //shows the tile content when loaded
-            loaderClass = "displayNone"; //hides the loader when the content has loaded
-        }
+        // let containerClass = ""; //specifies the class of the container holding the main content
+        // let loaderClass = ""; //specifies the class of the container holding the spinner
+        //
+        // if (this.state.loading) {
+        //     containerClass = "displayNone"; //hides the tile content when loading
+        //     loaderClass = "loaderContainer"; //shows the loader when loading
+        // } else {
+        //     containerClass = "contentContainer"; //shows the tile content when loaded
+        //     loaderClass = "displayNone"; //hides the loader when the content has loaded
+        // }
 
 
         return (
             <div>
-                
-                <Navbar/>
 
-                
+                <NavigationBar/>
+
+
                 <div className="container-fluid" id="main-container">
 
-                    
+
                     <MenuPanel/>
 
                     <MainPanel/>

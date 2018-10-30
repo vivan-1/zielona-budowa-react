@@ -15,7 +15,6 @@ body {
   background-color: $backgroundColor;
   position: relative;
   overflow-x: hidden;
-  height: 100%;
   @include set-selection;
 }
 

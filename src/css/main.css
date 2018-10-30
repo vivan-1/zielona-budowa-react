@@ -7,8 +7,7 @@ body {
   font-style: "Dosis", sans-serif !important;
   background-color: #fff;
   position: relative;
-  overflow-x: hidden;
-  height: 100%; }
+  overflow-x: hidden; }
   body ::-moz-selection {
     background: #333333;
     color: white; }
