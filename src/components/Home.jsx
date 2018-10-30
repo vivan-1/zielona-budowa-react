@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Image} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
-class English extends Component {
+class Home extends Component {
 
     constructor(props) {
         super(props);
@@ -53,7 +53,7 @@ class English extends Component {
             <div>
                 <div className={loaderClass}>
                     <FadeLoader
-                        color={"#9d0059"}
+                        color={"#eeeeee"}
                         loading={this.state.loading}
                     />
                 </div>
@@ -90,4 +90,4 @@ class English extends Component {
     }
 }
 
-export default English;
+export default Home;
