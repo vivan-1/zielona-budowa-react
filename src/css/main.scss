@@ -9,28 +9,28 @@ body {
 }
 
 a {
-  color: setColor(-4);
+  color: setColor(0);
   text-decoration: none;
   cursor: pointer;
 
   &:link {
-    color: setColor(-4);
-    text-decoration: none;
+    color: setColor(0) !important;
+    text-decoration: none !important;
   }
 
   &:visited {
-    color: setColor(-4);
-    text-decoration: none;
+    color: setColor(0) !important;
+    text-decoration: none !important;
   }
 
   &:hover {
-    color: setColor(-5);
-    text-decoration: none;
+    color: setColor(0) !important;
+    text-decoration: none !important;
   }
 
   &:active {
-    color: setColor(-4);
-    text-decoration: none;
+    color: setColor(0) !important;
+    text-decoration: none !important;
   }
 
 }

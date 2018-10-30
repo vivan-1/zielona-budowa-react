@@ -1,36 +1,36 @@
 /*** GENERAL STYLES ***/
 a {
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer; }
   a:link {
-    color: black;
-    text-decoration: none; }
+    color: #000 !important;
+    text-decoration: none !important; }
   a:visited {
-    color: black;
-    text-decoration: none; }
+    color: #000 !important;
+    text-decoration: none !important; }
   a:hover {
-    color: black;
-    text-decoration: none; }
+    color: #000 !important;
+    text-decoration: none !important; }
   a:active {
-    color: black;
-    text-decoration: none; }
+    color: #000 !important;
+    text-decoration: none !important; }
 
 .routerLink {
   text-decoration: none; }
 
 .dynamic-box {
-  border: 2px solid #9d0059;
+  border: 2px solid #000;
   padding: 10px;
   text-align: center;
   margin: 10px; }
 @keyframes focusOnBox {
   from {
-    background-color: white; }
+    background-color: #b3b3b3; }
   to {
-    background-color: #ff9dd5; } }
+    background-color: gray; } }
   .dynamic-box:hover {
-    background-color: #ff9dd5;
+    background-color: gray;
     animation-name: focusOnBox;
     animation-duration: 0.8s;
     animation-timing-function: ease-out; }
