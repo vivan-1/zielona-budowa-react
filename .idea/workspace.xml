@@ -71,10 +71,10 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="261" column="16" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="16" />
+            <state relative-caret-position="320">
+              <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
               <folding>
-                <marker date="1540907822385" expanded="true" signature="283:1797" ph="..." />
+                <marker date="1540908216926" expanded="true" signature="283:1797" ph="..." />
               </folding>
             </state>
           </provider>
@@ -272,12 +272,12 @@
       <workItem from="1529508454864" duration="19000" />
       <workItem from="1531036977640" duration="597000" />
       <workItem from="1531213268476" duration="34000" />
-      <workItem from="1540898960012" duration="5702000" />
+      <workItem from="1540898960012" duration="6093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18305000" />
+    <option name="totallyTimeSpent" value="18696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="0" width="1472" height="832" extended-state="0" />
@@ -287,8 +287,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32986626" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3268945" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.20208023" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3268945" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20208023" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25779036" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24929178" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -334,7 +334,7 @@
         <state relative-caret-position="976">
           <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
           <folding>
-            <marker date="1540907822385" expanded="true" signature="283:1797" ph="..." />
+            <marker date="1540908216926" expanded="true" signature="283:1797" ph="..." />
           </folding>
         </state>
       </provider>
@@ -695,10 +695,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="261" column="16" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="16" />
+        <state relative-caret-position="320">
+          <caret line="367" column="30" selection-start-line="367" selection-start-column="30" selection-end-line="367" selection-end-column="30" />
           <folding>
-            <marker date="1540907822385" expanded="true" signature="283:1797" ph="..." />
+            <marker date="1540908216926" expanded="true" signature="283:1797" ph="..." />
           </folding>
         </state>
       </provider>
