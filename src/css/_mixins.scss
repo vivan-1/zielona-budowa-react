@@ -9,14 +9,15 @@
 //sets selection colours
 @mixin set-selection {
   ::-moz-selection {
-    background: setColor(-2);
-    color: setColor(2);
+    background: setColor(2);
+    color: setColor(0);
   }
   ::selection {
-    background: setColor(-2);
-    color: setColor(2);
+    background: setColor(2);
+    color: setColor(0);
   }
 }
+
 
 //sets border radius
 @mixin border-radius($radius) {
