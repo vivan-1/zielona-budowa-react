@@ -3,6 +3,8 @@ import {Image} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
 import Navbar from "./Navbar";
+import MenuPanel from "./MenuPanel";
+import MainPanel from "./MainPanel";
 
 class Home extends Component {
 
@@ -60,40 +62,9 @@ class Home extends Component {
                 <div className="container-fluid" id="main-container">
 
                     
-                    <div className="hidden-xs col-sm-2" id="menu-panel">
-                        <div id="menu-panel-text">
-                            <a href="#" id="link-0"><img className="img-responsive" src="images/logo-big.png" alt="Zielona budowa - logo" id="main-logo"></img></a>
-                            <div id="links">
-                                <p className="section-name">restauracje i&nbsp;hotele:</p>
-                                
-                                <p className="section-name">obiekty przemysłowe:</p>
-                                <p><a href="#" className="menu-panel-link" id="link-2-0">malarnia proszkowa</a></p>
-                                
-                                <p className="section-name">domy i&nbsp;osiedla:</p>
-                                <p><a href="#" className="menu-panel-link" id="link-3-0">dom w&nbsp;porębie</a></p>
-                                <p className="section-name">renowacje:</p>
-                                <p><a href="#" className="menu-panel-link" id="link-5-0">sportowa 20</a></p>
-                                <p className="section-name">&hellip;więcej wkrótce</p>
-                            </div>
-                            <div id="footer">
-                                <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a href="mailto:zielonabudowa@gmail.com">zielonabudowa@gmail.com</a><br/></span><a href="https://web.facebook.com/zielonabudowa/" target="_blank"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.instagram.com/zielonabudowa/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"><i className="fa fa-youtube-play" aria-hidden="true"></i></a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <MenuPanel/>
 
-                    <div className="col-sm-10 container-fluid" id="main-panel">
-
-                        <div id="main-panel-container">
-
-                        </div>
-
-                        <nav id="main-panel-footer" aria-label="...">
-                            <ul className="pager">
-                                <li id="prev" className="previous"><a id="prev-link" href="#"><span aria-hidden="true">&larr;</span> Wstecz</a></li>
-                                <li id="next" className="next"><a id="next-link" href="#">Dalej <span aria-hidden="true">&rarr;</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <MainPanel/>
 
                 </div>
             </div>
