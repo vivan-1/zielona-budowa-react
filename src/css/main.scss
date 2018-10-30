@@ -211,3 +211,52 @@ iframe {
   background-color: $backgroundColor !important;
   text-align: right;
 }
+
+/* MAIN CONTAINER */
+
+#main-container {
+  height: 100%;
+  padding: 0 !important;
+}
+
+/* Menu panel */
+
+#menu-panel {
+  border-right: $borderDefault;
+  height: 100%;
+  //width: 28%;
+  min-width: 180px;
+  //float: left;
+  font-size: 110%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+#main-logo {
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  width: 150px;
+}
+
+#menu-panel-text {
+  text-align: left;
+  display: inline-block;
+}
+
+#links {
+  margin: 40px 0;
+}
+
+#footer {
+  font-size: 100% !important;
+}
+
+.section-name {
+  color: setColor(4);
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+/* MAIN PANEL */
