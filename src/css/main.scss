@@ -112,6 +112,13 @@ img {
   @include grayscale;
 }
 
+iframe {
+  @include grayscale;
+
+  &:focus {
+    -webkit-filter: grayscale(0%);
+  }
+}
 
 .dynamic-box {
   @include animated-box;
@@ -133,4 +140,74 @@ img {
 
 .displayNone {
   display: none;
+}
+
+/*** SECTION-SPECIFIC STYLES ***/
+
+/* NAVBAR */
+
+.navbar-brand {
+  padding-top: 4px;
+}
+
+#nav-links {
+  margin-bottom: 20px;
+}
+
+.nav-section-name {
+  padding: 10px 15px;
+  color: setColor(4);
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+  color: setColor(2);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $mainColor;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $mainColor;
+  background-color: $backgroundColor;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+  border-color: setColor(4);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: setColor(4);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $mainColor;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: setColor(2);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $mainColor;
+  }
+}
+
+#top-navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border-bottom: $borderDefault !important;
+  background-color: $backgroundColor !important;
+  text-align: right;
 }
