@@ -1,5 +1,9 @@
 import React, {Component} from "react";
 import {Col} from "react-bootstrap";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+
+import SplashScreen from "./SplashScreen";
+import Viewer from "./Viewer";
 
 
 class MainPanel extends Component {
@@ -29,8 +33,6 @@ class MainPanel extends Component {
     //take project details from url
     setDetails() {
 
-        let {section} = this.props.match;
-        console.log(section);
 
     }
 
@@ -47,22 +49,12 @@ class MainPanel extends Component {
         };
         return(
             <Col xs={12} sm={9} md={10} style={style} id="main-panel">
-
-                <div id="main-panel-container">
-                    <div className="view-content">
-                        <div id="title-box">
-                            <span id="title">zielona budowa</span><br/>
-                            <span id="subtitle">pracownia architektoniczna</span>
-                        </div>
+                <Router>
+                    <div>
+                        <Route exact path="/" component={SplashScreen}/>
+                        <Route path="/portfolio/:section/:project/:view" component={Viewer}/>
                     </div>
-                </div>
-
-                <nav id="main-panel-footer" aria-label="...">
-                    <ul className="pager">
-                        <li id="prev" className="previous"><a id="prev-link" href="#"><span aria-hidden="true">&larr;</span> Wstecz</a></li>
-                        <li id="next" className="next"><a id="next-link" href="#">Dalej <span aria-hidden="true">&rarr;</span></a></li>
-                    </ul>
-                </nav>
+                </Router>
             </Col>
         );
     }
