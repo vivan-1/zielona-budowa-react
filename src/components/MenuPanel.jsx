@@ -67,6 +67,24 @@ class MenuPanel extends Component {
 
         //domy i osiedla
 
+        let domy = []; //array holding section links
+
+        if (sections.domy) {
+
+            for (let i = 0; i < portfolio.domy.length; i++) {
+
+                //take id, image_url, name and tagline from the props
+                let {id, name} = portfolio.domy[i];
+                let url = "/przemyslowe/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                domy.push(<MenuLink
+                    name={name}
+                    url={url}
+                />);
+            }
+
+        }
+
         //renowacje
 
         return (
@@ -101,7 +119,17 @@ class MenuPanel extends Component {
                         </div>
 
                         <p className={classDomy}>domy i&nbsp;osiedla:</p>
-                        <p><a href="#" className="menu-panel-link" id="link-3-0">dom w&nbsp;porębie</a></p>
+
+                        <div>
+                            {domy.map((link, k) => {
+                                return (
+                                    <p key={k}>
+                                        {link}
+                                    </p>
+                                )
+                            })}
+                        </div>
+
                         <p className={classRenowacje}>renowacje:</p>
                         <p><a href="#" className="menu-panel-link" id="link-5-0">sportowa 20</a></p>
                         <p className="section-name">&hellip;więcej wkrótce</p>
