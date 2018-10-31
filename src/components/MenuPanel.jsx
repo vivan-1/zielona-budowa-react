@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Col} from "react-bootstrap";
 
 class MenuPanel extends Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class MenuPanel extends Component {
 
     render() {
         return(
-            <div className="hidden-xs col-sm-2" id="menu-panel">
+            <Col xsHidden sm={2} id="menu-panel">
                 <div id="menu-panel-text">
                     <a href="#" id="link-0"><img className="img-responsive" src="images/logo-big.png" alt="Zielona budowa - logo" id="main-logo"></img></a>
                     <div id="links">
@@ -26,7 +27,7 @@ class MenuPanel extends Component {
                         <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a href="mailto:zielonabudowa@gmail.com">zielonabudowa@gmail.com</a><br/></span><a href="https://web.facebook.com/zielonabudowa/" target="_blank"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.instagram.com/zielonabudowa/" target="_blank"><i className="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"><i className="fa fa-youtube-play" aria-hidden="true"></i></a></p>
                     </div>
                 </div>
-            </div>
+            </Col>
         );
     }
 }

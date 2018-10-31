@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Col} from "react-bootstrap";
 
 
 class MainPanel extends Component {
@@ -9,7 +10,7 @@ class MainPanel extends Component {
 
     render() {
         return(
-            <div className="col-sm-10 container-fluid" id="main-panel">
+            <Col xs={12} sm={10} id="main-panel">
 
                 <div id="main-panel-container">
 
@@ -21,7 +22,7 @@ class MainPanel extends Component {
                         <li id="next" className="next"><a id="next-link" href="#">Dalej <span aria-hidden="true">&rarr;</span></a></li>
                     </ul>
                 </nav>
-            </div>
+            </Col>
         );
     }
 }

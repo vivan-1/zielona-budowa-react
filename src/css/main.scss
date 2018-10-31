@@ -148,6 +148,9 @@ iframe {
 
 Navbar.Brand {
   padding-top: 4px;
+  img {
+    height: 120% !important;
+  }
 }
 
 #nav-links {
