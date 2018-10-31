@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {Navbar} from "react-bootstrap";
-import {sections, portfolio} from "../data/constants";
+import {Link} from "react-router-dom";
 
+import {sections, portfolio} from "../data/constants";
 import NavLink from "./NavLink";
 
 class NavigationBar extends Component {
@@ -103,7 +104,6 @@ class NavigationBar extends Component {
         }
 
 
-
         return (
             <Navbar id="top-navbar">
                 <div className="container">
@@ -115,8 +115,10 @@ class NavigationBar extends Component {
                         {/*<span className="icon-bar"></span>*/}
                         {/*<span className="icon-bar"></span>*/}
                         {/*</button>*/}
-                        <Navbar.Brand id="nav-link-0" href="#home">
-                            <img src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"></img>
+                        <Navbar.Brand href="#home">
+                            <Link to="/">
+                                <img src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"></img>
+                            </Link>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Navbar.Collapse id="navbar">
