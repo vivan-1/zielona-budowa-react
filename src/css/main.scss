@@ -139,7 +139,7 @@ iframe {
   height: 100vh; }
 
 .displayNone {
-  display: none;
+  display: none !important;
 }
 
 /*** SECTION-SPECIFIC STYLES ***/

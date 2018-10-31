@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Navbar} from "react-bootstrap";
+import {sections, portfolio} from "../data/constants";
 
 class NavigationBar extends Component {
     constructor(props) {
@@ -7,6 +8,15 @@ class NavigationBar extends Component {
     }
 
     render() {
+
+
+
+        //don't display the names of empty sections
+        let classRestauracje = sections.restauracje ? "" : "displayNone";
+        let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
+        let classDomy = sections.domy ? "" : "displayNone";
+        let classRenowacje = sections.renowacje ? "" : "displayNone";
+        console.log(sections, classRestauracje);
         return (
             <Navbar id="top-navbar">
                 <div className="container">
@@ -25,14 +35,22 @@ class NavigationBar extends Component {
                     <Navbar.Collapse id="navbar">
                         <div id="nav-panel-text">
                             <ul className="nav navbar-nav" id="nav-links">
-                                <li className="nav-section-name">restauracje i&nbsp;hotele:</li>
-
-                                <li className="nav-section-name">obiekty przemysłowe:</li>
+                                <div className={classRestauracje}>
+                                    <li className="nav-section-name">restauracje i&nbsp;hotele:</li>
+                                </div>
+                                <div className={classPrzemyslowe}>
+                                    <li className="nav-section-name">obiekty przemysłowe:</li>
+                                </div>
                                 <li><a href="#" className="page-scroll" id="nav-link-2-0">malarnia proszkowa</a></li>
 
-                                <li className="nav-section-name">domy i&nbsp;osiedla:</li>
+                                <div className={classDomy}>
+                                    <li className="nav-section-name">domy i&nbsp;osiedla:</li>
+                                </div>
                                 <li><a href="#" className="page-scroll" id="nav-link-3-0">dom w&nbsp;porębie</a></li>
-                                <li className="nav-section-name">renowacje:</li>
+
+                                <div className={classRenowacje}>
+                                    <li className="nav-section-name">renowacje:</li>
+                                </div>
                                 <li><a href="#" className="page-scroll" id="nav-link-5-0">sportowa 20</a></li>
                                 <li className="nav-section-name">&hellip;więcej wkrótce</li>
                             </ul>
