@@ -8,7 +8,7 @@ class SplashScreen extends Component {
 
     render() {
         return(
-            <div id="main-panel-container">
+            <div id="splash-screen">
                 <div className="view-content">
                     <div id="title-box">
                         <span id="title">zielona budowa</span><br/>

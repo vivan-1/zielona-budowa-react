@@ -293,6 +293,14 @@ iframe {
   background-image: url("../../public/images/background.jpg");
 }
 
+#splash-screen {
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../public/images/background.jpg");
+  height: 100%;
+  overflow: hidden;
+}
+
 #main-panel-container {
   height: 90% !important;
   width: 100% !important;

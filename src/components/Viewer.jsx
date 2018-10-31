@@ -8,7 +8,14 @@ class Viewer extends Component {
         this.state = {
             section: "",
             project: "",
-            view: 0
+            view: 0,
+            imageUrl: "",
+            videoUrl: "",
+            textFrames: [],
+            videFrame: 0,
+            maxViews: 0,
+            isTextFrame: false,
+            isVideoFrame: false
         }
 
         this.goToUrl = this.goToUrl.bind(this);
@@ -29,7 +36,12 @@ class Viewer extends Component {
 
         let {section, project, view} = this.props.match.params;
 
+        //take the section and project names as well as view number from the url
         this.setState({section, project, view});
+
+        //create image url based on project name and view number
+
+
 
     }
 
