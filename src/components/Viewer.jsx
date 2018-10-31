@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {sections, portfolio} from "../data/constants";
 
 
 class Viewer extends Component {
@@ -12,11 +13,14 @@ class Viewer extends Component {
             imageUrl: "",
             videoUrl: "",
             textFrames: [],
-            videFrame: 0,
-            maxViews: 0,
+            videoFrame: 0,
+            numberOfViews: 0,
+            projectIndex: 0,
+            isFirstFrame: false,
+            isLastFrame: false,
             isTextFrame: false,
             isVideoFrame: false
-        }
+        };
 
         this.goToUrl = this.goToUrl.bind(this);
     }
@@ -40,6 +44,74 @@ class Viewer extends Component {
         this.setState({section, project, view});
 
         //create image url based on project name and view number
+        this.setState({imageUrl: project + "-" + view});
+
+        //locate data in the portfolio object
+
+        //
+        // switch(this.state.section) {
+        //     case "restauracje":
+        //         for (i = 0; i < portfolio.restauracje[i].length; i++) {
+        //             if (portfolio.restauracje[i].id === project) {
+        //                 this.setState({projectIndex: i});
+        //                 break;
+        //             }
+        //         }
+        //         break;
+        //
+        //     case "przemyslowe":
+        //         for (i = 0; i < portfolio.przemyslowe[i].length; i++) {
+        //             if (portfolio.przemyslowe[i].id === project) {
+        //                 this.setState({projectIndex: i});
+        //                 break;
+        //             }
+        //         }
+        //         break;
+        //
+        //     case "domy":
+        //         for (i = 0; i < portfolio.domy[i].length; i++) {
+        //             if (portfolio.domy[i].id === project) {
+        //                 this.setState({projectIndex: i});
+        //                 break;
+        //             }
+        //         }
+        //         break;
+        //
+        //     case "renowacje":
+        //         for (i = 0; i < portfolio.renowacje[i].length; i++) {
+        //             if (portfolio.renowacje[i].id === project) {
+        //                 this.setState({projectIndex: i});
+        //                 break;
+        //             }
+        //         }
+        //         break;
+        //     default:
+        //         this.goToUrl("/");
+        // }
+        //
+        // console.log(this.state.projectIndex);
+
+
+
+        /*
+        *
+            videoUrl: "",
+            textFrames: [],
+            videoFrame: 0,
+            maxViews: 0,
+            isFirstFrame: false,
+            isLastFrame: false,
+            isTextFrame: false,
+            isVideoFrame: false
+            ///////
+
+            id: 'malarnia',
+            name: 'malarnia proszkowa',
+            numberOfViews: 10,
+            videoFrame: 5,
+            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ&t=3s",
+            textFrames: [9, 10]
+        * */
 
 
 
