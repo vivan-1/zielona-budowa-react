@@ -8,7 +8,15 @@ class MainPanel extends Component {
         super(props);
 
         this.goToUrl = this.goToUrl.bind(this);
+
+        this.state = {
+            section: "",
+            project: "",
+            view: 0
+        }
+
     }
+
 
 
     //goes to specific url
@@ -18,9 +26,21 @@ class MainPanel extends Component {
 
     }
 
+    //take project details from url
+    setDetails() {
+
+        let {section} = this.props.match;
+        console.log(section);
+
+    }
+
+    componentDidMount() {
+            this.setDetails();
+
+    }
+
     render() {
 
-        // console.log(this.props.match.params.section);
 
         let style = {
             backgroundImage: "url('../../public/images/background.jpg')"

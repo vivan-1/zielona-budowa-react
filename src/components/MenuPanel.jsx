@@ -35,7 +35,7 @@ class MenuPanel extends Component {
 
                 //take id, image_url, name and tagline from the props
                 let {id, name} = portfolio.restauracje[i];
-                let url = "/restauracje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                let url = "/portfolio/restauracje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 restauracje.push(<MenuLink
                     name={name}
@@ -55,7 +55,7 @@ class MenuPanel extends Component {
 
                 //take id, image_url, name and tagline from the props
                 let {id, name} = portfolio.przemyslowe[i];
-                let url = "/przemyslowe/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                let url = "/portfolio/przemyslowe/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 przemyslowe.push(<MenuLink
                     name={name}
@@ -75,7 +75,7 @@ class MenuPanel extends Component {
 
                 //take id, image_url, name and tagline from the props
                 let {id, name} = portfolio.domy[i];
-                let url = "/domy/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                let url = "/portfolio/domy/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 domy.push(<MenuLink
                     name={name}
@@ -95,7 +95,7 @@ class MenuPanel extends Component {
 
                 //take id and name from the portfolio constant
                 let {id, name} = portfolio.renowacje[i];
-                let url = "/renowacje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                let url = "/portfolio/renowacje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 renowacje.push(<MenuLink
                     name={name}
