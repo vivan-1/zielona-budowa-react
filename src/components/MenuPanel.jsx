@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {Col} from "react-bootstrap";
 
 import {sections, portfolio} from "../data/constants";
+import{MenuLink} from "./MenuLink";
 
 class MenuPanel extends Component {
     constructor(props) {
@@ -10,25 +11,30 @@ class MenuPanel extends Component {
 
 
     componentDidMount() {
-        console.log(sections, portfolio);
+
     }
 
     render() {
 
+        //don't display the names of empty sections
+        let classRestauracje = sections.restauracje ? "section-name" : "displayNone";
+        let classPrzemyslowe = sections.przemyslowe ? "section-name" : "displayNone";
+        let classDomy = sections.domy ? "section-name" : "displayNone";
+        let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
 
         return(
             <Col xsHidden sm={3} md={2} id="menu-panel">
                 <div id="menu-panel-text">
                     <a href="#" id="link-0"><img className="img-responsive" src="images/logo-big.png" alt="Zielona budowa - logo" id="main-logo"></img></a>
                     <div id="links">
-                        <p className="section-name">restauracje i&nbsp;hotele:</p>
+                        <p className={classRestauracje}>restauracje i&nbsp;hotele:</p>
 
-                        <p className="section-name">obiekty przemysłowe:</p>
+                        <p className={classPrzemyslowe}>obiekty przemysłowe:</p>
                         <p><a href="#" className="menu-panel-link" id="link-2-0">malarnia proszkowa</a></p>
 
-                        <p className="section-name">domy i&nbsp;osiedla:</p>
+                        <p className={classDomy}>domy i&nbsp;osiedla:</p>
                         <p><a href="#" className="menu-panel-link" id="link-3-0">dom w&nbsp;porębie</a></p>
-                        <p className="section-name">renowacje:</p>
+                        <p className={classRenowacje}>renowacje:</p>
                         <p><a href="#" className="menu-panel-link" id="link-5-0">sportowa 20</a></p>
                         <p className="section-name">&hellip;więcej wkrótce</p>
                     </div>
