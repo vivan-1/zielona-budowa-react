@@ -1,13 +1,3 @@
-//specifies which sections are visible [empty sections are hidden]
-
-export const sections = {
-    restauracje: false,
-    przemyslowe: true,
-    domy: true,
-    renowacje: true
-};
-
-
 //specifies the content of all section elements
 
 export const portfolio = {
@@ -43,4 +33,13 @@ export const portfolio = {
             textFrames: []
         }
     ]
+};
+
+//specifies which sections are visible [empty sections are hidden]
+
+export const sections = {
+    restauracje: portfolio.restauracje.length > 0,
+    przemyslowe: portfolio.przemyslowe.length > 0,
+    domy: portfolio.domy.length > 0,
+    renowacje: portfolio.renowacje.length > 0
 };
