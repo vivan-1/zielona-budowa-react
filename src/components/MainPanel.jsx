@@ -20,6 +20,8 @@ class MainPanel extends Component {
 
     render() {
 
+        // console.log(this.props.match.params.section);
+
         let style = {
             backgroundImage: "url('../../public/images/background.jpg')"
         };
