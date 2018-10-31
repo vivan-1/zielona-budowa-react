@@ -18,7 +18,92 @@ class NavigationBar extends Component {
         let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
         let classDomy = sections.domy ? "" : "displayNone";
         let classRenowacje = sections.renowacje ? "" : "displayNone";
-        console.log(sections, classRestauracje);
+
+
+        //create an arrays of section links
+
+        //restauracje
+
+        let restauracje = []; //array holding section links
+
+        if (sections.restauracje) {
+
+            for (let i = 0; i < portfolio.restauracje.length; i++) {
+
+                //take id, image_url, name and tagline from the props
+                let {id, name} = portfolio.restauracje[i];
+                let url = "/restauracje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                restauracje.push(<NavLink
+                    name={name}
+                    url={url}
+                />);
+            }
+
+        }
+
+        //obiekty przemysłowe
+
+        let przemyslowe = []; //array holding section links
+
+        if (sections.przemyslowe) {
+
+            for (let i = 0; i < portfolio.przemyslowe.length; i++) {
+
+                //take id, image_url, name and tagline from the props
+                let {id, name} = portfolio.przemyslowe[i];
+                let url = "/przemyslowe/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                przemyslowe.push(<NavLink
+                    name={name}
+                    url={url}
+                />);
+            }
+
+        }
+
+        //domy i osiedla
+
+        let domy = []; //array holding section links
+
+        if (sections.domy) {
+
+            for (let i = 0; i < portfolio.domy.length; i++) {
+
+                //take id, image_url, name and tagline from the props
+                let {id, name} = portfolio.domy[i];
+                let url = "/domy/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                domy.push(<NavLink
+                    name={name}
+                    url={url}
+                />);
+            }
+
+        }
+
+        //renowacje
+
+        let renowacje = []; //array holding section links
+
+        if (sections.renowacje) {
+
+            for (let i = 0; i < portfolio.renowacje.length; i++) {
+
+                //take id and name from the portfolio constant
+                let {id, name} = portfolio.renowacje[i];
+                let url = "/renowacje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                renowacje.push(<NavLink
+                    name={name}
+                    url={url}
+                />);
+            }
+
+        }
+
+
+
         return (
             <Navbar id="top-navbar">
                 <div className="container">
@@ -40,20 +125,60 @@ class NavigationBar extends Component {
                                 <div className={classRestauracje}>
                                     <li className="nav-section-name">restauracje i&nbsp;hotele:</li>
                                 </div>
+
+                                <div>
+                                    {restauracje.map((link, k) => {
+                                        return (
+                                            <p key={k}>
+                                                {link}
+                                            </p>
+                                        )
+                                    })}
+                                </div>
+
                                 <div className={classPrzemyslowe}>
                                     <li className="nav-section-name">obiekty przemysłowe:</li>
                                 </div>
-                                <li><a href="#" className="page-scroll" id="nav-link-2-0">malarnia proszkowa</a></li>
+
+                                <div>
+                                    {przemyslowe.map((link, k) => {
+                                        return (
+                                            <p key={k}>
+                                                {link}
+                                            </p>
+                                        )
+                                    })}
+                                </div>
+
 
                                 <div className={classDomy}>
                                     <li className="nav-section-name">domy i&nbsp;osiedla:</li>
                                 </div>
-                                <li><a href="#" className="page-scroll" id="nav-link-3-0">dom w&nbsp;porębie</a></li>
+
+                                <div>
+                                    {domy.map((link, k) => {
+                                        return (
+                                            <p key={k}>
+                                                {link}
+                                            </p>
+                                        )
+                                    })}
+                                </div>
 
                                 <div className={classRenowacje}>
                                     <li className="nav-section-name">renowacje:</li>
                                 </div>
-                                <li><a href="#" className="page-scroll" id="nav-link-5-0">sportowa 20</a></li>
+
+                                <div>
+                                    {renowacje.map((link, k) => {
+                                        return (
+                                            <p key={k}>
+                                                {link}
+                                            </p>
+                                        )
+                                    })}
+                                </div>
+
                                 <li className="nav-section-name">&hellip;więcej wkrótce</li>
                             </ul>
 

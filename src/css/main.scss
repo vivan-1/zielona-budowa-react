@@ -222,7 +222,7 @@ iframe {
 
 }
 
-  /* Menu panel */
+/* Menu panel */
 
 #menu-panel {
   border-right: $borderDefault;
@@ -231,7 +231,7 @@ iframe {
   min-width: 180px;
   //float: left;
   font-size: 110%;
-  overflow-y: auto;
+  overflow-y: auto !important;
   overflow-x: hidden;
   text-align: center;
 }

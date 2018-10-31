@@ -2,6 +2,7 @@
 
 export const portfolio = {
     restauracje: [
+
     ],
     przemyslowe: [
         {
