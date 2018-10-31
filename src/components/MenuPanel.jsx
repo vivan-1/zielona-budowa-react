@@ -1,12 +1,21 @@
 import React, {Component} from "react";
 import {Col} from "react-bootstrap";
 
+import {sections, portfolio} from "../data/constants";
+
 class MenuPanel extends Component {
     constructor(props) {
         super(props);
     }
 
+
+    componentDidMount() {
+        console.log(sections, portfolio);
+    }
+
     render() {
+
+
         return(
             <Col xsHidden sm={3} md={2} id="menu-panel">
                 <div id="menu-panel-text">

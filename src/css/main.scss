@@ -146,13 +146,6 @@ iframe {
 
 /* NAVBAR */
 
-Navbar.Brand {
-  padding-top: 4px;
-  img {
-    height: 120% !important;
-  }
-}
-
 #nav-links {
   margin-bottom: 20px;
 }
@@ -226,9 +219,10 @@ Navbar.Brand {
 #main-container {
   height: 100% !important;
   padding: 0 !important;
+
 }
 
-/* Menu panel */
+  /* Menu panel */
 
 #menu-panel {
   border-right: $borderDefault;
