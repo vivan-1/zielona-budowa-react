@@ -6,6 +6,16 @@ class MainPanel extends Component {
 
     constructor(props) {
         super(props);
+
+        this.goToUrl = this.goToUrl.bind(this);
+    }
+
+
+    //goes to specific url
+    goToUrl(url) {
+
+        this.props.history.push(url); //go to the specified url
+
     }
 
     render() {
