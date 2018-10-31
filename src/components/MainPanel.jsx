@@ -11,35 +11,15 @@ class MainPanel extends Component {
     constructor(props) {
         super(props);
 
-        this.goToUrl = this.goToUrl.bind(this);
 
-        this.state = {
-            section: "",
-            project: "",
-            view: 0
-        }
+
+
 
     }
 
 
 
-    //goes to specific url
-    goToUrl(url) {
 
-        this.props.history.push(url); //go to the specified url
-
-    }
-
-    //take project details from url
-    setDetails() {
-
-
-    }
-
-    componentDidMount() {
-            this.setDetails();
-
-    }
 
     render() {
 

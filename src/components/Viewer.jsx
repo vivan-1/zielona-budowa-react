@@ -4,16 +4,54 @@ import React, {Component} from "react";
 class Viewer extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            section: "",
+            project: "",
+            view: 0
+        }
+
+        this.goToUrl = this.goToUrl.bind(this);
+    }
+
+
+    //goes to specific url
+    goToUrl(url) {
+
+        this.props.history.push(url); //go to the specified url
+
+    }
+
+
+
+    //take project details from url
+    setDetails() {
+
+        const {section, project, view} = this.props.match.params;
+
+        this.setState({section, project, view});
+
+    }
+
+    componentDidMount() {
+        this.setDetails();
+
+    }
+
+    componentWillReceiveProps() {
+        this.setDetails();
     }
 
     render() {
+        let display = this.state.section + " " + this.state.project + " " + this.state.view;
         return(
+
             <div>
                 <div id="main-panel-container">
                     <div className="view-content">
                         <div id="title-box">
                             <span id="title">coś innego</span><br/>
-                            <span id="subtitle">pracownia architektoniczna</span>
+                            <span id="subtitle">{display}</span>
                         </div>
                     </div>
                 </div>
