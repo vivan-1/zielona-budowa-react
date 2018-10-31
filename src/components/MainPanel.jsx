@@ -10,10 +10,15 @@ class MainPanel extends Component {
 
     render() {
         return(
-            <Col xs={12} sm={10} id="main-panel">
+            <Col xs={12} sm={9} md={10} id="main-panel">
 
                 <div id="main-panel-container">
-
+                    <div className="view-content">
+                        <div id="title-box">
+                            <span id="title">zielona budowa</span><br/>
+                            <span id="subtitle">pracownia architektoniczna</span>
+                        </div>
+                    </div>
                 </div>
 
                 <nav id="main-panel-footer" aria-label="...">

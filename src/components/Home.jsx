@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Grid, Row} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
 import NavigationBar from "./NavigationBar";
@@ -53,20 +54,18 @@ class Home extends Component {
 
 
         return (
-            <div>
 
+            <Grid fluid id="main-container">
                 <NavigationBar/>
 
-
-                <div className="container-fluid" id="main-container">
-
-
+                <Row>
                     <MenuPanel/>
 
                     <MainPanel/>
+                </Row>
 
-                </div>
-            </div>
+            </Grid>
+
         );
     }
 }

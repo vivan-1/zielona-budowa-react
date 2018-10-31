@@ -120,9 +120,9 @@ iframe {
   }
 }
 
-.dynamic-box {
-  @include animated-box;
-}
+//.dynamic-box {
+//  @include animated-box;
+//}
 
 /*** SPINNER STYLES ***/
 .loaderContainer {
@@ -291,6 +291,7 @@ Navbar.Brand {
 
 #main-panel-footer {
   height: 10%;
+  width: 100%;
   padding-top: 0 !important;
   margin-top: 0 !important;
 }

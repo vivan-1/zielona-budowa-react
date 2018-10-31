@@ -8,7 +8,7 @@ class MenuPanel extends Component {
 
     render() {
         return(
-            <Col xsHidden sm={2} id="menu-panel">
+            <Col xsHidden sm={3} md={2} id="menu-panel">
                 <div id="menu-panel-text">
                     <a href="#" id="link-0"><img className="img-responsive" src="images/logo-big.png" alt="Zielona budowa - logo" id="main-logo"></img></a>
                     <div id="links">
