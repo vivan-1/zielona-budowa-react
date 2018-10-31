@@ -27,7 +27,7 @@ class Viewer extends Component {
     //take project details from url
     setDetails() {
 
-        const {section, project, view} = this.props.match.params;
+        let {section, project, view} = this.props.match.params;
 
         this.setState({section, project, view});
 
@@ -38,8 +38,11 @@ class Viewer extends Component {
 
     }
 
+
     componentWillReceiveProps() {
-        this.setDetails();
+
+
+            this.setDetails();
     }
 
     render() {

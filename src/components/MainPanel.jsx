@@ -29,12 +29,10 @@ class MainPanel extends Component {
         };
         return(
             <Col xs={12} sm={9} md={10} style={style} id="main-panel">
-                <Router>
-                    <div>
+
                         <Route exact path="/" component={SplashScreen}/>
-                        <Route path="/portfolio/:section/:project/:view" component={Viewer}/>
-                    </div>
-                </Router>
+                        <Route path="/portfolio/:section/:project/:view" component={props => <Viewer {...props}/>} />
+
             </Col>
         );
     }
