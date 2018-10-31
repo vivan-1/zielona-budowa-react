@@ -116,7 +116,7 @@ class NavigationBar extends Component {
                         {/*<span className="icon-bar"></span>*/}
                         {/*</button>*/}
                         <Navbar.Brand id="nav-link-0" href="#home">
-                            <img src="images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"></img>
+                            <img src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"></img>
                         </Navbar.Brand>
                     </Navbar.Header>
                     <Navbar.Collapse id="navbar">
