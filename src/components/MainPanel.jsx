@@ -9,8 +9,12 @@ class MainPanel extends Component {
     }
 
     render() {
+
+        let style = {
+            backgroundImage: "url('../../public/images/background.jpg')"
+        };
         return(
-            <Col xs={12} sm={9} md={10} id="main-panel">
+            <Col xs={12} sm={9} md={10} style={style} id="main-panel">
 
                 <div id="main-panel-container">
                     <div className="view-content">

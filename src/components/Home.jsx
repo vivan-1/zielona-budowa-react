@@ -58,7 +58,7 @@ class Home extends Component {
             <Grid fluid id="main-container">
                 <NavigationBar/>
 
-                <Row>
+                <Row id="panels">
                     <MenuPanel/>
 
                     <MainPanel/>

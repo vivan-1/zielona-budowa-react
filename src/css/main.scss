@@ -5,10 +5,15 @@
 /*** GENERAL STYLES ***/
 
 
-html {
-  height: 100%;
+html, body, #root, #app {
+  height: 100vh !important;
+  position: absolute;
+  width: 100% !important;
 }
 
+#panels {
+  height: 100%;
+}
 body {
   height: 100%;
   font-style: $mainFont !important;
@@ -17,6 +22,7 @@ body {
   overflow-x: hidden;
   @include set-selection;
 }
+
 
 //a {
 //  color: setColor(0);
@@ -197,9 +203,16 @@ iframe {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: $mainColor;
   }
+
+  //hide menu panel on small screens
+  #menu-panel {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
+
+  //hide navbar on large screens
   #top-navbar {
     display: none;
   }
@@ -218,7 +231,8 @@ iframe {
 
 #main-container {
   height: 100% !important;
-  max-height: 100%;
+  min-height: 100% !important;
+  max-height: 100% !important;
   padding: 0 !important;
 
 }
@@ -266,7 +280,7 @@ iframe {
 /* MAIN PANEL */
 
 #main-panel {
-  height: 100%;
+  height: 100vh !important;
   //width: 72%;
   //float: left;
   overflow: hidden;
@@ -275,8 +289,12 @@ iframe {
   background-position: center center;
 }
 
+.hasBackground {
+  background-image: url("../../public/images/background.jpg");
+}
+
 #main-panel-container {
-  height: 90%;
+  height: 90% !important;
   width: 100% !important;
   position: relative;
   overflow: hidden;
