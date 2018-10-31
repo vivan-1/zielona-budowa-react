@@ -8,9 +8,7 @@ class MenuLink extends Component {
 
     render() {
         return(
-            <p>
                 <Link to={this.props.url} className="routerLink">{this.props.name}</Link>
-            </p>
         );
     }
 }

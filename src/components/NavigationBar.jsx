@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import {Navbar} from "react-bootstrap";
 import {sections, portfolio} from "../data/constants";
 
+import NavLink from "./NavLink";
+
 class NavigationBar extends Component {
     constructor(props) {
         super(props);
