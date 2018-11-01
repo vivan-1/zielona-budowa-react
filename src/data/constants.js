@@ -10,7 +10,7 @@ export const portfolio = {
             name: 'malarnia proszkowa',
             numberOfViews: 11,
             videoFrame: 5,
-            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ&t=3s",
+            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
             textFrames: [9, 10]
         }
     ],

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ResponsiveEmbed from "react-responsive-embed";
+import YouTube from "react-youtube";
 
 import {portfolio} from "../data/constants";
 import {Link} from "react-router-dom";
@@ -142,11 +143,19 @@ class Viewer extends Component {
     componentWillReceiveProps() {
 
 
-        this.setDetails();
+        // this.setDetails();
     }
 
     render() {
 
+
+        const opts = {
+            height: '390',
+            width: '640',
+            playerVars: { // https://developers.google.com/youtube/player_parameters
+                autoplay: 1
+            }
+        };
 
 
         //choose appropriate content depending on the frame type
@@ -157,7 +166,11 @@ class Viewer extends Component {
 
         if (this.state.isVideoFrame) {
             content = <div className="view-content">
-                <ResponsiveEmbed src={this.state.videoUrl}/>
+                <YouTube
+                    videoId="wxPkxKkHDgQ"
+                    opts={opts}
+                    onReady={this._onReady}
+                />
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
