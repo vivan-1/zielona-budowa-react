@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {Image} from "react-bootstrap";
 
 import {sections, portfolio} from "../data/constants";
 import NavLink from "./NavLink";
@@ -117,7 +118,7 @@ class NavigationBar extends Component {
                         {/*</button>*/}
                         <Navbar.Brand href="#home">
                             <Link to="/">
-                                <img src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"></img>
+                                <Image src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar" responsive />
                             </Link>
                         </Navbar.Brand>
                     </Navbar.Header>

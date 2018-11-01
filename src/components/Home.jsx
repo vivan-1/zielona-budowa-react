@@ -11,23 +11,23 @@ class Home extends Component {
     constructor(props) {
         super(props);
         // this.updateImagesLoaded = this.updateImagesLoaded.bind(this);
-        this.state = {
-            loading: true, //specifies whether the spinner should be visible
-            imagesLoaded: 0, //the number of images that have been loaded
-            allImages: 4 //the total number of images that need to load before the spinner is hidden
-        }
+        // this.state = {
+        //     loading: true, //specifies whether the spinner should be visible
+        //     imagesLoaded: 0, //the number of images that have been loaded
+        //     allImages: 4 //the total number of images that need to load before the spinner is hidden
+        // }
     }
 
-    updateImagesLoaded() {
-
-        this.setState({imagesLoaded: this.state.imagesLoaded + 1}); //increment the number of loaded images by 1
-
-        //if the number of loaded images reaches the number of all images that need to be loaded, hide the spinner
-        if (this.state.imagesLoaded >= this.state.allImages) {
-            this.setState({loading: false});
-        }
-
-    }
+    // updateImagesLoaded() {
+    //
+    //     this.setState({imagesLoaded: this.state.imagesLoaded + 1}); //increment the number of loaded images by 1
+    //
+    //     //if the number of loaded images reaches the number of all images that need to be loaded, hide the spinner
+    //     if (this.state.imagesLoaded >= this.state.allImages) {
+    //         this.setState({loading: false});
+    //     }
+    //
+    // }
 
     //set dynamic page title
     componentWillMount() {

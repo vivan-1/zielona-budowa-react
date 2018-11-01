@@ -4,14 +4,18 @@
 
 /*** GENERAL STYLES ***/
 
-html, body, #root, #app {
+html, #root, #app {
   height: 100vh !important;
   position: absolute;
   width: 100% !important;
 }
 
+#root {
+  color: fuchsia !important;
+}
+
 #panels {
-  height: 100%;
+  height: 100% !important;
 }
 
 body {
@@ -385,26 +389,26 @@ iframe {
 //  }
 //}
 //
-//.embed-responsive {
-//  position: absolute;
-//  left: 0;
-//  right: 0;
-//  top: 50%;
-//  margin-top: -28.1%;
-//  /* video height / video width */
-//  padding-bottom: 56.2%;
-//  height: 0;
-//  overflow: hidden;
-//}
-//
-//.embed-responsive iframe {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  width: 100%;
-//  height: 100%;
-//  padding: 25px;
-//}
+.iframe-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -28.1%;
+  /* video height / video width */
+  padding-bottom: 56.2%;
+  height: 0;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
 
 /* Text pages */
 .text-note {

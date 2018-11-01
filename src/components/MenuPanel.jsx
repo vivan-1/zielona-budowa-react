@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Col} from "react-bootstrap";
+import {Col, Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 import {sections, portfolio} from "../data/constants";
@@ -109,8 +109,8 @@ class MenuPanel extends Component {
             <Col xsHidden sm={3} md={2} id="menu-panel">
                 <div id="menu-panel-text">
                     <Link to="/">
-                        <img className="img-responsive" src="/images/logo-big.png" alt="Zielona budowa - logo"
-                             id="main-logo"></img>
+                        <Image src="/images/logo-big.png" alt="Zielona budowa - logo"
+                             id="main-logo" responsive />
                     </Link>
                     <div id="links">
                         <p className={classRestauracje}>restauracje i&nbsp;hotele:</p>
