@@ -15,7 +15,6 @@ class Viewer extends Component {
             textFrames: [],
             videoFrame: 0,
             numberOfViews: 0,
-            projectIndex: 0,
             isFirstFrame: false,
             isLastFrame: false,
             isTextFrame: false,
@@ -46,51 +45,54 @@ class Viewer extends Component {
         //create image url based on project name and view number
         this.setState({imageUrl: project + "-" + view});
 
-        //locate data in the portfolio object
+        //check the index of the project in the potfolio and get appropiate data
+        
+        let projectIndex = 0;
+        switch (this.state.section) {
+            case "restauracje":
+                for (let i = 0; i < portfolio.restauracje.length; i++) {
+                    if (portfolio.restauracje[i].id === project) {
+                        projectIndex = i;
+                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.restauracje[projectIndex];
+                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        break;
+                    }
+                }
+                break;
 
-        //
-        // switch(this.state.section) {
-        //     case "restauracje":
-        //         for (i = 0; i < portfolio.restauracje[i].length; i++) {
-        //             if (portfolio.restauracje[i].id === project) {
-        //                 this.setState({projectIndex: i});
-        //                 break;
-        //             }
-        //         }
-        //         break;
-        //
-        //     case "przemyslowe":
-        //         for (i = 0; i < portfolio.przemyslowe[i].length; i++) {
-        //             if (portfolio.przemyslowe[i].id === project) {
-        //                 this.setState({projectIndex: i});
-        //                 break;
-        //             }
-        //         }
-        //         break;
-        //
-        //     case "domy":
-        //         for (i = 0; i < portfolio.domy[i].length; i++) {
-        //             if (portfolio.domy[i].id === project) {
-        //                 this.setState({projectIndex: i});
-        //                 break;
-        //             }
-        //         }
-        //         break;
-        //
-        //     case "renowacje":
-        //         for (i = 0; i < portfolio.renowacje[i].length; i++) {
-        //             if (portfolio.renowacje[i].id === project) {
-        //                 this.setState({projectIndex: i});
-        //                 break;
-        //             }
-        //         }
-        //         break;
-        //     default:
-        //         this.goToUrl("/");
-        // }
-        //
-        // console.log(this.state.projectIndex);
+            case "przemyslowe":
+                for (let i = 0; i < portfolio.przemyslowe.length; i++) {
+                    if (portfolio.przemyslowe[i].id === project) {
+                        projectIndex = i;
+                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.przemyslowe[projectIndex];
+                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        break;
+                    }
+                }
+                break;
 
+            case "domy":
+                for (let i = 0; i < portfolio.domy.length; i++) {
+                    if (portfolio.domy[i].id === project) {
+                        projectIndex = i;
+                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.domy[projectIndex];
+                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        break;
+                    }
+                }
+                break;
+
+            case "renowacje":
+                for (let i = 0; i < portfolio.renowacje.length; i++) {
+                    if (portfolio.renowacje[i].id === project) {
+                        projectIndex = i;
+                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.renowacje[projectIndex];
+                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        break;
+                    }
+                }
+                break;
+        }
 
 
         /*
@@ -114,7 +116,6 @@ class Viewer extends Component {
         * */
 
 
-
     }
 
     componentDidMount() {
@@ -126,12 +127,12 @@ class Viewer extends Component {
     componentWillReceiveProps() {
 
 
-            this.setDetails();
+        this.setDetails();
     }
 
     render() {
         let display = this.state.section + " " + this.state.project + " " + this.state.view;
-        return(
+        return (
 
             <div>
                 <div id="main-panel-container">
@@ -145,8 +146,10 @@ class Viewer extends Component {
 
                 <nav id="main-panel-footer" aria-label="...">
                     <ul className="pager">
-                        <li id="prev" className="previous"><a id="prev-link" href="#"><span aria-hidden="true">&larr;</span> Wstecz</a></li>
-                        <li id="next" className="next"><a id="next-link" href="#">Dalej <span aria-hidden="true">&rarr;</span></a></li>
+                        <li id="prev" className="previous"><a id="prev-link" href="#"><span
+                            aria-hidden="true">&larr;</span> Wstecz</a></li>
+                        <li id="next" className="next"><a id="next-link" href="#">Dalej <span
+                            aria-hidden="true">&rarr;</span></a></li>
                     </ul>
                 </nav>
             </div>
