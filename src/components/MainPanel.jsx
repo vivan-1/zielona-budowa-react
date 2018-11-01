@@ -22,14 +22,14 @@ class MainPanel extends Component {
             backgroundImage: "url('../../public/images/background.jpg')"
         };
         return (
-            <Col xs={12} sm={9} md={10} style={style} id="main-panel">
+            <div id="main-panel">
                 <Switch>
                     <Route exact path="/" component={SplashScreen}/>
                     <Route path="/portfolio/:section/:project/:view" component={props => <Viewer {...props}/>}/>
                     <Route component={SplashScreen}/>
                 </Switch>
 
-            </Col>
+            </div>
         );
     }
 }

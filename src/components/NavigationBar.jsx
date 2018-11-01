@@ -39,6 +39,7 @@ class NavigationBar extends Component {
                 restauracje.push(<NavLink
                     name={name}
                     url={url}
+                    id={id}
                 />);
             }
 
@@ -59,6 +60,7 @@ class NavigationBar extends Component {
                 przemyslowe.push(<NavLink
                     name={name}
                     url={url}
+                    id={id}
                 />);
             }
 
@@ -79,6 +81,7 @@ class NavigationBar extends Component {
                 domy.push(<NavLink
                     name={name}
                     url={url}
+                    id={id}
                 />);
             }
 
@@ -99,6 +102,7 @@ class NavigationBar extends Component {
                 renowacje.push(<NavLink
                     name={name}
                     url={url}
+                    id={id}
                 />);
             }
 

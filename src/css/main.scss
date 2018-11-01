@@ -10,9 +10,6 @@ html, #root, #app {
   width: 100% !important;
 }
 
-#root {
-  color: fuchsia !important;
-}
 
 #panels {
   height: 100% !important;
@@ -23,7 +20,6 @@ body {
   font-style: $mainFont !important;
   background-color: $backgroundColor;
   position: relative;
-  overflow-x: hidden;
   @include set-selection;
 }
 
@@ -115,7 +111,7 @@ a {
   background-color: setColor(9.5);
 }
 
-img {
+img, Image, .view-content {
   @include grayscale;
   @include no-select;
 }
@@ -293,7 +289,7 @@ iframe {
 }
 
 .hasBackground {
-  background-image: url("../../public/images/background.jpg");
+  //background-image: url("../../public/images/background.jpg");
 }
 
 #splash-screen {
@@ -329,7 +325,7 @@ iframe {
 .view-content {
   width: 100%;
   height: 100%;
-  display: flex;
+  //display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 !important;

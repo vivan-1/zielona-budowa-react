@@ -9,13 +9,13 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <div id="app">
+
                     <Switch>
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/portfolio/:section/:project/:view" component={props => <Home {...props}/>}/>
                         <Route component={Home}/>
                     </Switch>
-                </div>
+
             </Router>
         );
     }

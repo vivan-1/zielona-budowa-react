@@ -8,14 +8,14 @@ class SplashScreen extends Component {
 
     render() {
         return(
-            <div id="splash-screen">
-                <div className="view-content">
+
+                <div className="view-content" id="splash-screen">
                     <div id="title-box">
                         <span id="title">zielona budowa</span><br/>
                         <span id="subtitle">pracownia architektoniczna</span>
                     </div>
                 </div>
-            </div>
+
         );
     }
 }

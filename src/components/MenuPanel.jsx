@@ -38,6 +38,7 @@ class MenuPanel extends Component {
                 let url = "/portfolio/restauracje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 restauracje.push(<MenuLink
+                    id={id}
                     name={name}
                     url={url}
                 />);
@@ -58,6 +59,7 @@ class MenuPanel extends Component {
                 let url = "/portfolio/przemyslowe/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 przemyslowe.push(<MenuLink
+                    id={id}
                     name={name}
                     url={url}
                 />);
@@ -78,6 +80,7 @@ class MenuPanel extends Component {
                 let url = "/portfolio/domy/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 domy.push(<MenuLink
+                    id={id}
                     name={name}
                     url={url}
                 />);
@@ -98,6 +101,7 @@ class MenuPanel extends Component {
                 let url = "/portfolio/renowacje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
                 //update the array with a planet tile containing the above details
                 renowacje.push(<MenuLink
+                    id={id}
                     name={name}
                     url={url}
                 />);

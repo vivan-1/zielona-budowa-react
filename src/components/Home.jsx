@@ -55,16 +55,16 @@ class Home extends Component {
 
         return (
 
-            <Grid fluid id="main-container">
+            <div fluid id="main-container">
                 <NavigationBar/>
 
-                <Row id="panels">
+                <div id="panels">
                     <MenuPanel/>
 
                     <MainPanel/>
-                </Row>
+                </div>
 
-            </Grid>
+            </div>
 
         );
     }
