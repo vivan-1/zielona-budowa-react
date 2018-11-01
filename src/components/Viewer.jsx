@@ -152,10 +152,10 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
 
         // let display = "numberOfViews: " + this.state.numberOfViews + " videoFrame: " + this.state.videoFrame + " videoUrl: " + this.state.videoUrl + " textFrames: " + this.state.textFrames;
 
-        let backButton = this.state.isFirst ? "<div></div>" : <a id="prev-link" href="#"><span
+        let backButton = this.state.isFirstFrame ? <div></div> : <a id="prev-link" href="#"><span
                             aria-hidden="true">&larr;</span> Wstecz</a>;
 
-        let nextButton = this.state.isLast ? "<div></div>" : <a id="next-link" href="#">Dalej <span
+        let nextButton = this.state.isLastFrame ? <div></div> : <a id="next-link" href="#">Dalej <span
                             aria-hidden="true">&rarr;</span></a>;
 
         return (
