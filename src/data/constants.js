@@ -8,7 +8,7 @@ export const portfolio = {
         {
             id: 'malarnia',
             name: 'malarnia proszkowa',
-            numberOfViews: 10,
+            numberOfViews: 11,
             videoFrame: 5,
             videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ&t=3s",
             textFrames: [9, 10]
@@ -18,8 +18,8 @@ export const portfolio = {
         {
             id: 'dom-poreba',
             name: 'dom w porębie',
-            numberOfViews: 16,
-            videoFrame: 1000,
+            numberOfViews: 17,
+            videoFrame: 0,
             videoUrl: "",
             textFrames: []
         }
@@ -28,8 +28,8 @@ export const portfolio = {
         {
             id: 'sportowa20',
             name: 'sportowa 20',
-            numberOfViews: 17,
-            videoFrame: 1000,
+            numberOfViews: 18,
+            videoFrame: 0,
             videoUrl: "",
             textFrames: []
         }
