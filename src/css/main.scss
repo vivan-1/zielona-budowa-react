@@ -116,6 +116,7 @@ a {
 
 img {
   @include grayscale;
+  @include no-select;
 }
 
 iframe {

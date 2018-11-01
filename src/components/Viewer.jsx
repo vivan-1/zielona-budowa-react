@@ -97,13 +97,13 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
     let isLastFrame = Number(view) === numberOfViews;
 
     //check if the current frame is a video frame
-    let isVideoFrame = view === videoFrame;
+    let isVideoFrame = Number(view) === videoFrame;
 
     //check if the current frame is a text frame
 
     let isTextFrame = false;
     for (let i = 0; i < textFrames.length; i++) {
-        if (textFrames[i] === view) {
+        if (textFrames[i] === Number(view) - 1) {
             isTextFrame = true;
         }
     }
@@ -152,6 +152,8 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
         //choose appropriate content depending on the frame type
 
         let content;
+
+        console.log("isVideoFrame: ", this.state.isVideoFrame, " isTextFrame: ", this.state.isTextFrame);
 
         if (this.state.isVideoFrame) {
             content = <div className="view-content">

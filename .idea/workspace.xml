@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="206">
+              <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#71#77#1" expanded="true" />
@@ -78,8 +79,8 @@
       <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="318">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -114,13 +115,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="400" column="21" selection-start-line="400" selection-start-column="21" selection-end-line="400" selection-end-column="21" />
+            <state relative-caret-position="117">
+              <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
               <folding>
-                <marker date="1541068930565" expanded="true" signature="391:1905" ph="..." />
+                <marker date="1541070195980" expanded="true" signature="391:1905" ph="..." />
               </folding>
             </state>
           </provider>
@@ -137,9 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;br&gt;</find>
-      <find>border-rad</find>
-      <find>men-u</find>
       <find>min-width</find>
       <find>#root</find>
       <find>navbar</find>
@@ -153,7 +151,6 @@
       <find>72</find>
       <find>float</find>
       <find>main-con</find>
-      <find>img</find>
       <find>match.</find>
       <find>url</find>
       <find>props.match</find>
@@ -164,9 +161,13 @@
       <find>rojec</find>
       <find>display: none</find>
       <find>numberOfViews</find>
-      <find>select</find>
       <find>&quot;-&quot;</find>
+      <find>this.setState({numberOfViews, videoFrame, videoUrl, textFrames});</find>
+      <find>select</find>
       <find>border-ra</find>
+      <find>isVide</find>
+      <find>img</find>
+      <find>grayscale</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -175,6 +176,7 @@
       <replace>$mainColor</replace>
       <replace>NavLink</replace>
       <replace>take id and name from the portfolio constant</replace>
+      <replace>this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});</replace>
       <replace>rojectIndex = i;</replace>
     </replaceStrings>
   </component>
@@ -204,8 +206,8 @@
         <option value="$PROJECT_DIR$/src/components/MainPanel.jsx" />
         <option value="$PROJECT_DIR$/src/components/SplashScreen.jsx" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/css/main.scss" />
         <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
+        <option value="$PROJECT_DIR$/src/css/main.scss" />
       </list>
     </option>
   </component>
@@ -331,12 +333,12 @@
       <workItem from="1531213268476" duration="34000" />
       <workItem from="1540898960012" duration="13322000" />
       <workItem from="1540976946224" duration="27805000" />
-      <workItem from="1541059400368" duration="10052000" />
+      <workItem from="1541059400368" duration="10642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63782000" />
+    <option name="totallyTimeSpent" value="64372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="32" width="1478" height="775" extended-state="0" />
@@ -680,20 +682,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="206">
+          <caret line="105" column="46" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#71#77#1" expanded="true" />
+            <element signature="e#86#92#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main.scss">
+    <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="400" column="21" selection-start-line="400" selection-start-column="21" selection-end-line="400" selection-end-column="21" />
-          <folding>
-            <marker date="1541068930565" expanded="true" signature="391:1905" ph="..." />
-          </folding>
+        <state relative-caret-position="318">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -704,14 +708,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
+    <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="117">
+          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#71#77#1" expanded="true" />
-            <element signature="e#86#92#1" expanded="true" />
+            <marker date="1541070195980" expanded="true" signature="391:1905" ph="..." />
           </folding>
         </state>
       </provider>
