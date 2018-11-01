@@ -23,6 +23,12 @@ class MenuPanel extends Component {
         let classDomy = sections.domy ? "section-name" : "displayNone";
         let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
 
+        //check displayed project
+
+        let displayedProject = this.props.match.params.project;
+        console.log(displayedProject);
+
+
         //create an arrays of section links
 
         //restauracje
@@ -41,6 +47,7 @@ class MenuPanel extends Component {
                     id={id}
                     name={name}
                     url={url}
+                    project={displayedProject}
                 />);
             }
 
@@ -62,6 +69,7 @@ class MenuPanel extends Component {
                     id={id}
                     name={name}
                     url={url}
+                    project={displayedProject}
                 />);
             }
 
@@ -83,6 +91,7 @@ class MenuPanel extends Component {
                     id={id}
                     name={name}
                     url={url}
+                    project={displayedProject}
                 />);
             }
 
@@ -104,6 +113,7 @@ class MenuPanel extends Component {
                     id={id}
                     name={name}
                     url={url}
+                    project={displayedProject}
                 />);
             }
 

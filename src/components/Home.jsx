@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Route} from "react-router-dom";
 import {Grid, Row} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
@@ -59,7 +60,7 @@ class Home extends Component {
                 <NavigationBar/>
 
                 <div id="panels">
-                    <MenuPanel/>
+                    <Route component={props => <MenuPanel {...props}/>}/>
 
                     <MainPanel/>
                 </div>
