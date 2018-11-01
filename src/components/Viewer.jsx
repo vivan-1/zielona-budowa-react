@@ -184,7 +184,9 @@ class Viewer extends Component {
         return (
 
             <div>
-                <div>{content}</div>
+                <div id="main-panel-container">
+                    <div>{content}</div>
+                </div>
 
                 <nav id="main-panel-footer" aria-label="...">
                     <ul className="pager">
