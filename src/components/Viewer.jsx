@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import {sections, portfolio} from "../data/constants";
+import {portfolio} from "../data/constants";
+import {Link} from "react-router-dom";
 
 
 class Viewer extends Component {
@@ -18,7 +19,8 @@ class Viewer extends Component {
             isFirstFrame: false,
             isLastFrame: false,
             isTextFrame: false,
-            isVideoFrame: false
+            isVideoFrame: false,
+            isImageFrame: false
         };
 
         this.goToUrl = this.goToUrl.bind(this);
@@ -33,7 +35,6 @@ class Viewer extends Component {
     }
 
 
-
     //take project details from url
     setDetails() {
 
@@ -46,7 +47,7 @@ class Viewer extends Component {
         this.setState({imageUrl: project + "-" + view});
 
         //check the index of the project in the potfolio and get appropiate data
-        
+
         let projectIndex = 0;
         switch (this.state.section) {
             case "restauracje":
@@ -94,26 +95,25 @@ class Viewer extends Component {
                 break;
         }
 
+        //check if the current frame is the first or last frame
+        let isFirstFrame = this.state.view === 1;
+        let isLastFrame = this.state.view === this.state.numberOfViews;
 
-        /*
-        *
-            videoUrl: "",
-            textFrames: [],
-            videoFrame: 0,
-            maxViews: 0,
-            isFirstFrame: false,
-            isLastFrame: false,
-            isTextFrame: false,
-            isVideoFrame: false
-            ///////
+        //check if the current frame is a video frame
+        let isVideoFrame = this.state.view === this.videoFrame;
 
-            id: 'malarnia',
-            name: 'malarnia proszkowa',
-            numberOfViews: 10,
-            videoFrame: 5,
-            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ&t=3s",
-            textFrames: [9, 10]
-        * */
+        //check if the current frame is a text frame
+
+        let isTextFrame = false;
+        for (let i = 0; i < this.state.textFrames.length; i++) {
+            if (this.state.textFrames[i] === this.state.view) {
+                isTextFrame = true;
+            }
+        }
+
+        //update the state with the above values
+
+        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame});
 
 
     }
@@ -132,6 +132,14 @@ class Viewer extends Component {
 
     render() {
         let display = this.state.section + " " + this.state.project + " " + this.state.view;
+
+        //hide back and next buttons when they are not necessary
+        let backButton = this.state.isFirst ? "<div></div>" : <a id="prev-link" href="#"><span
+                            aria-hidden="true">&larr;</span> Wstecz</a>;
+
+        let nextButton = this.state.isLast ? "<div></div>" : <a id="next-link" href="#">Dalej <span
+                            aria-hidden="true">&rarr;</span></a>;
+
         return (
 
             <div>
@@ -146,10 +154,10 @@ class Viewer extends Component {
 
                 <nav id="main-panel-footer" aria-label="...">
                     <ul className="pager">
-                        <li id="prev" className="previous"><a id="prev-link" href="#"><span
-                            aria-hidden="true">&larr;</span> Wstecz</a></li>
-                        <li id="next" className="next"><a id="next-link" href="#">Dalej <span
-                            aria-hidden="true">&rarr;</span></a></li>
+
+                        <li id="prev" className="previous">{backButton}</li>
+
+                        <li id="next" className="next">{nextButton}</li>
                     </ul>
                 </nav>
             </div>
