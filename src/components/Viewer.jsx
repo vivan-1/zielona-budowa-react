@@ -11,6 +11,7 @@ class Viewer extends Component {
             section: "",
             project: "",
             view: 0,
+            name: "",
             imageUrl: "",
             videoUrl: "",
             textFrames: [],
@@ -45,8 +46,8 @@ class Viewer extends Component {
 
                     if (portfolio.restauracje[i].id === project) {
 
-                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.restauracje[i];
-                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.restauracje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
                         this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
                         break;
                     }
@@ -56,8 +57,8 @@ class Viewer extends Component {
             case "przemyslowe":
                 for (let i = 0; i < portfolio.przemyslowe.length; i++) {
                     if (portfolio.przemyslowe[i].id === project) {
-                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.przemyslowe[i];
-                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.przemyslowe[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
                         this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
                         break;
                     }
@@ -67,8 +68,8 @@ class Viewer extends Component {
             case "domy":
                 for (let i = 0; i < portfolio.domy.length; i++) {
                     if (portfolio.domy[i].id === project) {
-                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.domy[i];
-                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.domy[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
                         this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
                         break;
                     }
@@ -79,8 +80,8 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.renowacje.length; i++) {
                     if (portfolio.renowacje[i].id === project) {
 
-                        let {numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.renowacje[i];
-                        this.setState({numberOfViews, videoFrame, videoUrl, textFrames});
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.renowacje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
                         this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
                         break;
                     }
@@ -146,8 +147,27 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
 
     render() {
 
-        let content = <div></div>;
 
+
+        //choose appropriate content depending on the frame type
+
+        let content;
+
+        if (this.state.isVideoFrame) {
+            content = <div className="view-content">
+                <div className="video-wrapper">
+                    <div className="embed-responsive">
+                        <iframe width="520" height="293" src={this.state.videoUrl} frameBorder="0" allowFullScreen></iframe>
+                    </div>
+                </div>
+            </div>;
+        } else if (this.state.isTextFrame) {
+            content = <div className="view-content">
+                <img className="text-note" src={this.state.imageUrl} alt={this.state.name} />
+            </div>;
+        } else {
+            content = <div className="view-content"><img src={this.state.imageUrl} alt={this.state.name} /></div>;
+        }
 
         //specify the pager urls
         let backView = Number(this.state.view) - 1;
