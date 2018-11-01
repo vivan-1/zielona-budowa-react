@@ -110,7 +110,7 @@ class NavigationBar extends Component {
 
 
         return (
-            <Navbar id="top-navbar">
+            <Navbar collapseOnSelect id="top-navbar">
                 <div className="container">
                     <Navbar.Header>
                         <Navbar.Toggle/>
