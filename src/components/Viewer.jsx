@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import ResponsiveEmbed from "react-responsive-embed";
+
 import {portfolio} from "../data/constants";
 import {Link} from "react-router-dom";
 
@@ -89,29 +91,29 @@ class Viewer extends Component {
                 break;
         }
 
-}
-
-checkFrameType(view, numberOfViews, videoFrame, textFrames) {
-    //check if the current frame is the first or last frame
-    let isFirstFrame = Number(view) === 1;
-    let isLastFrame = Number(view) === numberOfViews;
-
-    //check if the current frame is a video frame
-    let isVideoFrame = Number(view) === videoFrame;
-
-    //check if the current frame is a text frame
-
-    let isTextFrame = false;
-    for (let i = 0; i < textFrames.length; i++) {
-        if (textFrames[i] === Number(view) - 1) {
-            isTextFrame = true;
-        }
     }
 
-    //update the state with the above values
+    checkFrameType(view, numberOfViews, videoFrame, textFrames) {
+        //check if the current frame is the first or last frame
+        let isFirstFrame = Number(view) === 1;
+        let isLastFrame = Number(view) === numberOfViews;
 
-    this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame});
-}
+        //check if the current frame is a video frame
+        let isVideoFrame = Number(view) === videoFrame;
+
+        //check if the current frame is a text frame
+
+        let isTextFrame = false;
+        for (let i = 0; i < textFrames.length; i++) {
+            if (textFrames[i] === Number(view) - 1) {
+                isTextFrame = true;
+            }
+        }
+
+        //update the state with the above values
+
+        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame});
+    }
 
     //take project details from url
     setDetails() {
@@ -123,12 +125,10 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
         this.setState({section, project, view});
 
         //create image url based on project name and view number
-        this.setState({imageUrl: "/images/portfolio/" + project + "-" + view +".jpg"});
+        this.setState({imageUrl: "/images/portfolio/" + project + "-" + view + ".jpg"});
 
         //check the index of the project in the potfolio and get appropiate data
         this.retrieveProjectData(section, project, view);
-
-
 
 
     }
@@ -157,18 +157,14 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
 
         if (this.state.isVideoFrame) {
             content = <div className="view-content">
-                <div className="video-wrapper">
-                    <div className="embed-responsive">
-                        <iframe width="520" height="293" src={this.state.videoUrl} frameBorder="0" allowFullScreen></iframe>
-                    </div>
-                </div>
+                <ResponsiveEmbed src={this.state.videoUrl}/>
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
-                <img className="text-note" src={this.state.imageUrl} alt={this.state.name} />
+                <img className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
             </div>;
         } else {
-            content = <div className="view-content"><img src={this.state.imageUrl} alt={this.state.name} /></div>;
+            content = <div className="view-content"><img src={this.state.imageUrl} alt={this.state.name}/></div>;
         }
 
         //specify the pager urls
@@ -180,10 +176,10 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
 
         //specify the pager code depending on whether they should be displayed
         let backButton = this.state.isFirstFrame ? <div></div> : <Link to={backButtonLink} id="prev-link"><span
-                            aria-hidden="true">&larr;</span> Wstecz</Link>;
+            aria-hidden="true">&larr;</span> Wstecz</Link>;
 
         let nextButton = this.state.isLastFrame ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
-                            aria-hidden="true">&rarr;</span></Link>;
+            aria-hidden="true">&rarr;</span></Link>;
 
         return (
 
