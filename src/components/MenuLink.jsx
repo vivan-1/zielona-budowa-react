@@ -7,8 +7,13 @@ class MenuLink extends Component {
     }
 
     render() {
+
+        //check whether the link should be active
+        // let {project} = this.props.location;
+        // let linkClass = (project === this.props.id) ? "routerLink activated-link" : "routerLink";
+        let linkClass = "routerLink activated-link";
         return(
-                <Link to={this.props.url} className="routerLink">{this.props.name}</Link>
+                <Link to={this.props.url} className={linkClass}>{this.props.name}</Link>
         );
     }
 }
