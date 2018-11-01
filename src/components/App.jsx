@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 import Home from "./Home";
@@ -10,9 +10,11 @@ class App extends Component {
         return (
             <Router>
                 <div id="app">
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/portfolio/:section/:project/:view" component={props => <Home {...props}/>} />
-
+                    <Switch>
+                        <Route exact path="/" component={Home}/>
+                        <Route exact path="/portfolio/:section/:project/:view" component={props => <Home {...props}/>}/>
+                        <Route component={Home}/>
+                    </Switch>
                 </div>
             </Router>
         );

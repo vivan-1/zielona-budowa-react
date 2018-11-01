@@ -166,11 +166,13 @@ class Viewer extends Component {
 
         if (this.state.isVideoFrame) {
             content = <div className="view-content">
-                <YouTube
-                    videoId="wxPkxKkHDgQ"
-                    opts={opts}
-                    onReady={this._onReady}
-                />
+                <div id="iframe-wrapper">
+                    <YouTube
+                        videoId="wxPkxKkHDgQ"
+                        opts={opts}
+                        onReady={this._onReady}
+                    />
+                </div>
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
