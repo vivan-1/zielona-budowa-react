@@ -145,18 +145,26 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
     }
 
     render() {
-        // let display = this.state.section + " " + this.state.project + " " + this.state.view;
+        let display = this.state.section + " " + this.state.project + " " + this.state.view;
 
-        let display = "isFirstFrame: " +  this.state.isFirstFrame + " view:" + Number(this.state.view) + " isLastFrame: " + this.state.isLastFrame + " numberOfViews: " + this.state.numberOfViews + " imageUrl:" + this.state.imageUrl;
+        // let display = "isFirstFrame: " +  this.state.isFirstFrame + " view:" + Number(this.state.view) + " isLastFrame: " + this.state.isLastFrame + " numberOfViews: " + this.state.numberOfViews + " imageUrl:" + this.state.imageUrl;
         //hide back and next buttons when they are not necessary
 
         // let display = "numberOfViews: " + this.state.numberOfViews + " videoFrame: " + this.state.videoFrame + " videoUrl: " + this.state.videoUrl + " textFrames: " + this.state.textFrames;
 
-        let backButton = this.state.isFirstFrame ? <div></div> : <a id="prev-link" href="#"><span
-                            aria-hidden="true">&larr;</span> Wstecz</a>;
+        //specify the pager urls
+        let backView = Number(this.state.view) - 1;
+        let nextView = Number(this.state.view) + 1;
 
-        let nextButton = this.state.isLastFrame ? <div></div> : <a id="next-link" href="#">Dalej <span
-                            aria-hidden="true">&rarr;</span></a>;
+        let backButtonLink = "/portfolio/" + this.state.section + "/" + this.state.project + "/" + backView;
+        let nextButtonLink = "/portfolio/" + this.state.section + "/" + this.state.project + "/" + nextView;
+
+        //specify the pager code depending on whether they should be displayed
+        let backButton = this.state.isFirstFrame ? <div></div> : <Link to={backButtonLink} id="prev-link"><span
+                            aria-hidden="true">&larr;</span> Wstecz</Link>;
+
+        let nextButton = this.state.isLastFrame ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
+                            aria-hidden="true">&rarr;</span></Link>;
 
         return (
 
