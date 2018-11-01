@@ -122,7 +122,7 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
         this.setState({section, project, view});
 
         //create image url based on project name and view number
-        this.setState({imageUrl: project + "-" + view});
+        this.setState({imageUrl: "/images/portfolio/" + project + "-" + view +".jpg"});
 
         //check the index of the project in the potfolio and get appropiate data
         this.retrieveProjectData(section, project, view);
@@ -145,12 +145,9 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
     }
 
     render() {
-        let display = this.state.section + " " + this.state.project + " " + this.state.view;
 
-        // let display = "isFirstFrame: " +  this.state.isFirstFrame + " view:" + Number(this.state.view) + " isLastFrame: " + this.state.isLastFrame + " numberOfViews: " + this.state.numberOfViews + " imageUrl:" + this.state.imageUrl;
-        //hide back and next buttons when they are not necessary
+        let content = <div></div>;
 
-        // let display = "numberOfViews: " + this.state.numberOfViews + " videoFrame: " + this.state.videoFrame + " videoUrl: " + this.state.videoUrl + " textFrames: " + this.state.textFrames;
 
         //specify the pager urls
         let backView = Number(this.state.view) - 1;
@@ -169,14 +166,7 @@ checkFrameType(view, numberOfViews, videoFrame, textFrames) {
         return (
 
             <div>
-                <div id="main-panel-container">
-                    <div className="view-content">
-                        <div id="title-box">
-                            <span id="title">coś innego</span><br/>
-                            <span id="subtitle">{display}</span>
-                        </div>
-                    </div>
-                </div>
+                <div>{content}</div>
 
                 <nav id="main-panel-footer" aria-label="...">
                     <ul className="pager">

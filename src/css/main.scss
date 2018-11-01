@@ -398,4 +398,5 @@ iframe {
 
 .pager li>a, .pager li>span {
   @include border-radius(0);
+  @include no-select;
 }
