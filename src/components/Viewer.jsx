@@ -178,14 +178,22 @@ class Viewer extends Component {
         };
 
 
-
-
-
         //choose appropriate content depending on the frame type
 
-        let content;
+        let content; //variable holding the displayed content
 
-        if (this.state.isVideoFrame) {
+        //check if the splash screen should be shown (if section in routing is undefined)
+        let isSplash = (this.props.match.params.section === undefined);
+
+        if (isSplash) {
+            content = <div className="view-content" id="splash-screen">
+                <div id="title-box">
+                    <span id="title">zielona budowa</span><br/>
+                    <span id="subtitle">pracownia architektoniczna</span>
+                </div>
+            </div>;
+
+        } else if (this.state.isVideoFrame) {
             content = <div className="view-content">
                 <div className="iframe-wrapper">
                     <YouTube
@@ -198,7 +206,7 @@ class Viewer extends Component {
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
 
-                    <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+                <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
             </div>;
         } else {
             content = <div className="view-content">
@@ -214,12 +222,11 @@ class Viewer extends Component {
         let nextButtonLink = "/portfolio/" + this.state.section + "/" + this.state.project + "/" + nextView;
 
         //specify the pager code depending on whether they should be displayed
-        let backButton = this.state.isFirstFrame ? <div></div> : <Link to={backButtonLink} id="prev-link"><span
+        let backButton = this.state.isFirstFrame || isSplash ? <div></div> : <Link to={backButtonLink} id="prev-link"><span
             aria-hidden="true">&larr;</span> Wstecz</Link>;
 
-        let nextButton = this.state.isLastFrame ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
+        let nextButton = this.state.isLastFrame || isSplash ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
             aria-hidden="true">&rarr;</span></Link>;
-
 
 
         return (
