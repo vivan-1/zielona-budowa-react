@@ -211,7 +211,9 @@ class Viewer extends Component {
             </div>;
         } else {
             content = <div className="view-content">
-                <Image responsive src={this.state.imageUrl} alt={this.state.name}/>
+
+                <Image src={this.state.imageUrl} alt={this.state.name}/>
+
             </div>;
         }
 
