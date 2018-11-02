@@ -62,6 +62,17 @@ body {
   }
 }
 
+//@keyframes saturate {
+//  from {
+//    filter: grayscale(100%);
+//  }
+//
+//  to {
+//    filter: grayscale(0%);
+//  }
+//}
+
+
 a {
 
   text-decoration: none !important;
@@ -111,10 +122,10 @@ a {
   background-color: setColor(9.5);
 }
 
-//Image {
-//  @include grayscale;
-//  @include no-select;
-//}
+Image {
+  @include grayscale;
+  @include no-select;
+}
 
 iframe {
   @include grayscale;

@@ -9,15 +9,18 @@ import {Link} from "react-router-dom";
 
 //Image animation properties to remove greyscale on hover
 
-const HoverableImg = posed.img({
-    hoverable: true,
-    init: {
-        filter: 'grayscale(100%)'
-    },
-    hover: {
-        filter: 'grayscale(0%)'
-    }
-});
+// const Img = posed.img({
+//     visible: {
+//         visible: { opacity: 1 },
+//         hidden: { opacity: 0 }
+//
+//         // filter: 'grayscale(0%)',
+//         // transition: {
+//         //     duration: 400,
+//         //     ease: 'easeOut'
+//         // }
+//     }
+// });
 
 
 class Viewer extends Component {
@@ -45,8 +48,6 @@ class Viewer extends Component {
         this.setDetails = this.setDetails.bind(this);
         this.retrieveProjectData = this.retrieveProjectData.bind(this);
         this.checkFrameType = this.checkFrameType.bind(this);
-
-
 
 
     }
@@ -152,6 +153,7 @@ class Viewer extends Component {
 
     }
 
+
     componentDidMount() {
         this.setDetails();
 
@@ -200,7 +202,7 @@ class Viewer extends Component {
             </div>;
         } else {
             content = <div className="view-content">
-                <HoverableImg responsive src={this.state.imageUrl} alt={this.state.name}/>
+                <Image responsive src={this.state.imageUrl} alt={this.state.name}/>
             </div>;
         }
 
