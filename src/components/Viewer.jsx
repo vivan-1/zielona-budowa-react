@@ -205,8 +205,9 @@ class Viewer extends Component {
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
-
-                <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+                <div className="iframe-wrapper">
+                    <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+                </div>
             </div>;
         } else {
             content = <div className="view-content">
@@ -222,11 +223,13 @@ class Viewer extends Component {
         let nextButtonLink = "/portfolio/" + this.state.section + "/" + this.state.project + "/" + nextView;
 
         //specify the pager code depending on whether they should be displayed
-        let backButton = this.state.isFirstFrame || isSplash ? <div></div> : <Link to={backButtonLink} id="prev-link"><span
-            aria-hidden="true">&larr;</span> Wstecz</Link>;
+        let backButton = this.state.isFirstFrame || isSplash ? <div></div> :
+            <Link to={backButtonLink} id="prev-link"><span
+                aria-hidden="true">&larr;</span> Wstecz</Link>;
 
-        let nextButton = this.state.isLastFrame || isSplash ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
-            aria-hidden="true">&rarr;</span></Link>;
+        let nextButton = this.state.isLastFrame || isSplash ? <div></div> :
+            <Link to={nextButtonLink} id="next-link">Dalej <span
+                aria-hidden="true">&rarr;</span></Link>;
 
 
         return (
