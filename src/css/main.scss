@@ -111,10 +111,10 @@ a {
   background-color: setColor(9.5);
 }
 
-img, Image, .view-content {
-  @include grayscale;
-  @include no-select;
-}
+//Image {
+//  @include grayscale;
+//  @include no-select;
+//}
 
 iframe {
   @include grayscale;
@@ -284,8 +284,6 @@ iframe {
   //float: left;
   overflow: hidden;
   padding: 60px 0 20px 0;
-  background-size: cover;
-  background-position: center center;
 }
 
 .hasBackground {

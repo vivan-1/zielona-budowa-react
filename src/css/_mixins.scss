@@ -72,7 +72,7 @@
 
     filter: grayscale(100%) !important;
     -webkit-filter: grayscale(100%) !important;
-    z-index: -9999999999999999999999999 !important;
+    z-index: 9999999999999999999999999 !important;
     -webkit-transition: all 0.9s ease-in-out !important;
     -moz-transition: all 0.9s ease-in-out !important;
     -o-transition: all 0.9s ease-in-out !important;
@@ -82,7 +82,7 @@
   &:hover {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
-    z-index: -9999999999999999999999999 !important;
+    z-index: 9999999999999999999999999 !important;
     -webkit-transition: all 0.9s ease-in-out !important;
     -moz-transition: all 0.9s ease-in-out !important;
     -o-transition: all 0.9s ease-in-out !important;

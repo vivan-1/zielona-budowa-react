@@ -1,9 +1,23 @@
 import React, {Component} from "react";
-import ResponsiveEmbed from "react-responsive-embed";
+import {Image} from "react-bootstrap";
+import posed from "react-pose";
 import YouTube from "react-youtube";
 
 import {portfolio} from "../data/constants";
 import {Link} from "react-router-dom";
+
+
+//Image animation properties to remove greyscale on hover
+
+const HoverableImg = posed.img({
+    hoverable: true,
+    init: {
+        filter: 'grayscale(100%)'
+    },
+    hover: {
+        filter: 'grayscale(0%)'
+    }
+});
 
 
 class Viewer extends Component {
@@ -31,6 +45,10 @@ class Viewer extends Component {
         this.setDetails = this.setDetails.bind(this);
         this.retrieveProjectData = this.retrieveProjectData.bind(this);
         this.checkFrameType = this.checkFrameType.bind(this);
+
+
+
+
     }
 
 
@@ -148,7 +166,7 @@ class Viewer extends Component {
 
     render() {
 
-
+        //YouTube video options
         const opts = {
             height: '390',
             width: '640',
@@ -158,11 +176,12 @@ class Viewer extends Component {
         };
 
 
+
+
+
         //choose appropriate content depending on the frame type
 
         let content;
-
-        console.log("isVideoFrame: ", this.state.isVideoFrame, " isTextFrame: ", this.state.isTextFrame);
 
         if (this.state.isVideoFrame) {
             content = <div className="view-content">
@@ -176,10 +195,13 @@ class Viewer extends Component {
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
-                <img className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+
+                    <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
             </div>;
         } else {
-            content = <div className="view-content"><img src={this.state.imageUrl} alt={this.state.name}/></div>;
+            content = <div className="view-content">
+                <HoverableImg responsive src={this.state.imageUrl} alt={this.state.name}/>
+            </div>;
         }
 
         //specify the pager urls
@@ -195,6 +217,8 @@ class Viewer extends Component {
 
         let nextButton = this.state.isLastFrame ? <div></div> : <Link to={nextButtonLink} id="next-link">Dalej <span
             aria-hidden="true">&rarr;</span></Link>;
+
+
 
         return (
 
