@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPanel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css.map" afterDir="false" />
@@ -32,8 +34,8 @@
       <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="335">
+              <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -53,20 +55,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainPanel.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPanel.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="NavigationBar.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="228">
               <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+            <state relative-caret-position="548">
+              <caret line="276" column="3" lean-forward="true" selection-start-line="276" selection-start-column="3" selection-end-line="276" selection-end-column="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -95,13 +109,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
+            <state relative-caret-position="198">
+              <caret line="125" column="21" lean-forward="true" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
               <folding>
-                <marker date="1541280274288" expanded="true" signature="379:2015" ph="..." />
+                <marker date="1541281653857" expanded="true" signature="379:2015" ph="..." />
               </folding>
             </state>
           </provider>
@@ -112,18 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
               <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPanel.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/MainPanel.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,12 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>collapse</find>
-      <find>grayscale</find>
-      <find>Image</find>
-      <find>#main-pnael</find>
-      <find>youtube</find>
-      <find>img,</find>
       <find>Link</find>
       <find>#main-panel</find>
       <find>background</find>
@@ -164,12 +160,18 @@
       <find>../../public/images/background</find>
       <find>classRestauracje</find>
       <find>więcej</find>
-      <find>więcej wk</find>
       <find>2-1</find>
-      <find>&lt;Col</find>
       <find>./</find>
-      <find>main-panel</find>
+      <find>#main-panel-wrappe</find>
+      <find>.view-</find>
       <find>splash sc</find>
+      <find>więcej wk</find>
+      <find>&lt;Col</find>
+      <find>.view</find>
+      <find>main=</find>
+      <find>main-</find>
+      <find>main-panel</find>
+      <find>grayscal</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -211,11 +213,11 @@
         <option value="$PROJECT_DIR$/src/components/MenuPanel.jsx" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home.jsx" />
-        <option value="$PROJECT_DIR$/src/components/MainPanel.jsx" />
         <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
+        <option value="$PROJECT_DIR$/src/components/MainPanel.jsx" />
         <option value="$PROJECT_DIR$/src/css/main.scss" />
+        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
       </list>
     </option>
   </component>
@@ -236,8 +238,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
-    <option name="width" value="1015" />
+    <option name="x" value="43" />
+    <option name="width" value="1330" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -354,15 +356,15 @@
       <workItem from="1541145345116" duration="3629000" />
       <workItem from="1541149571527" duration="8476000" />
       <workItem from="1541173274382" duration="609000" />
-      <workItem from="1541245448385" duration="17316000" />
+      <workItem from="1541245448385" duration="18856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115644000" />
+    <option name="totallyTimeSpent" value="117184000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="812" height="830" extended-state="0" />
+    <frame x="35" y="0" width="1064" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3935484" />
@@ -631,47 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MenuPanel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MainPanel.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,10 +654,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+        <state relative-caret-position="335">
+          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="237" column="43" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MenuPanel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPanel.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -701,10 +693,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
+        <state relative-caret-position="198">
+          <caret line="125" column="21" lean-forward="true" selection-start-line="125" selection-start-column="21" selection-end-line="125" selection-end-column="21" />
           <folding>
-            <marker date="1541280274288" expanded="true" signature="379:2015" ph="..." />
+            <marker date="1541281653857" expanded="true" signature="379:2015" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="276" column="3" lean-forward="true" selection-start-line="276" selection-start-column="3" selection-end-line="276" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

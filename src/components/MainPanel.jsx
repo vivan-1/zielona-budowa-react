@@ -21,7 +21,7 @@ class MainPanel extends Component {
         };
         return (
             <div id="main-panel">
-                    <Route component={props => <Viewer {...props}/>}/>
+                    <Route component={props => <Viewer {...props}/>} />
             </div>
         );
     }

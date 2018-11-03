@@ -230,6 +230,7 @@ class Viewer extends Component {
             </div>;
         }
 
+
         //specify the pager urls
         let backView = Number(this.state.view) - 1;
         let nextView = Number(this.state.view) + 1;
@@ -246,24 +247,33 @@ class Viewer extends Component {
             <Link to={nextButtonLink} id="next-link">Dalej <span
                 aria-hidden="true">&rarr;</span></Link>;
 
+        if (isSplash) {
+            return (
 
-        return (
+                    <div id="splash-container">
+                        <div>{content}</div>
+                    </div>
 
-            <div>
-                <div id="main-panel-container">
-                    <div>{content}</div>
+            );
+        } else {
+            return (
+
+                <div id="main-panel-wrapper">
+                    <div id="main-panel-container">
+                        <div>{content}</div>
+                    </div>
+
+                    <nav id="main-panel-footer" aria-label="...">
+                        <ul className="pager">
+
+                            <li id="prev" className="previous">{backButton}</li>
+
+                            <li id="next" className="next">{nextButton}</li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <nav id="main-panel-footer" aria-label="...">
-                    <ul className="pager">
-
-                        <li id="prev" className="previous">{backButton}</li>
-
-                        <li id="next" className="next">{nextButton}</li>
-                    </ul>
-                </nav>
-            </div>
-        );
+            );
+        }
     }
 }
 
