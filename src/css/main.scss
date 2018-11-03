@@ -62,15 +62,15 @@ body {
   }
 }
 
-//@keyframes saturate {
-//  from {
-//    filter: grayscale(100%);
-//  }
-//
-//  to {
-//    filter: grayscale(0%);
-//  }
-//}
+@keyframes saturate {
+  from {
+    filter: grayscale(100%);
+  }
+
+  to {
+    filter: grayscale(0%);
+  }
+}
 
 
 a {

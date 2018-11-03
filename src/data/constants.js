@@ -28,10 +28,10 @@ export const portfolio = {
         {
             id: 'sportowa20',
             name: 'sportowa 20',
-            numberOfViews: 18,
+            numberOfViews: 17,
             videoFrame: 0,
             videoUrl: "",
-            textFrames: []
+            textFrames: [16, 17]
         }
     ]
 };
