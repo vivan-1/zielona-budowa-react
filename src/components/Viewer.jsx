@@ -109,6 +109,18 @@ class Viewer extends Component {
                     }
                 }
                 break;
+
+            case "koncepcje":
+                for (let i = 0; i < portfolio.koncepcje.length; i++) {
+                    if (portfolio.koncepcje[i].id === project) {
+
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.koncepcje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        break;
+                    }
+                }
+                break;
         }
 
     }
