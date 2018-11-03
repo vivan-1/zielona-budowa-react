@@ -40,32 +40,55 @@
   display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
 }
 
-////sets animation of background colour on hover
-//@mixin animated-box {
-//
-//  @keyframes focusOnBox {
-//    from {
-//      background-color: setColor(7);
-//    }
-//
-//    to {
-//      background-color: setColor(5);
-//    }
-//  }
-//
-//  &:hover {
-//    background-color: setColor(5);
-//    animation-name: focusOnBox;
-//    animation-duration: 0.8s;
-//    animation-timing-function: ease-out;
-//  }
-//
-//  border: 2px solid setColor(0);
-//  padding: 10px;
-//  text-align: center;
-//  margin: 10px;
-//
-//}
+//sets animation of background colour on hover
+@mixin animated-box {
+
+  @keyframes focusOnBox {
+    from {
+      background-color: setColor(7);
+    }
+
+    to {
+      background-color: setColor(5);
+    }
+  }
+
+  &:hover {
+    background-color: setColor(5);
+    animation-name: focusOnBox;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+  }
+
+  border: 2px solid setColor(0);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+
+}
+
+
+//changes gayscale on image load
+
+@mixin saturate {
+
+  @keyframes saturating {
+    from {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    to {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+
+  animation-name: saturating;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+
+}
 
 //changes greyscale on hover
 @mixin grayscale {

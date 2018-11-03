@@ -1,6 +1,6 @@
 /*** GENERAL STYLES ***/
 html, #root, #app {
-  height: 100vh !important; }
+  height: 100% !important; }
 
 #panels {
   height: 100% !important; }
@@ -23,6 +23,11 @@ body {
     background-color: #fff; }
   to {
     background-color: #f2f2f2; } }
+@keyframes saturate {
+  from {
+    filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%); } }
 a {
   text-decoration: none !important;
   color: #4d4d4d !important; }
@@ -56,7 +61,7 @@ a {
   color: #000 !important;
   background-color: #f2f2f2; }
 
-img, Image {
+#main-logo, #logo-navbar {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
   z-index: -9999999999999999999999999 !important;
@@ -68,7 +73,7 @@ img, Image {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  img:hover, Image:hover {
+  #main-logo:hover, #logo-navbar:hover {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
     z-index: -9999999999999999999999999 !important;
@@ -272,13 +277,33 @@ iframe {
   font-size: 1.5vmax;
   padding-left: 30%; }
 
-.view-content img {
+.gallery-image, .text-note {
   max-width: 95%;
   max-height: 95%;
   margin: auto !important;
   display: block;
-  position: relative; }
-
+  position: relative;
+  animation-name: saturating;
+  animation-duration: 6s;
+  animation-timing-function: ease; }
+@keyframes saturating {
+  from {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); } }
+iframe {
+  animation-name: saturating;
+  animation-duration: 6s;
+  animation-timing-function: ease; }
+@keyframes saturating {
+  from {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); } }
 .video-wrapper {
   width: 100%;
   position: relative;

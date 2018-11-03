@@ -218,14 +218,14 @@ class Viewer extends Component {
             </div>;
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
-                <div className="iframe-wrapper">
+
                     <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
-                </div>
+
             </div>;
         } else {
             content = <div className="view-content">
 
-                <Image src={this.state.imageUrl} alt={this.state.name}/>
+                <Image resobsuve className="gallery-image" src={this.state.imageUrl} alt={this.state.name}/>
 
             </div>;
         }
