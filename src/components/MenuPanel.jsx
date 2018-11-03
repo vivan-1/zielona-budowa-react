@@ -217,7 +217,7 @@ class MenuPanel extends Component {
                             })}
                         </div>
 
-                        <p className="section-name">&hellip;więcej wkrótce</p>
+                        {/*<p className="section-name">&hellip;więcej wkrótce</p>*/}
                     </div>
                     <div id="footer">
                         <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a

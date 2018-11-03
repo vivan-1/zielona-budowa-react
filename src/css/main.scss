@@ -293,7 +293,8 @@ iframe {
   height: 100vh !important;
   //width: 72%;
   //float: left;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   padding: 60px 0 20px 0;
 }
 

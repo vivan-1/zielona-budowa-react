@@ -229,7 +229,7 @@ class NavigationBar extends Component {
                                     })}
                                 </div>
 
-                                <li className="nav-section-name">&hellip;więcej wkrótce</li>
+                                {/*<li className="nav-section-name">&hellip;więcej wkrótce</li>*/}
                             </ul>
 
                             <div id="nav-footer">
