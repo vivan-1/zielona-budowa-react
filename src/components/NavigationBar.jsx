@@ -20,6 +20,7 @@ class NavigationBar extends Component {
         let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
         let classDomy = sections.domy ? "" : "displayNone";
         let classRenowacje = sections.renowacje ? "" : "displayNone";
+        let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
 
 
         //create an arrays of section links
@@ -108,6 +109,27 @@ class NavigationBar extends Component {
 
         }
 
+        //koncepcje
+
+        let koncepcje = []; //array holding section links
+
+        if (sections.koncepcje) {
+
+            for (let i = 0; i < portfolio.koncepcje.length; i++) {
+
+                //take id and name from the portfolio constant
+                let {id, name} = portfolio.koncepcje[i];
+                let url = "/portfolio/koncepcje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                koncepcje.push(<NavLink
+                    name={name}
+                    url={url}
+                    id={id}
+                />);
+            }
+
+        }
+
 
         return (
             <Navbar collapseOnSelect id="top-navbar">
@@ -178,6 +200,20 @@ class NavigationBar extends Component {
 
                                 <div>
                                     {renowacje.map((link, k) => {
+                                        return (
+                                            <p key={k}>
+                                                {link}
+                                            </p>
+                                        )
+                                    })}
+                                </div>
+
+                                <div className={classKoncepcje}>
+                                    <li className="nav-section-name">koncepcje:</li>
+                                </div>
+
+                                <div>
+                                    {koncepcje.map((link, k) => {
                                         return (
                                             <p key={k}>
                                                 {link}

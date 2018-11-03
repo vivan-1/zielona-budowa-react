@@ -22,6 +22,7 @@ class MenuPanel extends Component {
         let classPrzemyslowe = sections.przemyslowe ? "section-name" : "displayNone";
         let classDomy = sections.domy ? "section-name" : "displayNone";
         let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
+        let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
 
         //check displayed project
 
@@ -119,6 +120,28 @@ class MenuPanel extends Component {
 
         }
 
+        //koncepcje
+
+        let koncepcje = []; //array holding section links
+
+        if (sections.koncepcje) {
+
+            for (let i = 0; i < portfolio.koncepcje.length; i++) {
+
+                //take id and name from the portfolio constant
+                let {id, name} = portfolio.koncepcje[i];
+                let url = "/portfolio/koncepcje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
+                //update the array with a planet tile containing the above details
+                koncepcje.push(<MenuLink
+                    id={id}
+                    name={name}
+                    url={url}
+                    project={displayedProject}
+                />);
+            }
+
+        }
+
         return (
             <Col xsHidden sm={3} md={2} id="menu-panel">
                 <div id="menu-panel-text">
@@ -166,6 +189,18 @@ class MenuPanel extends Component {
 
                         <div>
                             {renowacje.map((link, k) => {
+                                return (
+                                    <p key={k}>
+                                        {link}
+                                    </p>
+                                )
+                            })}
+                        </div>
+
+                        <p className={classKoncepcje}>koncepcje:</p>
+
+                        <div>
+                            {koncepcje.map((link, k) => {
                                 return (
                                     <p key={k}>
                                         {link}

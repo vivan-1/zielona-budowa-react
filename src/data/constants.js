@@ -33,6 +33,9 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [16, 17]
         }
+    ],
+    koncepcje: [
+
     ]
 };
 
@@ -42,5 +45,6 @@ export const sections = {
     restauracje: portfolio.restauracje.length > 0,
     przemyslowe: portfolio.przemyslowe.length > 0,
     domy: portfolio.domy.length > 0,
-    renowacje: portfolio.renowacje.length > 0
+    renowacje: portfolio.renowacje.length > 0,
+    koncepcje: portfolio.koncepcje.length > 0
 };
