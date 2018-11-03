@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/MenuPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.scss" afterDir="false" />
-    </list>
+    <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -60,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NavigationBar.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NavigationBar.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="232" column="33" lean-forward="true" selection-start-line="232" selection-start-column="33" selection-end-line="232" selection-end-column="33" />
+            <state relative-caret-position="196">
+              <caret line="237" column="43" lean-forward="true" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -93,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -152,10 +148,10 @@
       <find>border-right</find>
       <find>#menu-panel</find>
       <find>../../public/images/background</find>
-      <find>./</find>
       <find>classRestauracje</find>
       <find>więcej</find>
       <find>więcej wk</find>
+      <find>./</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -340,16 +336,15 @@
       <workItem from="1541145345116" duration="3629000" />
       <workItem from="1541149571527" duration="8476000" />
       <workItem from="1541173274382" duration="609000" />
-      <workItem from="1541245448385" duration="7975000" />
+      <workItem from="1541245448385" duration="8672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106303000" />
+    <option name="totallyTimeSpent" value="107000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="0" width="1476" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24391939" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -675,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="232" column="33" lean-forward="true" selection-start-line="232" selection-start-column="33" selection-end-line="232" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -689,6 +677,13 @@
           <folding>
             <marker date="1541261245307" expanded="true" signature="375:1993" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavigationBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="237" column="43" lean-forward="true" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="43" />
         </state>
       </provider>
     </entry>
