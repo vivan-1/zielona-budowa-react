@@ -6,8 +6,8 @@
 
 html, #root, #app {
   height: 100vh !important;
-  position: absolute;
-  width: 100% !important;
+  //position: absolute;
+  //width: 100% !important;
 }
 
 
@@ -62,15 +62,15 @@ body {
   }
 }
 
-@keyframes saturate {
-  from {
-    filter: grayscale(100%);
-  }
-
-  to {
-    filter: grayscale(0%);
-  }
-}
+//@keyframes saturate {
+//  from {
+//    filter: grayscale(100%);
+//  }
+//
+//  to {
+//    filter: grayscale(0%);
+//  }
+//}
 
 
 a {
@@ -195,6 +195,10 @@ iframe {
   border-color: setColor(4);
 }
 
+.navbar-toggle {
+  margin-top: 16px !important;
+}
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: setColor(4);
@@ -231,7 +235,7 @@ iframe {
 #top-navbar {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: $borderDefault !important;
   background-color: $backgroundColor !important;
   text-align: right;

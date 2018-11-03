@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-import {Image} from "react-bootstrap";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Route} from "react-router-dom";
 
 import Viewer from "./Viewer";
 

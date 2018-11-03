@@ -1,8 +1,6 @@
 /*** GENERAL STYLES ***/
 html, #root, #app {
-  height: 100vh !important;
-  position: absolute;
-  width: 100% !important; }
+  height: 100vh !important; }
 
 #panels {
   height: 100% !important; }
@@ -25,11 +23,6 @@ body {
     background-color: #fff; }
   to {
     background-color: #f2f2f2; } }
-@keyframes saturate {
-  from {
-    filter: grayscale(100%); }
-  to {
-    filter: grayscale(0%); } }
 a {
   text-decoration: none !important;
   color: #4d4d4d !important; }
@@ -66,7 +59,7 @@ a {
 img, Image {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
-  z-index: 9999999999999999999999999 !important;
+  z-index: -9999999999999999999999999 !important;
   -webkit-transition: all 0.9s ease-in-out !important;
   -moz-transition: all 0.9s ease-in-out !important;
   -o-transition: all 0.9s ease-in-out !important;
@@ -78,7 +71,7 @@ img, Image {
   img:hover, Image:hover {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
-    z-index: 9999999999999999999999999 !important;
+    z-index: -9999999999999999999999999 !important;
     -webkit-transition: all 0.9s ease-in-out !important;
     -moz-transition: all 0.9s ease-in-out !important;
     -o-transition: all 0.9s ease-in-out !important;
@@ -87,7 +80,7 @@ img, Image {
 iframe {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
-  z-index: 9999999999999999999999999 !important;
+  z-index: -9999999999999999999999999 !important;
   -webkit-transition: all 0.9s ease-in-out !important;
   -moz-transition: all 0.9s ease-in-out !important;
   -o-transition: all 0.9s ease-in-out !important;
@@ -95,7 +88,7 @@ iframe {
   iframe:hover {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
-    z-index: 9999999999999999999999999 !important;
+    z-index: -9999999999999999999999999 !important;
     -webkit-transition: all 0.9s ease-in-out !important;
     -moz-transition: all 0.9s ease-in-out !important;
     -o-transition: all 0.9s ease-in-out !important;
@@ -149,6 +142,9 @@ iframe {
 .navbar-default .navbar-toggle {
   border-color: #666666; }
 
+.navbar-toggle {
+  margin-top: 16px !important; }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #666666; }
@@ -172,7 +168,7 @@ iframe {
 #top-navbar {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #000 !important;
   background-color: #fff !important;
   text-align: right; }
