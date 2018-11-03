@@ -202,6 +202,7 @@ class Viewer extends Component {
                 <div id="title-box">
                     <span id="title">zielona budowa</span><br/>
                     <span id="subtitle">pracownia architektoniczna</span>
+                    {/*<Image src="/images/background.jpg" id="splash-image"/>*/}
                 </div>
             </div>;
 

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.scss" afterDir="false" />
@@ -67,8 +65,8 @@
       <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="205" column="19" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
+            <state relative-caret-position="262">
+              <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -91,8 +89,8 @@
       <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="319">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -100,10 +98,10 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="198" column="16" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
+            <state relative-caret-position="456">
+              <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
               <folding>
-                <marker date="1541278475821" expanded="true" signature="379:2015" ph="..." />
+                <marker date="1541280274288" expanded="true" signature="379:2015" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,8 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id={id}</find>
-      <find>toggle</find>
       <find>collapse</find>
       <find>grayscale</find>
       <find>Image</find>
@@ -172,6 +168,8 @@
       <find>2-1</find>
       <find>&lt;Col</find>
       <find>./</find>
+      <find>main-panel</find>
+      <find>splash sc</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -212,11 +210,11 @@
         <option value="$PROJECT_DIR$/src/css/main.css" />
         <option value="$PROJECT_DIR$/src/components/MenuPanel.jsx" />
         <option value="$PROJECT_DIR$/src/components/NavigationBar.jsx" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/MainPanel.jsx" />
         <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
         <option value="$PROJECT_DIR$/src/css/main.scss" />
       </list>
     </option>
@@ -356,12 +354,12 @@
       <workItem from="1541145345116" duration="3629000" />
       <workItem from="1541149571527" duration="8476000" />
       <workItem from="1541173274382" duration="609000" />
-      <workItem from="1541245448385" duration="15532000" />
+      <workItem from="1541245448385" duration="17316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113860000" />
+    <option name="totallyTimeSpent" value="115644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="812" height="830" extended-state="0" />
@@ -373,7 +371,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50034696" side_tool="true" weight="0.26298702" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32986626" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32682925" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32637855" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.499653" weight="0.22801788" />
@@ -640,23 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="205" column="19" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -694,6 +675,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -701,12 +689,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="198" column="16" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
+        <state relative-caret-position="456">
+          <caret line="332" column="17" selection-start-line="332" selection-start-column="17" selection-end-line="332" selection-end-column="17" />
           <folding>
-            <marker date="1541278475821" expanded="true" signature="379:2015" ph="..." />
+            <marker date="1541280274288" expanded="true" signature="379:2015" ph="..." />
           </folding>
         </state>
       </provider>
