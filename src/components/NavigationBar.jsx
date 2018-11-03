@@ -16,11 +16,18 @@ class NavigationBar extends Component {
 
 
         //don't display the names of empty sections
-        let classRestauracje = sections.restauracje ? "" : "displayNone";
-        let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
-        let classDomy = sections.domy ? "" : "displayNone";
-        let classRenowacje = sections.renowacje ? "" : "displayNone";
-        let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
+        // let classRestauracje = sections.restauracje ? "" : "displayNone";
+        // let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
+        // let classDomy = sections.domy ? "" : "displayNone";
+        // let classRenowacje = sections.renowacje ? "" : "displayNone";
+        // let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
+
+        //for the time being don't display any section names
+        let classRestauracje = "displayNone";
+        let classPrzemyslowe = "displayNone";
+        let classDomy = "displayNone";
+        let classRenowacje = "displayNone";
+        let classKoncepcje = "displayNone";
 
 
         //create an arrays of section links

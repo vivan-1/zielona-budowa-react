@@ -18,11 +18,19 @@ class MenuPanel extends Component {
     render() {
 
         //don't display the names of empty sections
-        let classRestauracje = sections.restauracje ? "section-name" : "displayNone";
-        let classPrzemyslowe = sections.przemyslowe ? "section-name" : "displayNone";
-        let classDomy = sections.domy ? "section-name" : "displayNone";
-        let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
-        let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
+        // let classRestauracje = sections.restauracje ? "section-name" : "displayNone";
+        // let classPrzemyslowe = sections.przemyslowe ? "section-name" : "displayNone";
+        // let classDomy = sections.domy ? "section-name" : "displayNone";
+        // let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
+        // let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
+
+        //for the time being don't display any section names
+        let classRestauracje = "displayNone";
+        let classPrzemyslowe = "displayNone";
+        let classDomy = "displayNone";
+        let classRenowacje = "displayNone";
+        let classKoncepcje = "displayNone";
+
 
         //check displayed project
 
