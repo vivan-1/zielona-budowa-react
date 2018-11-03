@@ -11,7 +11,15 @@ export const portfolio = {
             numberOfViews: 11,
             videoFrame: 5,
             videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
-            textFrames: [9, 10]
+            textFrames: [10, 11]
+        },
+        {
+            id: 'bazarowa',
+            name: 'bazarowa',
+            numberOfViews: 11,
+            videoFrame: 0,
+            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
+            textFrames: [11]
         }
     ],
     domy: [
