@@ -18,8 +18,16 @@ export const portfolio = {
             name: 'bazarowa',
             numberOfViews: 11,
             videoFrame: 0,
-            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
+            videoUrl: "",
             textFrames: [11]
+        },
+        {
+            id: 'ecgolonog',
+            name: 'ec gołonóg',
+            numberOfViews: 20,
+            videoFrame: 0,
+            videoUrl: "",
+            textFrames: []
         }
     ],
     domy: [
