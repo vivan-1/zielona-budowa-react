@@ -49,7 +49,7 @@ export const portfolio = {
             textFrames: [],
             textContent: "",
             fileFrame: 0,
-            fileContent: ""
+            fileContent: []
         },
         {
             id: 'sulow',
@@ -60,7 +60,12 @@ export const portfolio = {
             textFrames: [8],
             textContent: "",
             fileFrame: 9,
-            fileContent: ""
+            fileContent: [
+                {name: "",
+                url: ""},
+                {name: "",
+                    url: ""},
+            ]
         }
     ],
     renowacje: [
