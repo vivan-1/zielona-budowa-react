@@ -37,6 +37,17 @@ export const portfolio = {
             textContent: "",
             fileFrame: 0,
             fileContent: ""
+        },
+        {
+            id: 'polimerplast',
+            name: 'polimerplast',
+            numberOfViews: 24,
+            videoFrame: 0,
+            videoUrl: "",
+            textFrames: [23, 24],
+            textContent: "",
+            fileFrame: 0,
+            fileContent: ""
         }
     ],
     domy: [
