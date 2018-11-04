@@ -43,7 +43,8 @@ class Viewer extends Component {
             isLastFrame: false,
             isTextFrame: false,
             isVideoFrame: false,
-            isImageFrame: false
+            isImageFrame: false,
+            isFileFrame: false
         };
 
         this.goToUrl = this.goToUrl.bind(this);
@@ -70,9 +71,9 @@ class Viewer extends Component {
 
                     if (portfolio.restauracje[i].id === project) {
 
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.restauracje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.restauracje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -81,9 +82,9 @@ class Viewer extends Component {
             case "przemyslowe":
                 for (let i = 0; i < portfolio.przemyslowe.length; i++) {
                     if (portfolio.przemyslowe[i].id === project) {
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.przemyslowe[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.przemyslowe[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -92,9 +93,9 @@ class Viewer extends Component {
             case "domy":
                 for (let i = 0; i < portfolio.domy.length; i++) {
                     if (portfolio.domy[i].id === project) {
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.domy[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.domy[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -104,9 +105,9 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.renowacje.length; i++) {
                     if (portfolio.renowacje[i].id === project) {
 
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.renowacje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.renowacje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -116,9 +117,9 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.koncepcje.length; i++) {
                     if (portfolio.koncepcje[i].id === project) {
 
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames} = portfolio.koncepcje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames);
+                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.koncepcje[i];
+                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -127,7 +128,7 @@ class Viewer extends Component {
 
     }
 
-    checkFrameType(view, numberOfViews, videoFrame, textFrames) {
+    checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame) {
         //check if the current frame is the first or last frame
         let isFirstFrame = Number(view) === 1;
         let isLastFrame = Number(view) === numberOfViews;
@@ -142,11 +143,15 @@ class Viewer extends Component {
             if (textFrames[i] === Number(view) - 1) {
                 isTextFrame = true;
             }
+
         }
+
+        //check if the current frame is a file frame
+        let isFileFrame = Number(view) === fileFrame;
 
         //update the state with the above values
 
-        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame});
+        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame, isFileFrame});
     }
 
     //take project details from url
@@ -212,9 +217,11 @@ class Viewer extends Component {
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
 
-                    <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+                <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
 
             </div>;
+        } else if (this.state.isFileFrame) {
+content = <div>pliki</div>
         } else {
             content = <div className="view-content">
 
@@ -243,15 +250,15 @@ class Viewer extends Component {
         if (isSplash) {
             return (
 
-                    <div id="splash-container">
-                        <div className="view-content" id="splash-screen">
-                            <div id="title-box">
-                                <span id="title">zielona budowa</span><br/>
-                                <span id="subtitle">pracownia architektoniczna</span>
-                                {/*<Image src="/images/background.jpg" id="splash-image"/>*/}
-                            </div>
+                <div id="splash-container">
+                    <div className="view-content" id="splash-screen">
+                        <div id="title-box">
+                            <span id="title">zielona budowa</span><br/>
+                            <span id="subtitle">pracownia architektoniczna</span>
+                            {/*<Image src="/images/background.jpg" id="splash-image"/>*/}
                         </div>
                     </div>
+                </div>
 
             );
         } else {
