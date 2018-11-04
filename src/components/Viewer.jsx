@@ -197,16 +197,7 @@ class Viewer extends Component {
         //check if the splash screen should be shown (if section in routing is undefined)
         let isSplash = (this.props.match.params.section === undefined);
 
-        if (isSplash) {
-            content = <div className="view-content" id="splash-screen">
-                <div id="title-box">
-                    <span id="title">zielona budowa</span><br/>
-                    <span id="subtitle">pracownia architektoniczna</span>
-                    {/*<Image src="/images/background.jpg" id="splash-image"/>*/}
-                </div>
-            </div>;
-
-        } else if (this.state.isVideoFrame) {
+        if (this.state.isVideoFrame) {
             content = <div className="view-content">
                 <div className="iframe-wrapper">
                     <YouTube
@@ -251,7 +242,13 @@ class Viewer extends Component {
             return (
 
                     <div id="splash-container">
-                        <div>{content}</div>
+                        <div className="view-content" id="splash-screen">
+                            <div id="title-box">
+                                <span id="title">zielona budowa</span><br/>
+                                <span id="subtitle">pracownia architektoniczna</span>
+                                {/*<Image src="/images/background.jpg" id="splash-image"/>*/}
+                            </div>
+                        </div>
                     </div>
 
             );
