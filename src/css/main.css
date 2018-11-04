@@ -65,10 +65,10 @@ a {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
   z-index: -9999999999999999999999999 !important;
-  -webkit-transition: all 0.9s ease-in-out !important;
-  -moz-transition: all 0.9s ease-in-out !important;
-  -o-transition: all 0.9s ease-in-out !important;
-  transition: all 0.9s ease-in-out !important;
+  -webkit-transition: all 3s ease-in-out !important;
+  -moz-transition: all 3s ease-in-out !important;
+  -o-transition: all 3s ease-in-out !important;
+  transition: all 3s ease-in-out !important;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -77,27 +77,27 @@ a {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
     z-index: -9999999999999999999999999 !important;
-    -webkit-transition: all 0.9s ease-in-out !important;
-    -moz-transition: all 0.9s ease-in-out !important;
-    -o-transition: all 0.9s ease-in-out !important;
-    transition: all 0.9s ease-in-out !important; }
+    -webkit-transition: all 3s ease-in-out !important;
+    -moz-transition: all 3s ease-in-out !important;
+    -o-transition: all 3s ease-in-out !important;
+    transition: all 3s ease-in-out !important; }
 
 iframe {
   filter: grayscale(100%) !important;
   -webkit-filter: grayscale(100%) !important;
   z-index: -9999999999999999999999999 !important;
-  -webkit-transition: all 0.9s ease-in-out !important;
-  -moz-transition: all 0.9s ease-in-out !important;
-  -o-transition: all 0.9s ease-in-out !important;
-  transition: all 0.9s ease-in-out !important; }
+  -webkit-transition: all 3s ease-in-out !important;
+  -moz-transition: all 3s ease-in-out !important;
+  -o-transition: all 3s ease-in-out !important;
+  transition: all 3s ease-in-out !important; }
   iframe:hover {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
     z-index: -9999999999999999999999999 !important;
-    -webkit-transition: all 0.9s ease-in-out !important;
-    -moz-transition: all 0.9s ease-in-out !important;
-    -o-transition: all 0.9s ease-in-out !important;
-    transition: all 0.9s ease-in-out !important; }
+    -webkit-transition: all 3s ease-in-out !important;
+    -moz-transition: all 3s ease-in-out !important;
+    -o-transition: all 3s ease-in-out !important;
+    transition: all 3s ease-in-out !important; }
   iframe:focus {
     -webkit-filter: grayscale(0%); }
 
@@ -284,7 +284,7 @@ iframe {
   display: block;
   position: relative;
   animation-name: saturating;
-  animation-duration: 6s;
+  animation-duration: 11s;
   animation-timing-function: ease; }
 @keyframes saturating {
   from {
@@ -295,7 +295,7 @@ iframe {
     -webkit-filter: grayscale(0%); } }
 iframe {
   animation-name: saturating;
-  animation-duration: 6s;
+  animation-duration: 11s;
   animation-timing-function: ease; }
 @keyframes saturating {
   from {
