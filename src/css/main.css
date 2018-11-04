@@ -187,7 +187,7 @@ iframe {
 #menu-panel {
   height: 100%;
   min-width: 180px;
-  font-size: 110%;
+  font-size: 120%;
   overflow-y: auto !important;
   overflow-x: hidden;
   text-align: center; }
@@ -332,6 +332,18 @@ iframe {
 .text-note {
   border: 4px dashed setColor(6.5);
   max-height: 95%; }
+
+/* File pages */
+.files-panel h1 {
+  margin-top: 20%;
+  text-align: center;
+  margin-bottom: 30px; }
+.files-panel p {
+  font-size: 110%;
+  text-align: center;
+  margin-bottom: 20px; }
+  .files-panel p i {
+    font-size: 130%; }
 
 /* Pagers */
 .pager li > a, .pager li > span {

@@ -154,7 +154,7 @@ class MenuPanel extends Component {
                 <div id="menu-panel-text">
                     <Link to="/">
                         <Image src="/images/logo-big.png" alt="Zielona budowa - logo"
-                             id="main-logo" responsive />
+                               id="main-logo" responsive/>
                     </Link>
                     <div id="links">
                         <p className={classRestauracje}>restauracje i&nbsp;hotele:</p>
@@ -221,12 +221,10 @@ class MenuPanel extends Component {
                     <div id="footer">
                         <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a
                             href="mailto:biuro@zielonabudowa.com.pl">biuro@zielonabudowa.com.pl</a><br/></span><a
-                            href="https://web.facebook.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
-                            className="fa fa-facebook-square" aria-hidden="true"></i></a>&nbsp;&nbsp;<a
-                            href="https://www.instagram.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
-                            className="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;<a
-                            href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank" rel="noopener noreferrer"><i
-                            className="fa fa-youtube-play" aria-hidden="true"></i></a></p>
+                            href="https://web.facebook.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>&nbsp;&nbsp;<a
+                            href="https://www.instagram.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>&nbsp;&nbsp;<a
+                            href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"
+                            rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></p>
                     </div>
                 </div>
             </Col>
