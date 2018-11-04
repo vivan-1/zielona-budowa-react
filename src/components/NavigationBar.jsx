@@ -235,14 +235,14 @@ class NavigationBar extends Component {
                             <div id="nav-footer">
                                 <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a
                                     href="mailto:biuro@zielonabudowa.com.pl">biuro@zielonabudowa.com.pl</a><br/></span><a
-                                    href="https://web.facebook.com/zielonabudowa/" target="_blank"><i
+                                    href="https://web.facebook.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
                                     className="fa fa-facebook-square"
                                     aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                    href="https://www.instagram.com/zielonabudowa/" target="_blank"><i
+                                    href="https://www.instagram.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
                                     className="fa fa-instagram"
                                     aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
                                     href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"><i
-                                    className="fa fa-youtube-play" aria-hidden="true"></i></a></p>
+                                    className="fa fa-youtube-play" aria-hidden="true" rel="noopener noreferrer"></i></a></p>
                             </div>
 
                         </div>
