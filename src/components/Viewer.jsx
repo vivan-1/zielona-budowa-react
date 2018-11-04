@@ -140,18 +140,26 @@ class Viewer extends Component {
 
         let isTextFrame = false;
         for (let i = 0; i < textFrames.length; i++) {
-            if (textFrames[i] === Number(view) - 1) {
+            if (textFrames[i] === Number(view)) {
                 isTextFrame = true;
             }
 
         }
+        console.log("text frame: " + isTextFrame);
 
         //check if the current frame is a file frame
         let isFileFrame = Number(view) === fileFrame;
 
+        console.log("file: " + isFileFrame);
+        //if all the above are false, set the frame as image frame
+
+        let isImageFrame = !(isVideoFrame || isTextFrame || isFileFrame);
+        console.log("image frame: " + isImageFrame);
+
         //update the state with the above values
 
-        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame, isFileFrame});
+        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame, isImageFrame, isFileFrame});
+
     }
 
     //take project details from url
@@ -196,7 +204,6 @@ class Viewer extends Component {
             }
         };
 
-
         //choose appropriate content depending on the frame type
 
         let content; //variable holding the displayed content
@@ -214,15 +221,19 @@ class Viewer extends Component {
                     />
                 </div>
             </div>;
+
         } else if (this.state.isTextFrame) {
             content = <div className="view-content">
 
                 <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
 
             </div>;
+
         } else if (this.state.isFileFrame) {
-content = <div>pliki</div>
+            content = <div>pliki</div>;
+
         } else {
+
             content = <div className="view-content">
 
                 <Image resobsuve className="gallery-image" src={this.state.imageUrl} alt={this.state.name}/>

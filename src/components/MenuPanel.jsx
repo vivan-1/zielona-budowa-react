@@ -35,7 +35,6 @@ class MenuPanel extends Component {
         //check displayed project
 
         let displayedProject = this.props.match.params.project;
-        console.log(displayedProject);
 
 
         //create an arrays of section links
