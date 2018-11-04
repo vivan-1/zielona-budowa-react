@@ -13,7 +13,8 @@ export const portfolio = {
             videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
             textFrames: [10, 11],
             textContent: "",
-            fileFrame: 0
+            fileFrame: 0,
+            fileContent: ""
         },
         {
             id: 'bazarowa',
@@ -23,7 +24,8 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [11],
             textContent: "",
-            fileFrame: 0
+            fileFrame: 0,
+            fileContent: ""
         },
         {
             id: 'ecgolonog',
@@ -33,7 +35,8 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [],
             textContent: "",
-            fileFrame: 0
+            fileFrame: 0,
+            fileContent: ""
         }
     ],
     domy: [
@@ -45,7 +48,8 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [],
             textContent: "",
-            fileFrame: 0
+            fileFrame: 0,
+            fileContent: ""
         },
         {
             id: 'sulow',
@@ -55,7 +59,8 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [8],
             textContent: "",
-            fileFrame: 9
+            fileFrame: 9,
+            fileContent: ""
         }
     ],
     renowacje: [
@@ -67,7 +72,8 @@ export const portfolio = {
             videoUrl: "",
             textFrames: [16, 17],
             textContent: "",
-            fileFrame: 0
+            fileFrame: 0,
+            fileContent: ""
         }
     ],
     koncepcje: [
