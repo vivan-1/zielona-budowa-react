@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/MenuPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuPanel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-    </list>
+    <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -349,18 +345,17 @@
       <workItem from="1541149571527" duration="8476000" />
       <workItem from="1541173274382" duration="609000" />
       <workItem from="1541245448385" duration="22154000" />
-      <workItem from="1541319449355" duration="11940000" />
+      <workItem from="1541319449355" duration="12235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132422000" />
+    <option name="totallyTimeSpent" value="132717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="81" width="1181" height="749" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30944055" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30944055" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50034696" side_tool="true" weight="0.26298702" />
@@ -369,7 +364,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32637855" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.499653" visible="true" weight="0.25932205" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.499653" visible="true" weight="0.25932205" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24929178" />
