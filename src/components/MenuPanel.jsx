@@ -224,7 +224,9 @@ class MenuPanel extends Component {
                             href="https://web.facebook.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>&nbsp;&nbsp;<a
                             href="https://www.instagram.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>&nbsp;&nbsp;<a
                             href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"
-                            rel="noopener noreferrer"><i className="fab fa-youtube"></i></a></p>
+                            rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>&nbsp;&nbsp;<a
+                            href="https://twitter.com/ZielonaBudowa" target="_blank" rel="noopener noreferrer"><i
+                            className="fab fa-twitter-square"></i></a></p>
                     </div>
                 </div>
             </Col>

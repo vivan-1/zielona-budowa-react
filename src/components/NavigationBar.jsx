@@ -151,7 +151,8 @@ class NavigationBar extends Component {
                         {/*</button>*/}
                         <Navbar.Brand href="#home">
                             <Link to="/">
-                                <Image src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar" responsive />
+                                <Image src="/images/logo-small.png" alt="Zielona budowa - logo" id="logo-navbar"
+                                       responsive/>
                             </Link>
                         </Navbar.Brand>
                     </Navbar.Header>
@@ -235,12 +236,18 @@ class NavigationBar extends Component {
                             <div id="nav-footer">
                                 <p>zielona budowa<br/><span className="small-text">+48 664 142 159<br/><a
                                     href="mailto:biuro@zielonabudowa.com.pl">biuro@zielonabudowa.com.pl</a><br/></span><a
-                                    href="https://web.facebook.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
-                                    className="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                    href="https://www.instagram.com/zielonabudowa/" target="_blank" rel="noopener noreferrer"><i
-                                    className="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                    href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"><i className="fab fa-youtube"></i></a></p>
-                            </div>
+                                    href="https://web.facebook.com/zielonabudowa/" target="_blank"
+                                    rel="noopener noreferrer"><i
+                                    className="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                    href="https://www.instagram.com/zielonabudowa/" target="_blank"
+                                    rel="noopener noreferrer"><i
+                                    className="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                    href="https://www.youtube.com/channel/UC8Uneg0JGEC2rH0P3AmWTvg" target="_blank"><i
+                                    className="fab fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                    href="https://twitter.com/ZielonaBudowa" target="_blank"
+                                    rel="noopener noreferrer"><i
+                                    className="fab fa-twitter-square"></i></a>
+                                </p></div>
 
                         </div>
                     </Navbar.Collapse>
