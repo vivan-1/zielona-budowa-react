@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import {sections, portfolio} from "../data/constants";
 import MenuLink from "./MenuLink";
 
+
 class MenuPanel extends Component {
     constructor(props) {
         super(props);
