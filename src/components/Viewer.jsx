@@ -230,7 +230,13 @@ class Viewer extends Component {
             </div>;
 
         } else if (this.state.isFileFrame) {
-            content = <div>pliki</div>;
+            content = <div className="files-panel">
+                <h1>pliki pdf do pobrania:</h1>
+                <p><a href="/files/sulow-1.pdf" target="_blank"><i className="fas fa-file-pdf"></i>&nbsp;instalacja do
+                    pompy ciepła 5kWp</a></p>
+                <p><a href="/files/sulow-2.pdf" target="_blank"><i className="fas fa-file-pdf"></i>&nbsp;symulacja
+                    działania instalacji z&nbsp;pompą ciepła za pomocą WP-OPT<sup>©</sup></a></p>
+            </div>;
 
         } else {
 

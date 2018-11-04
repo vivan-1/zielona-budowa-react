@@ -52,8 +52,8 @@ export const portfolio = {
             fileContent: []
         },
         {
-            id: 'sulow',
-            name: 'zespół architektoniczny sułów',
+            id: 'dommodulowy',
+            name: 'dom modułowy',
             numberOfViews: 9,
             videoFrame: 0,
             videoUrl: "",
