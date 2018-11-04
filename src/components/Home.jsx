@@ -56,7 +56,7 @@ class Home extends Component {
 
         return (
 
-            <div fluid id="main-container" id="app">
+            <div id="main-container" id="app">
                 <NavigationBar/>
 
                 <div id="panels">

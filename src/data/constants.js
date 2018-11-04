@@ -11,7 +11,9 @@ export const portfolio = {
             numberOfViews: 11,
             videoFrame: 5,
             videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
-            textFrames: [10, 11]
+            textFrames: [10, 11],
+            textContent: "",
+            fileFrame: 0
         },
         {
             id: 'bazarowa',
@@ -19,7 +21,9 @@ export const portfolio = {
             numberOfViews: 11,
             videoFrame: 0,
             videoUrl: "",
-            textFrames: [11]
+            textFrames: [11],
+            textContent: "",
+            fileFrame: 0
         },
         {
             id: 'ecgolonog',
@@ -27,7 +31,9 @@ export const portfolio = {
             numberOfViews: 20,
             videoFrame: 0,
             videoUrl: "",
-            textFrames: []
+            textFrames: [],
+            textContent: "",
+            fileFrame: 0
         }
     ],
     domy: [
@@ -37,7 +43,19 @@ export const portfolio = {
             numberOfViews: 17,
             videoFrame: 0,
             videoUrl: "",
-            textFrames: []
+            textFrames: [],
+            textContent: "",
+            fileFrame: 0
+        },
+        {
+            id: 'sulow',
+            name: 'zespół architektoniczny sułów',
+            numberOfViews: 9,
+            videoFrame: 0,
+            videoUrl: "",
+            textFrames: [8],
+            textContent: "",
+            fileFrame: 9
         }
     ],
     renowacje: [
@@ -47,7 +65,9 @@ export const portfolio = {
             numberOfViews: 17,
             videoFrame: 0,
             videoUrl: "",
-            textFrames: [16, 17]
+            textFrames: [16, 17],
+            textContent: "",
+            fileFrame: 0
         }
     ],
     koncepcje: [
