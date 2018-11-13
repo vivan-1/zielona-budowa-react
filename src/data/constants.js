@@ -1,3 +1,5 @@
+import React from "react";
+
 //specifies the content of all section elements
 
 export const portfolio = {
@@ -8,7 +10,7 @@ export const portfolio = {
             name: 'malarnia proszkowa',
             numberOfViews: 9,
             textFrame: 9,
-            textContent: "<h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p>",
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 0,
             fileContent: ""
         },
@@ -17,7 +19,7 @@ export const portfolio = {
             name: 'bazarowa',
             numberOfViews: 11,
             textFrame: 11,
-            textContent: "",
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 0,
             fileContent: ""
         },
@@ -35,7 +37,7 @@ export const portfolio = {
             name: 'polimerplast',
             numberOfViews: 23,
             textFrame: 23,
-            textContent: "",
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 0,
             fileContent: ""
         }
@@ -55,7 +57,7 @@ export const portfolio = {
             name: 'dom modułowy',
             numberOfViews: 9,
             textFrame: 8,
-            textContent: "",
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 9,
             fileContent: [
                 "instalacja do pompy ciepła 5kWp",

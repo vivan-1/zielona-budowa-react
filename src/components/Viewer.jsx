@@ -242,7 +242,7 @@ class Viewer extends Component {
 
             content = <div className="view-content">
 
-                <Image resobsuve className="gallery-image" src={this.state.imageUrl} alt={this.state.name}/>
+                <Image className="gallery-image" src={this.state.imageUrl} alt={this.state.name}/>
 
             </div>;
         }

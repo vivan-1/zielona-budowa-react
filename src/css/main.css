@@ -295,17 +295,6 @@ iframe {
   to {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%); } }
-iframe {
-  animation-name: saturating;
-  animation-duration: 7s;
-  animation-timing-function: ease; }
-@keyframes saturating {
-  from {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); }
-  to {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%); } }
 .video-wrapper {
   width: 100%;
   position: relative;
