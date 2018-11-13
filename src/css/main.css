@@ -285,25 +285,19 @@ iframe {
   max-height: 95%;
   margin: auto !important;
   display: block;
-  filter: grayscale(100%) !important;
-  -webkit-filter: grayscale(100%) !important;
-  z-index: -9999999999999999999999999 !important;
-  -webkit-transition: all 3s ease-in-out !important;
-  -moz-transition: all 3s ease-in-out !important;
-  -o-transition: all 3s ease-in-out !important;
-  transition: all 3s ease-in-out !important; }
-  .gallery-image:hover, .text-note:hover {
-    filter: grayscale(0%) !important;
-    -webkit-filter: grayscale(0%) !important;
-    z-index: -9999999999999999999999999 !important;
-    -webkit-transition: all 3s ease-in-out !important;
-    -moz-transition: all 3s ease-in-out !important;
-    -o-transition: all 3s ease-in-out !important;
-    transition: all 3s ease-in-out !important; }
-
+  animation-name: saturating;
+  animation-duration: 7s;
+  animation-timing-function: ease; }
+@keyframes saturating {
+  from {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+  to {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%); } }
 iframe {
   animation-name: saturating;
-  animation-duration: 11s;
+  animation-duration: 7s;
   animation-timing-function: ease; }
 @keyframes saturating {
   from {

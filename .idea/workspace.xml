@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portfolio/malarnia-10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portfolio/malarnia-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portfolio/malarnia-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portfolio/malarnia-8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/portfolio/malarnia-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/portfolio/malarnia-9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1040">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="406">
+              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -72,8 +62,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="407" column="18" selection-start-line="407" selection-start-column="18" selection-end-line="407" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="407" column="19" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -102,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="288" column="41" lean-forward="true" selection-start-line="288" selection-start-column="41" selection-end-line="288" selection-end-column="41" />
+            <state relative-caret-position="237">
+              <caret line="285" column="33" lean-forward="true" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -132,7 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gallery</find>
       <find>gallery-imageno-</find>
       <find>iframe</find>
       <find>1.5</find>
@@ -162,6 +151,7 @@
       <find>overflow-x</find>
       <find>view-c</find>
       <find>saturate</find>
+      <find>grayscale</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -211,13 +201,13 @@
         <option value="$PROJECT_DIR$/src/components/NavigationBar.jsx" />
         <option value="$PROJECT_DIR$/src/components/MenuPanel.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/App.jsx" />
         <option value="$PROJECT_DIR$/src/components/test.js" />
-        <option value="$PROJECT_DIR$/src/css/main.scss" />
         <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
+        <option value="$PROJECT_DIR$/src/css/main.scss" />
+        <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
       </list>
     </option>
   </component>
@@ -366,12 +356,12 @@
       <workItem from="1541524896206" duration="3624000" />
       <workItem from="1541620098023" duration="569000" />
       <workItem from="1541661617575" duration="1203000" />
-      <workItem from="1542122559102" duration="299000" />
+      <workItem from="1542122559102" duration="745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147027000" />
+    <option name="totallyTimeSpent" value="147473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="2" width="1118" height="828" extended-state="0" />
@@ -383,9 +373,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50034696" side_tool="true" weight="0.26298702" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32986626" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32637855" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3258595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.499653" visible="true" weight="0.23916294" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.499653" weight="0.23916294" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -679,20 +669,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/test.js" />
-    <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1040">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="407" column="18" selection-start-line="407" selection-start-column="18" selection-end-line="407" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -715,8 +691,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="288" column="41" lean-forward="true" selection-start-line="288" selection-start-column="41" selection-end-line="288" selection-end-column="41" />
+        <state relative-caret-position="237">
+          <caret line="285" column="33" lean-forward="true" selection-start-line="285" selection-start-column="33" selection-end-line="285" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="407" column="19" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
         </state>
       </provider>
     </entry>
