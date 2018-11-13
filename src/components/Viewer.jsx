@@ -133,12 +133,12 @@ class Viewer extends Component {
         //     }
         //
         // }
-        console.log("text frame: " + isTextFrame);
+
 
         //check if the current frame is a file frame
         let isFileFrame = Number(view) === fileFrame;
 
-        console.log("file: " + isFileFrame);
+
         //if all the above are false, set the frame as image frame
 
         let isImageFrame = !(isTextFrame || isFileFrame);
@@ -191,7 +191,7 @@ class Viewer extends Component {
         //         autoplay: 1
         //     }
         // };
-        console.log("textContent", this.state.textContent);
+
         //choose appropriate content depending on the frame type
 
         let content; //variable holding the displayed content
