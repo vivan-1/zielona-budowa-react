@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -88,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="229" column="79" selection-start-line="229" selection-start-column="79" selection-end-line="229" selection-end-column="79" />
+            <state relative-caret-position="144">
+              <caret line="107" column="83" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="83" />
               <folding>
                 <element signature="e#412#418#0" expanded="true" />
                 <element signature="e#977#983#1" expanded="true" />
@@ -102,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state relative-caret-position="246">
+              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -123,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>content</find>
       <find>t</find>
       <find>textContent: &quot;&quot;</find>
       <find>fluid</find>
@@ -153,6 +153,7 @@
       <find>sulow</find>
       <find>video</find>
       <find>textContent, fileFrame}</find>
+      <find>textContent</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -208,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/components/test.js" />
         <option value="$PROJECT_DIR$/src/css/main.scss" />
         <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -358,12 +359,12 @@
       <workItem from="1541524896206" duration="3624000" />
       <workItem from="1541620098023" duration="569000" />
       <workItem from="1541661617575" duration="1203000" />
-      <workItem from="1542122559102" duration="3155000" />
+      <workItem from="1542122559102" duration="3274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149883000" />
+    <option name="totallyTimeSpent" value="150002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="2" width="1202" height="828" extended-state="0" />
@@ -698,22 +699,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="229" column="79" selection-start-line="229" selection-start-column="79" selection-end-line="229" selection-end-column="79" />
+        <state relative-caret-position="144">
+          <caret line="107" column="83" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="83" />
           <folding>
             <element signature="e#412#418#0" expanded="true" />
             <element signature="e#977#983#1" expanded="true" />
             <element signature="e#1183#1189#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>

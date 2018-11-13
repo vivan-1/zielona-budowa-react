@@ -10,7 +10,7 @@ export const portfolio = {
             name: 'malarnia proszkowa',
             numberOfViews: 10,
             textFrames: [9, 10],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: ""
         },
@@ -19,7 +19,7 @@ export const portfolio = {
             name: 'bazarowa',
             numberOfViews: 11,
             textFrames: [11],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: ""
         },
@@ -28,7 +28,7 @@ export const portfolio = {
             name: 'ec gołonóg',
             numberOfViews: 20,
             textFrames: [],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: ""
         },
@@ -37,7 +37,7 @@ export const portfolio = {
             name: 'polimerplast',
             numberOfViews: 24,
             textFrames: [23, 24],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: ""
         }
@@ -48,7 +48,7 @@ export const portfolio = {
             name: 'dom w porębie',
             numberOfViews: 17,
             textFrames: [],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: []
         },
@@ -57,7 +57,7 @@ export const portfolio = {
             name: 'dom modułowy',
             numberOfViews: 9,
             textFrames: [8],
-            textContent: "",
+            textContent: [],
             fileFrame: 9,
             fileContent: [
                 "instalacja do pompy ciepła 5kWp",
@@ -71,7 +71,7 @@ export const portfolio = {
             name: 'sportowa 20',
             numberOfViews: 17,
             textFrames: [16, 17],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: ""
         }

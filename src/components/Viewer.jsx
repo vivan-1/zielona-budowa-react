@@ -34,7 +34,7 @@ class Viewer extends Component {
             name: "",
             imageUrl: "",
             textFrames: [],
-            textContent: "",
+            textContent: [],
             fileFrame: 0,
             fileContent: [],
             numberOfViews: 0,
