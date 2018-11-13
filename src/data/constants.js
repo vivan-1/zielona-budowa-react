@@ -94,7 +94,13 @@ export const portfolio = {
             name: 'polimerplast',
             numberOfViews: 23,
             textFrame: 23,
-            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
+            textContent: <div>
+                <p>Inwestycja obejmuje przebudowę istniejącego budynku biurowego na budynek socjalno-biurowy. Istniejący budynek powstawał etapowo i stanowi efekt złożenia dwóch budynków.</p>
+
+                <p>Czas powstania tych budynków jest nieznany, jednakże na podstawie oględzin i analizy zastosowanych rozwiązań konstrukcyjnych i budowlanych szacuje się, iż pierwsza część powstała w latach pięćdziesiątych ubiegłego wieku, natomiast druga część na przełomie lat 70-tych i 80-tych ubiegłego wieku. Nie zachowała się żadna dokumentacja budowlana istniejącego obiektu, nie udało się jej odnaleźć również w powiatowym archiwum.</p>
+
+                <p>Przebudowa będzie polegać na wyburzeniu zewnętrznej dobudówki (od strony wschodniej) z zachowaniem znajdującego się w niej biegu schodowego, a także na hydroizolacji i ociepleniu całego budynku, wymianie stolarki okiennej i drzwiowej, wymianie instalacji grzewczej i instalacji wentylacji, wymianie instalacji elektrycznej, przebudowie i wykończeniu wnętrz w taki sposób, iż na parterze w skrzydle wschodnim budynku powstanie węzeł szatni i natrysków dla 48 osób, kobiet i mężczyzn. Jednocześnie pozostałe pomieszczenia na parterze i piętrze zostaną zaaranżowane na nowo z przeznaczeniem na pomieszczenia biurowe i gospodarcze.</p>
+            </div>,
             fileFrame: 0,
             fileContent: ""
         }
@@ -114,7 +120,20 @@ export const portfolio = {
             name: 'dom modułowy',
             numberOfViews: 9,
             textFrame: 8,
-            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
+            textContent: <div>
+                <p>Założenia materiałowe:</p>
+                <ol className="medium-margins">
+                    <li>konstrukcja domów i budynków garażowych/gospodarczych z profili z drewna LSL (laminated strand lumber) - szybkie zestawienie poglądowe</li>
+                    <li>łączenie konstrukcji - drewniane</li>
+                    <li>więźba dachowa - wiązary lsl, pokrycie z płyty OSB</li>
+                    <li>izolacja termiczna z włókien celulozowych (ekofiber lub równoważne) - dotyczy wszystkich przegród: dachu, ścian zewnętrznych i podłogi</li>
+                    <li>podłoga lekka na legarach lsl, izolacja - wdmuchiwane włókna celulozowe</li>
+                    <li>lekki fundament na ławach z bloczków lub na ławach rzymskich z kamienia łamanego wiązanego zaprawą</li>
+                    <li>fasady szklane samonośne</li>
+                    <li>warstwa wierzchnia pokrycia dachowego – blachodachówka lub gont tradycyjny, łupany</li>
+                    <li>fasady - dom z ćwierćbala warstwowego, izolowanego (50-100 mm)</li>
+                </ol>
+            </div>,
             fileFrame: 9,
             fileContent: [
                 "instalacja do pompy ciepła 5kWp",
@@ -150,25 +169,6 @@ export const portfolio = {
                 <h2>Etap II: Przebudowa i zmiana sposobu użytkowania obiektu na obiekt w&nbsp;całości biurowy</h2>
 
                 <p>Przebudowa zakłada wstawienie do wnętrza hali magazynowej kaskadowych pięter. Konstrukcja z prefabrykowanych słupów i belek żelbetowych, wypełnienia ścian biur – akrylowe. Dokumentacja projektowa jest aktualnie opracowywana.</p>
-
-                <p>Założenia materiałowe:</p>
-                <ol className="medium-margins">
-                    <li>konstrukcja domów i budynków garażowych/gospodarczych z profili z drewna LSL (laminated strand lumber) - szybkie zestawienie poglądowe</li>
-                    <li>łączenie konstrukcji - drewniane</li>
-                    <li>więźba dachowa - wiązary lsl, pokrycie z płyty OSB</li>
-                    <li>izolacja termiczna z włókien celulozowych (ekofiber lub równoważne) - dotyczy wszystkich przegród: dachu, ścian zewnętrznych i podłogi</li>
-                    <li>podłoga lekka na legarach lsl, izolacja - wdmuchiwane włókna celulozowe</li>
-                    <li>lekki fundament na ławach z bloczków lub na ławach rzymskich z kamienia łamanego wiązanego zaprawą</li>
-                    <li>fasady szklane samonośne</li>
-                    <li>warstwa wierzchnia pokrycia dachowego – blachodachówka lub gont tradycyjny, łupany</li>
-                    <li>fasady - dom z ćwierćbala warstwowego, izolowanego (50-100 mm)</li>
-                </ol>
-
-                <p>Inwestycja obejmuje przebudowę istniejącego budynku biurowego na budynek socjalno-biurowy. Istniejący budynek powstawał etapowo i stanowi efekt złożenia dwóch budynków.</p>
-
-                <p>Czas powstania tych budynków jest nieznany, jednakże na podstawie oględzin i analizy zastosowanych rozwiązań konstrukcyjnych i budowlanych szacuje się, iż pierwsza część powstała w latach pięćdziesiątych ubiegłego wieku, natomiast druga część na przełomie lat 70-tych i 80-tych ubiegłego wieku. Nie zachowała się żadna dokumentacja budowlana istniejącego obiektu, nie udało się jej odnaleźć również w powiatowym archiwum.</p>
-
-                <p>Przebudowa będzie polegać na wyburzeniu zewnętrznej dobudówki (od strony wschodniej) z zachowaniem znajdującego się w niej biegu schodowego, a także na hydroizolacji i ociepleniu całego budynku, wymianie stolarki okiennej i drzwiowej, wymianie instalacji grzewczej i instalacji wentylacji, wymianie instalacji elektrycznej, przebudowie i wykończeniu wnętrz w taki sposób, iż na parterze w skrzydle wschodnim budynku powstanie węzeł szatni i natrysków dla 48 osób, kobiet i mężczyzn. Jednocześnie pozostałe pomieszczenia na parterze i piętrze zostaną zaaranżowane na nowo z przeznaczeniem na pomieszczenia biurowe i gospodarcze.</p>
 
 
             </div>,
