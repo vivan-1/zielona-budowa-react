@@ -300,8 +300,16 @@ iframe {
   max-height: 95%;
   margin: auto !important;
   display: block;
-  overflow-y: auto;
-  font-size: 150%; }
+  overflow-y: auto; }
+  @media (min-width: 768px) {
+    .text-note {
+      font-size: 150%; } }
+  .text-note ::-moz-selection {
+    background: white;
+    color: #a6a6a6; }
+  .text-note ::selection {
+    background: white;
+    color: #a6a6a6; }
   .text-note table {
     margin: 40px auto; }
     .text-note table td {
@@ -309,14 +317,23 @@ iframe {
       padding-right: 10px; }
   .text-note h1, .text-note h2 {
     margin-bottom: 40px;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .text-note p {
     margin-top: 40px;
     margin-bottom: 40px; }
 
+.medium-margins {
+  margin-left: 15%;
+  margin-right: 15%; }
+
 .wide-margins {
   margin-left: 25%;
   margin-right: 25%; }
+
+.very-wide-margins {
+  margin-left: 30%;
+  margin-right: 30%; }
 
 .centered {
   text-align: center; }

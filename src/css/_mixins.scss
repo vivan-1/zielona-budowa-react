@@ -7,14 +7,14 @@
 }
 
 //sets selection colours
-@mixin set-selection {
+@mixin set-selection($background, $color) {
   ::-moz-selection {
-    background: setColor(2);
-    color: setColor(10);
+    background: setColor($background);
+    color: setColor($color);
   }
   ::selection {
-    background: setColor(2);
-    color: setColor(10);
+    background: setColor($background);
+    color: setColor($color);
   }
 }
 

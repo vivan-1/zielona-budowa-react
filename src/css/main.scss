@@ -21,7 +21,7 @@ body {
   font-style: $mainFont !important;
   background-color: $backgroundColor;
   position: relative;
-  @include set-selection;
+  @include set-selection(2, 10);
 }
 
 //a {
@@ -416,7 +416,12 @@ iframe {
   margin: auto !important;
   display: block;
   overflow-y: auto;
-  font-size:150%;
+
+  @media (min-width: 768px) {
+    font-size:150%;
+  }
+
+  @include set-selection(10, 6.5);
 
   table {
     margin: 40px auto;
@@ -430,6 +435,7 @@ iframe {
   h1, h2 {
     margin-bottom: 40px;
     text-align: center;
+    font-weight: bold;
   }
 
   p {
@@ -438,15 +444,20 @@ iframe {
   }
 }
 
+.medium-margins {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .wide-margins {
   margin-left: 25%;
   margin-right: 25%;
 }
 
-//.very-wide-margins {
-//  margin-left: 30%;
-//  margin-right: 30%;
-//}
+.very-wide-margins {
+  margin-left: 30%;
+  margin-right: 30%;
+}
 
 .centered {
   text-align: center;
