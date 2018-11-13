@@ -33,10 +33,8 @@ class Viewer extends Component {
             view: 0,
             name: "",
             imageUrl: "",
-            videoUrl: "",
             textFrames: [],
             textContent: "",
-            videoFrame: 0,
             fileFrame: 0,
             numberOfViews: 0,
             isFirstFrame: false,
@@ -71,9 +69,9 @@ class Viewer extends Component {
 
                     if (portfolio.restauracje[i].id === project) {
 
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.restauracje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.restauracje[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -82,9 +80,9 @@ class Viewer extends Component {
             case "przemyslowe":
                 for (let i = 0; i < portfolio.przemyslowe.length; i++) {
                     if (portfolio.przemyslowe[i].id === project) {
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.przemyslowe[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.przemyslowe[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -93,9 +91,9 @@ class Viewer extends Component {
             case "domy":
                 for (let i = 0; i < portfolio.domy.length; i++) {
                     if (portfolio.domy[i].id === project) {
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.domy[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.domy[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -105,21 +103,9 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.renowacje.length; i++) {
                     if (portfolio.renowacje[i].id === project) {
 
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.renowacje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
-                        break;
-                    }
-                }
-                break;
-
-            case "koncepcje":
-                for (let i = 0; i < portfolio.koncepcje.length; i++) {
-                    if (portfolio.koncepcje[i].id === project) {
-
-                        let {name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame} = portfolio.koncepcje[i];
-                        this.setState({name, numberOfViews, videoFrame, videoUrl, textFrames, textContent, fileFrame});
-                        this.checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.renowacje[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
                 }
@@ -128,13 +114,13 @@ class Viewer extends Component {
 
     }
 
-    checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame) {
+    checkFrameType(view, numberOfViews, textFrames, fileFrame) {
         //check if the current frame is the first or last frame
         let isFirstFrame = Number(view) === 1;
         let isLastFrame = Number(view) === numberOfViews;
 
-        //check if the current frame is a video frame
-        let isVideoFrame = Number(view) === videoFrame;
+        // //check if the current frame is a video frame
+        // let isVideoFrame = Number(view) === videoFrame;
 
         //check if the current frame is a text frame
 
@@ -153,12 +139,12 @@ class Viewer extends Component {
         console.log("file: " + isFileFrame);
         //if all the above are false, set the frame as image frame
 
-        let isImageFrame = !(isVideoFrame || isTextFrame || isFileFrame);
-        console.log("image frame: " + isImageFrame);
+        let isImageFrame = !(isTextFrame || isFileFrame);
+
 
         //update the state with the above values
 
-        this.setState({isFirstFrame, isLastFrame, isVideoFrame, isTextFrame, isImageFrame, isFileFrame});
+        this.setState({isFirstFrame, isLastFrame, isTextFrame, isImageFrame, isFileFrame});
 
     }
 
@@ -195,14 +181,14 @@ class Viewer extends Component {
 
     render() {
 
-        //YouTube video options
-        const opts = {
-            height: '390',
-            width: '640',
-            playerVars: { // https://developers.google.com/youtube/player_parameters
-                autoplay: 1
-            }
-        };
+        // //YouTube video options
+        // const opts = {
+        //     height: '390',
+        //     width: '640',
+        //     playerVars: { // https://developers.google.com/youtube/player_parameters
+        //         autoplay: 1
+        //     }
+        // };
 
         //choose appropriate content depending on the frame type
 
@@ -211,18 +197,19 @@ class Viewer extends Component {
         //check if the splash screen should be shown (if section in routing is undefined)
         let isSplash = (this.props.match.params.section === undefined);
 
-        if (this.state.isVideoFrame) {
-            content = <div className="view-content">
-                <div className="iframe-wrapper">
-                    <YouTube
-                        videoId="wxPkxKkHDgQ"
-                        opts={opts}
-                        onReady={this._onReady}
-                    />
-                </div>
-            </div>;
 
-        } else if (this.state.isTextFrame) {
+        //video frame content
+        // content = <div className="view-content">
+        //     <div className="iframe-wrapper">
+        //         <YouTube
+        //             videoId="wxPkxKkHDgQ"
+        //             opts={opts}
+        //             onReady={this._onReady}
+        //         />
+        //     </div>
+        // </div>;
+
+        if (this.state.isTextFrame) {
             content = <div className="view-content">
 
                 <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
