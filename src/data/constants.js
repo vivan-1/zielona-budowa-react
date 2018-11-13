@@ -60,10 +60,8 @@ export const portfolio = {
             textContent: "",
             fileFrame: 9,
             fileContent: [
-                {name: "",
-                url: ""},
-                {name: "",
-                    url: ""},
+                "instalacja do pompy ciepła 5kWp",
+                "symulacja działania instalacji z pompą ciepła za pomocą WP-OPT"
             ]
         }
     ],
