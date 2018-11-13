@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0857bfd-dde0-447a-b096-bca0bbf26926" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/files/sulow-1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/sulow-2.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Viewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Viewer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -91,20 +88,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Viewer.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="224" column="77" selection-start-line="223" selection-start-column="111" selection-end-line="224" selection-end-column="77" />
+            <state relative-caret-position="297">
+              <caret line="229" column="79" selection-start-line="229" selection-start-column="79" selection-end-line="229" selection-end-column="79" />
+              <folding>
+                <element signature="e#412#418#0" expanded="true" />
+                <element signature="e#977#983#1" expanded="true" />
+                <element signature="e#1183#1189#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
+            <state relative-caret-position="205">
+              <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -121,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1.5</find>
       <find>content</find>
       <find>t</find>
       <find>textContent: &quot;&quot;</find>
@@ -151,6 +152,7 @@
       <find>isVideo</find>
       <find>sulow</find>
       <find>video</find>
+      <find>textContent, fileFrame}</find>
     </findStrings>
     <replaceStrings>
       <replace>onLoad</replace>
@@ -170,6 +172,7 @@
       <replace>textContent: &quot;&quot;</replace>
       <replace>checkFrameType(view, numberOfViews, videoFrame, textFrames, fileFrame)</replace>
       <replace>fileContent: []</replace>
+      <replace>textContent, fileFrame, fileContent}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -205,8 +208,8 @@
         <option value="$PROJECT_DIR$/src/components/test.js" />
         <option value="$PROJECT_DIR$/src/css/main.scss" />
         <option value="$PROJECT_DIR$/src/css/_mixins.scss" />
-        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Viewer.jsx" />
       </list>
     </option>
   </component>
@@ -355,12 +358,12 @@
       <workItem from="1541524896206" duration="3624000" />
       <workItem from="1541620098023" duration="569000" />
       <workItem from="1541661617575" duration="1203000" />
-      <workItem from="1542122559102" duration="1600000" />
+      <workItem from="1542122559102" duration="3155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148328000" />
+    <option name="totallyTimeSpent" value="149883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="2" width="1202" height="828" extended-state="0" />
@@ -695,17 +698,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="224" column="77" selection-start-line="223" selection-start-column="111" selection-end-line="224" selection-end-column="77" />
+        <state relative-caret-position="205">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Viewer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="63" column="80" selection-start-line="63" selection-start-column="80" selection-end-line="63" selection-end-column="80" />
+        <state relative-caret-position="297">
+          <caret line="229" column="79" selection-start-line="229" selection-start-column="79" selection-end-line="229" selection-end-column="79" />
+          <folding>
+            <element signature="e#412#418#0" expanded="true" />
+            <element signature="e#977#983#1" expanded="true" />
+            <element signature="e#1183#1189#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

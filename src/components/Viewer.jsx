@@ -36,6 +36,7 @@ class Viewer extends Component {
             textFrames: [],
             textContent: "",
             fileFrame: 0,
+            fileContent: [],
             numberOfViews: 0,
             isFirstFrame: false,
             isLastFrame: false,
@@ -69,8 +70,8 @@ class Viewer extends Component {
 
                     if (portfolio.restauracje[i].id === project) {
 
-                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.restauracje[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.restauracje[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
                         this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
@@ -80,8 +81,8 @@ class Viewer extends Component {
             case "przemyslowe":
                 for (let i = 0; i < portfolio.przemyslowe.length; i++) {
                     if (portfolio.przemyslowe[i].id === project) {
-                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.przemyslowe[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.przemyslowe[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
                         this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
@@ -91,8 +92,8 @@ class Viewer extends Component {
             case "domy":
                 for (let i = 0; i < portfolio.domy.length; i++) {
                     if (portfolio.domy[i].id === project) {
-                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.domy[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.domy[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
                         this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
@@ -103,8 +104,8 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.renowacje.length; i++) {
                     if (portfolio.renowacje[i].id === project) {
 
-                        let {name, numberOfViews, textFrames, textContent, fileFrame} = portfolio.renowacje[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame});
+                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.renowacje[i];
+                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
                         this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
                         break;
                     }
@@ -194,6 +195,7 @@ class Viewer extends Component {
 
         let content; //variable holding the displayed content
 
+        let filesContent; //variable holding file links html
         //check if the splash screen should be shown (if section in routing is undefined)
         let isSplash = (this.props.match.params.section === undefined);
 
@@ -217,12 +219,20 @@ class Viewer extends Component {
             </div>;
 
         } else if (this.state.isFileFrame) {
+
+
             content = <div className="files-panel">
                 <h1>pliki pdf do pobrania:</h1>
-                <p><a href="/files/dommodulowy-1.pdf" target="_blank"><i className="fas fa-file-pdf"></i>&nbsp;instalacja do
-                    pompy ciepła 5kWp</a></p>
-                <p><a href="/files/dommodulowy-2.pdf" target="_blank"><i className="fas fa-file-pdf"></i>&nbsp;symulacja
-                    działania instalacji z&nbsp;pompą ciepła za pomocą WP-OPT<sup>©</sup></a></p>
+                {this.state.fileContent.map((fileContent, k) => {
+                    return (
+                        <p key={k}>
+                            <a href={"/files/" + this.state.project + "-" + (k+1) + ".pdf"} target="_blank" rel="noopener noreferrer">
+                                <i className="fas fa-file-pdf"></i>&nbsp;&nbsp;{fileContent}
+                            </a>
+                        </p>
+                    )
+                })}
+
             </div>;
 
         } else {
