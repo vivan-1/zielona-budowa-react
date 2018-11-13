@@ -11,12 +11,13 @@ html, #root, #app {
 }
 
 
-#panels {
+#app, #panels {
   height: 100% !important;
 }
 
 body {
   height: 100%;
+  overflow-x: hidden;
   font-style: $mainFont !important;
   background-color: $backgroundColor;
   position: relative;
@@ -372,6 +373,11 @@ iframe {
   flex-direction: column;
   justify-content: center;
   margin: 0 !important;
+
+  Image {
+    object-fit: contain;
+  }
+
 }
 
 //Title page
@@ -398,8 +404,8 @@ iframe {
   max-height: 95%;
   margin: auto !important;
   display: block;
-  position: relative;
-  @include saturate;
+  //position: relative;
+  @include grayscale;
 }
 
 iframe {

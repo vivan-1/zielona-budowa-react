@@ -2,11 +2,12 @@
 html, #root, #app {
   height: 100% !important; }
 
-#panels {
+#app, #panels {
   height: 100% !important; }
 
 body {
   height: 100%;
+  overflow-x: hidden;
   font-style: "Dosis", sans-serif !important;
   background-color: #fff;
   position: relative; }
@@ -262,6 +263,8 @@ iframe {
   flex-direction: column;
   justify-content: center;
   margin: 0 !important; }
+  .view-content Image {
+    object-fit: contain; }
 
 #title-box {
   text-align: center;
@@ -282,17 +285,22 @@ iframe {
   max-height: 95%;
   margin: auto !important;
   display: block;
-  position: relative;
-  animation-name: saturating;
-  animation-duration: 11s;
-  animation-timing-function: ease; }
-@keyframes saturating {
-  from {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%); }
-  to {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%); } }
+  filter: grayscale(100%) !important;
+  -webkit-filter: grayscale(100%) !important;
+  z-index: -9999999999999999999999999 !important;
+  -webkit-transition: all 3s ease-in-out !important;
+  -moz-transition: all 3s ease-in-out !important;
+  -o-transition: all 3s ease-in-out !important;
+  transition: all 3s ease-in-out !important; }
+  .gallery-image:hover, .text-note:hover {
+    filter: grayscale(0%) !important;
+    -webkit-filter: grayscale(0%) !important;
+    z-index: -9999999999999999999999999 !important;
+    -webkit-transition: all 3s ease-in-out !important;
+    -moz-transition: all 3s ease-in-out !important;
+    -o-transition: all 3s ease-in-out !important;
+    transition: all 3s ease-in-out !important; }
+
 iframe {
   animation-name: saturating;
   animation-duration: 11s;

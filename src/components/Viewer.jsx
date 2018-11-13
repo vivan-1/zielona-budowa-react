@@ -283,7 +283,7 @@ class Viewer extends Component {
 
                 <div id="main-panel-wrapper">
                     <div id="main-panel-container">
-                        <div>{content}</div>
+                        {content}
                     </div>
 
                     <nav id="main-panel-footer" aria-label="...">

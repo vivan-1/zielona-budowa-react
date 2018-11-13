@@ -8,11 +8,11 @@ import Home from "./Home";
 import Viewer from "./Viewer";
 
 
-
 class App extends Component {
     render() {
         return (
-            <Router>
+            <div id="app">
+                <Router>
 
                     <Switch>
                         <Route exact path="/" component={props => <Home {...props}/>}/>
@@ -20,7 +20,8 @@ class App extends Component {
                         <Route component={props => <Home {...props}/>}/>
                     </Switch>
 
-            </Router>
+                </Router>
+            </div>
         );
     }
 }

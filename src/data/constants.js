@@ -8,10 +8,10 @@ export const portfolio = {
         {
             id: 'malarnia',
             name: 'malarnia proszkowa',
-            numberOfViews: 11,
-            videoFrame: 5,
-            videoUrl: "https://www.youtube.com/watch?v=wxPkxKkHDgQ",
-            textFrames: [10, 11],
+            numberOfViews: 10,
+            videoFrame: 0,
+            videoUrl: "",
+            textFrames: [9, 10],
             textContent: "",
             fileFrame: 0,
             fileContent: ""
