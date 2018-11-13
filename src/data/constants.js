@@ -61,7 +61,22 @@ export const portfolio = {
             name: 'bazarowa',
             numberOfViews: 11,
             textFrame: 11,
-            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p className="centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
+            textContent: <div>
+                <h1>Rybitwy, Kraków</h1>
+
+
+                <p className="centered">
+                    Powierzchnia magazynów – 2850 m<sup>2</sup><br/>
+                    Powierzchnia biur – 1200 m<sup>2</sup><br/>
+                    Kubatura – 31&nbsp;600<sup>3</sup><br/>
+                    Wysokość – 11,95 m
+                </p>
+
+
+                <p className="centered">Projektowany od podstaw nowoczesny magazyn składowania przy ul. Bazarowej w Krakowie.<br/>
+                    Budynek w konstrukcji całkowicie żelbetowej, aktualne stadium projektowe – projekt budowlany.
+                </p>
+            </div>,
             fileFrame: 0,
             fileContent: ""
         },
