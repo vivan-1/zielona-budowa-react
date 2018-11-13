@@ -58,6 +58,9 @@ a {
 .small-text {
   font-size: 80%; }
 
+.centered {
+  text-align: center; }
+
 .activated-link {
   color: #000 !important;
   background-color: #f2f2f2; }
@@ -280,7 +283,7 @@ iframe {
   font-size: 1.5vmax;
   padding-left: 30%; }
 
-.gallery-image, .text-note {
+.gallery-image {
   max-width: 95%;
   max-height: 95%;
   margin: auto !important;
@@ -295,6 +298,13 @@ iframe {
   to {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%); } }
+.text-note {
+  width: 95%;
+  max-height: 95%;
+  margin: auto !important;
+  display: block;
+  overflow-y: auto; }
+
 .video-wrapper {
   width: 100%;
   position: relative;
@@ -321,8 +331,11 @@ iframe {
 
 /* Text pages */
 .text-note {
-  border: 4px dashed setColor(6.5);
-  max-height: 95%; }
+  border: 4px dashed #eee;
+  max-height: 95%;
+  background: #a6a6a6;
+  color: white;
+  padding: 30px; }
 
 /* File pages */
 .files-panel h1 {

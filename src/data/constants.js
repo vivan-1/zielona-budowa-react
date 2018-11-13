@@ -10,7 +10,7 @@ export const portfolio = {
             name: 'malarnia proszkowa',
             numberOfViews: 9,
             textFrame: 9,
-            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p className="centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 0,
             fileContent: ""
         },
@@ -19,7 +19,7 @@ export const portfolio = {
             name: 'bazarowa',
             numberOfViews: 11,
             textFrame: 11,
-            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
+            textContent: <div><h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p className="centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p></div>,
             fileFrame: 0,
             fileContent: ""
         },

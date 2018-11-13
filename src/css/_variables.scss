@@ -18,8 +18,8 @@ $textWidth: 550px;
 // *** BORDERS *** //
 
 $borderDefault: 1px solid $mainColor;
-$borderFancy: 4px dashed setColor(6.5);
-
+//$borderFancy: 4px dashed setColor(6.5);
+$borderFancy: 4px dashed #eee;
 //// *** SCREEN WIDTH BREAKPOINTS *** //
 //
 //$smallScreen: 480px;

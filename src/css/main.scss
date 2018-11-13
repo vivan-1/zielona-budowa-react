@@ -117,6 +117,10 @@ a {
   font-size: 80%;
 }
 
+.centered {
+  text-align: center;
+}
+
 .activated-link {
   //font-weight: 600 !important;
   color: $mainColor !important;
@@ -399,7 +403,7 @@ iframe {
 }
 
 //Image pages
-.gallery-image, .text-note {
+.gallery-image {
   max-width: 95%;
   max-height: 95%;
   margin: auto !important;
@@ -408,7 +412,16 @@ iframe {
   @include saturate;
 }
 
-//iframe {
+//Text pages
+.text-note {
+  width: 95%;
+  max-height: 95%;
+  margin: auto !important;
+  display: block;
+  overflow-y: auto;
+}
+
+  //iframe {
 //  @include saturate;
 //}
 
@@ -464,6 +477,9 @@ iframe {
 .text-note {
   border: $borderFancy;
   max-height: 95%;
+  background: setColor(6.5);
+  color: setColor(10);
+  padding: 30px;
 }
 
 /* File pages */
