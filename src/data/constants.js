@@ -8,9 +8,15 @@ export const portfolio = {
         {
             id: 'malarnia',
             name: 'malarnia proszkowa',
-            numberOfViews: 10,
-            textFrames: [9, 10],
-            textContent: [],
+            numberOfViews: 9,
+            textFrame: 9,
+            textContent: [
+                "<h1>Commodi doloribus expedita natus quam soluta</h1>" +
+                "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p>" +
+                "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p>",
+                "<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>" +
+                "<p>Consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p>"
+            ],
             fileFrame: 0,
             fileContent: ""
         },
@@ -18,8 +24,8 @@ export const portfolio = {
             id: 'bazarowa',
             name: 'bazarowa',
             numberOfViews: 11,
-            textFrames: [11],
-            textContent: [],
+            textFrame: 11,
+            textContent: "",
             fileFrame: 0,
             fileContent: ""
         },
@@ -27,17 +33,17 @@ export const portfolio = {
             id: 'ecgolonog',
             name: 'ec gołonóg',
             numberOfViews: 20,
-            textFrames: [],
-            textContent: [],
+            textFrame: 0,
+            textContent: "",
             fileFrame: 0,
             fileContent: ""
         },
         {
             id: 'polimerplast',
             name: 'polimerplast',
-            numberOfViews: 24,
-            textFrames: [23, 24],
-            textContent: [],
+            numberOfViews: 23,
+            textFrame: 23,
+            textContent: "",
             fileFrame: 0,
             fileContent: ""
         }
@@ -47,8 +53,8 @@ export const portfolio = {
             id: 'dom-poreba',
             name: 'dom w porębie',
             numberOfViews: 17,
-            textFrames: [],
-            textContent: [],
+            textFrame: 0,
+            textContent: "",
             fileFrame: 0,
             fileContent: []
         },
@@ -56,8 +62,8 @@ export const portfolio = {
             id: 'dommodulowy',
             name: 'dom modułowy',
             numberOfViews: 9,
-            textFrames: [8],
-            textContent: [],
+            textFrame: 8,
+            textContent: "",
             fileFrame: 9,
             fileContent: [
                 "instalacja do pompy ciepła 5kWp",
@@ -69,9 +75,9 @@ export const portfolio = {
         {
             id: 'sportowa20',
             name: 'sportowa 20',
-            numberOfViews: 17,
-            textFrames: [16, 17],
-            textContent: [],
+            numberOfViews: 16,
+            textFrame: 16,
+            textContent: "",
             fileFrame: 0,
             fileContent: ""
         }

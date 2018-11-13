@@ -33,7 +33,7 @@ class Viewer extends Component {
             view: 0,
             name: "",
             imageUrl: "",
-            textFrames: [],
+            textFrame: [],
             textContent: [],
             fileFrame: 0,
             fileContent: [],
@@ -70,9 +70,9 @@ class Viewer extends Component {
 
                     if (portfolio.restauracje[i].id === project) {
 
-                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.restauracje[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
-                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrame, textContent, fileFrame, fileContent} = portfolio.restauracje[i];
+                        this.setState({name, numberOfViews, textFrame, textContent, fileFrame, fileContent});
+                        this.checkFrameType(view, numberOfViews, textFrame, fileFrame);
                         break;
                     }
                 }
@@ -81,9 +81,9 @@ class Viewer extends Component {
             case "przemyslowe":
                 for (let i = 0; i < portfolio.przemyslowe.length; i++) {
                     if (portfolio.przemyslowe[i].id === project) {
-                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.przemyslowe[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
-                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrame, textContent, fileFrame, fileContent} = portfolio.przemyslowe[i];
+                        this.setState({name, numberOfViews, textFrame, textContent, fileFrame, fileContent});
+                        this.checkFrameType(view, numberOfViews, textFrame, fileFrame);
                         break;
                     }
                 }
@@ -92,9 +92,9 @@ class Viewer extends Component {
             case "domy":
                 for (let i = 0; i < portfolio.domy.length; i++) {
                     if (portfolio.domy[i].id === project) {
-                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.domy[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
-                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrame, textContent, fileFrame, fileContent} = portfolio.domy[i];
+                        this.setState({name, numberOfViews, textFrame, textContent, fileFrame, fileContent});
+                        this.checkFrameType(view, numberOfViews, textFrame, fileFrame);
                         break;
                     }
                 }
@@ -104,9 +104,9 @@ class Viewer extends Component {
                 for (let i = 0; i < portfolio.renowacje.length; i++) {
                     if (portfolio.renowacje[i].id === project) {
 
-                        let {name, numberOfViews, textFrames, textContent, fileFrame, fileContent} = portfolio.renowacje[i];
-                        this.setState({name, numberOfViews, textFrames, textContent, fileFrame, fileContent});
-                        this.checkFrameType(view, numberOfViews, textFrames, fileFrame);
+                        let {name, numberOfViews, textFrame, textContent, fileFrame, fileContent} = portfolio.renowacje[i];
+                        this.setState({name, numberOfViews, textFrame, textContent, fileFrame, fileContent});
+                        this.checkFrameType(view, numberOfViews, textFrame, fileFrame);
                         break;
                     }
                 }
@@ -115,7 +115,7 @@ class Viewer extends Component {
 
     }
 
-    checkFrameType(view, numberOfViews, textFrames, fileFrame) {
+    checkFrameType(view, numberOfViews, textFrame, fileFrame) {
         //check if the current frame is the first or last frame
         let isFirstFrame = Number(view) === 1;
         let isLastFrame = Number(view) === numberOfViews;
@@ -125,13 +125,14 @@ class Viewer extends Component {
 
         //check if the current frame is a text frame
 
-        let isTextFrame = false;
-        for (let i = 0; i < textFrames.length; i++) {
-            if (textFrames[i] === Number(view)) {
-                isTextFrame = true;
-            }
-
-        }
+        let isTextFrame = Number(view) === textFrame;
+        // let isTextFrame = false;
+        // for (let i = 0; i < textFrame.length; i++) {
+        //     if (textFrame[i] === Number(view)) {
+        //         isTextFrame = true;
+        //     }
+        //
+        // }
         console.log("text frame: " + isTextFrame);
 
         //check if the current frame is a file frame
