@@ -1,22 +1,14 @@
 //specifies the content of all section elements
 
 export const portfolio = {
-    restauracje: [
-
-    ],
+    restauracje: [],
     przemyslowe: [
         {
             id: 'malarnia',
             name: 'malarnia proszkowa',
             numberOfViews: 9,
             textFrame: 9,
-            textContent: [
-                "<h1>Commodi doloribus expedita natus quam soluta</h1>" +
-                "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p>" +
-                "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p>",
-                "<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>" +
-                "<p>Consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p>"
-            ],
+            textContent: "<h1>Commodi doloribus expedita natus quam soluta</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi corporis cupiditate ex fugiat harum incidunt minima nam nisi omnis praesentium saepe, voluptatem, voluptatum. Aut, dicta excepturi. Ab dolor, itaque!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, magnam, reiciendis!</p>",
             fileFrame: 0,
             fileContent: ""
         },

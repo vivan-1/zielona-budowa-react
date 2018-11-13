@@ -33,8 +33,8 @@ class Viewer extends Component {
             view: 0,
             name: "",
             imageUrl: "",
-            textFrame: [],
-            textContent: [],
+            textFrame: 0,
+            textContent: "",
             fileFrame: 0,
             fileContent: [],
             numberOfViews: 0,
@@ -191,12 +191,12 @@ class Viewer extends Component {
         //         autoplay: 1
         //     }
         // };
-
+        console.log("textContent", this.state.textContent);
         //choose appropriate content depending on the frame type
 
         let content; //variable holding the displayed content
 
-        let filesContent; //variable holding file links html
+
         //check if the splash screen should be shown (if section in routing is undefined)
         let isSplash = (this.props.match.params.section === undefined);
 
@@ -214,8 +214,9 @@ class Viewer extends Component {
 
         if (this.state.isTextFrame) {
             content = <div className="view-content">
-
-                <Image responsive className="text-note" src={this.state.imageUrl} alt={this.state.name}/>
+                <div className="text-note">
+                    {this.state.textContent}
+                </div>
 
             </div>;
 
@@ -227,7 +228,8 @@ class Viewer extends Component {
                 {this.state.fileContent.map((fileContent, k) => {
                     return (
                         <p key={k}>
-                            <a href={"/files/" + this.state.project + "-" + (k+1) + ".pdf"} target="_blank" rel="noopener noreferrer">
+                            <a href={"/files/" + this.state.project + "-" + (k + 1) + ".pdf"} target="_blank"
+                               rel="noopener noreferrer">
                                 <i className="fas fa-file-pdf"></i>&nbsp;&nbsp;{fileContent}
                             </a>
                         </p>
