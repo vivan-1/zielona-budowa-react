@@ -100,6 +100,35 @@ export const portfolio = {
                 <p>Czas powstania tych budynków jest nieznany, jednakże na podstawie oględzin i analizy zastosowanych rozwiązań konstrukcyjnych i budowlanych szacuje się, iż pierwsza część powstała w latach pięćdziesiątych ubiegłego wieku, natomiast druga część na przełomie lat 70-tych i 80-tych ubiegłego wieku. Nie zachowała się żadna dokumentacja budowlana istniejącego obiektu, nie udało się jej odnaleźć również w powiatowym archiwum.</p>
 
                 <p>Przebudowa będzie polegać na wyburzeniu zewnętrznej dobudówki (od strony wschodniej) z zachowaniem znajdującego się w niej biegu schodowego, a także na hydroizolacji i ociepleniu całego budynku, wymianie stolarki okiennej i drzwiowej, wymianie instalacji grzewczej i instalacji wentylacji, wymianie instalacji elektrycznej, przebudowie i wykończeniu wnętrz w taki sposób, iż na parterze w skrzydle wschodnim budynku powstanie węzeł szatni i natrysków dla 48 osób, kobiet i mężczyzn. Jednocześnie pozostałe pomieszczenia na parterze i piętrze zostaną zaaranżowane na nowo z przeznaczeniem na pomieszczenia biurowe i gospodarcze.</p>
+                <h1>Zestawienie powierzchni zagospodarowania terenu</h1>
+                <table>
+                    <tr className="underlined">
+                        <td>Całkowita powierzchnia działek:</td>
+                        <td>28&nbsp;590,89 m<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Powierzchnia zabudowy kubaturowej istniejącej (bez obiektu do rozbiórki):
+                        </td>
+                        <td>393,5<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Powierzchnia zabudowy kubaturowej projektowanej:</td>
+                        <td>397,3 m<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Powierzchnia utwardzonych nawierzchni:</td>
+                        <td>5900 m<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Powierzchnia biologicznie czynna:</td>
+                        <td>22690,89 m<sup>2</sup><br/>(79,3% pow. działki)</td>
+                    </tr>
+
+                </table>
+                <p>Uwarunkowania ochrony konserwatorskiej:</p>
+
+                <p>Wg załącznika graficznego do uchwały nr XLII/341/06 Rady Miejskiej w Łazach z dnia 25 października 2006 r. w sprawie miejscowego planu zagospodarowania przestrzennego miasta i gminy Łazy, teren inwestycji leży w strefie B pośredniej ochrony konserwatorskiej.</p>
+
             </div>,
             fileFrame: 0,
             fileContent: ""
@@ -149,7 +178,7 @@ export const portfolio = {
             textFrame: 16,
             textContent: <div>
                 <h1>Sportowa 20, Katowice</h1>
-                <h2>Etap I: Przebudowa budynku przemysłowego z&nbps;częścią socjalną na budynek magazynowy z częścią biurową</h2>
+                <h2>Etap I: Przebudowa budynku przemysłowego z&nbsp;częścią socjalną na budynek magazynowy z częścią biurową</h2>
 
                 <p className="centered">
                     Powierzchnia – 750 m<sup>2</sup><br/>
