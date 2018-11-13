@@ -58,9 +58,6 @@ a {
 .small-text {
   font-size: 80%; }
 
-.centered {
-  text-align: center; }
-
 .activated-link {
   color: #000 !important;
   background-color: #f2f2f2; }
@@ -303,7 +300,29 @@ iframe {
   max-height: 95%;
   margin: auto !important;
   display: block;
-  overflow-y: auto; }
+  overflow-y: auto;
+  font-size: 150%; }
+  .text-note table {
+    margin: 40px auto; }
+    .text-note table td {
+      padding-left: 10px;
+      padding-right: 10px; }
+  .text-note h1, .text-note h2 {
+    margin-bottom: 40px;
+    text-align: center; }
+  .text-note p {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
+.wide-margins {
+  margin-left: 25%;
+  margin-right: 25%; }
+
+.centered {
+  text-align: center; }
+
+.underlined {
+  border-bottom: 1px solid #fff; }
 
 .video-wrapper {
   width: 100%;

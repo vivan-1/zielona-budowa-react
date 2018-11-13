@@ -117,9 +117,6 @@ a {
   font-size: 80%;
 }
 
-.centered {
-  text-align: center;
-}
 
 .activated-link {
   //font-weight: 600 !important;
@@ -419,6 +416,38 @@ iframe {
   margin: auto !important;
   display: block;
   overflow-y: auto;
+  font-size:150%;
+
+  table {
+    margin: 40px auto;
+
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  h1, h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.wide-margins {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.centered {
+  text-align: center;
+}
+.underlined {
+  border-bottom: $borderContrast;
 }
 
   //iframe {
