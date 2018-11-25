@@ -7,11 +7,22 @@ class DetailedView extends Component {
 constructor(props) {
     super(props);
 
+
+    this.handleClose = this.handleClose.bind(this);
+
     this.state = {
         show: true, //specifies whether the detailed view modal should be visible
         // loading: true, //specifies whether the spinner should be visible
     }
 }
+
+    //closes the modal and routes back to the koncepcje component
+    handleClose() {
+
+        this.props.history.push("/koncepcje/"); //go to the home component
+        this.setState({show: false}); //hide the modal
+
+    }
 
 
     render() {
