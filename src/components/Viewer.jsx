@@ -196,9 +196,12 @@ class Viewer extends Component {
 
         let content; //variable holding the displayed content
 
+        //check if the koncepcje screen should be shown
+
+        let isConcepts = this.props.match.path.includes("koncepcje");
 
         //check if the splash screen should be shown (if section in routing is undefined)
-        let isSplash = (this.props.match.params.section === undefined);
+        let isSplash = !isConcepts && (this.props.match.params.section === undefined);
 
 
         //video frame content

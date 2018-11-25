@@ -16,9 +16,9 @@ class MainPanel extends Component {
     render() {
 
 
-        let style = {
-            backgroundImage: "url('../../public/images/background.jpg')"
-        };
+        // let style = {
+        //     backgroundImage: "url('../../public/images/background.jpg')"
+        // };
         return (
             <div id="main-panel">
                     <Route component={props => <Viewer {...props}/>} />
