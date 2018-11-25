@@ -215,3 +215,73 @@ export const sections = {
     domy: portfolio.domy.length > 0,
     renowacje: portfolio.renowacje.length > 0
 };
+
+
+//specifies common part of vide urls
+
+export const videoUrl = "http://drobnik.5gbfree.com/zielona";
+
+
+//specifies the content of 'koncepcje' sections
+
+export const concepts = [
+    {
+        id: "projekty_domow",
+        name: "projekty domów"
+    },
+    {
+        id: "dom_w_orzeszu",
+        name: "dom w orzeszu"
+    },
+
+    {
+        id: "flying_museum",
+        name: "flying aviation museum"
+    },
+    {
+        id: "fabryka_betonu",
+        name: "fabryka betonu"
+    },
+    {
+        id: "hala_tenisowa",
+        name: "hala tenisowa"
+    },
+    {
+        id: "kamienica_na_powislu",
+        name: "kamienica na powiślu"
+    },
+    {
+        id: "hotel_kaskada",
+        name: "hotel kaskada"
+    },
+    {
+        id: "sowice",
+        name: "osiedle sowice"
+    },
+
+    {
+        id: "socart",
+        name: "galeria socartu w krakowie"
+    },
+    {
+        id: "dom_weselny",
+        name: "dom weselny"
+    },
+
+    {
+        id: "owocowy_sad",
+        name: "osiedle w owocowym sadzie"
+    },
+    {
+        id: "dom_na_arkuszewie",
+        name: "dom na arkuszewie"
+    },
+    {
+        id: "sortownia_odpadow",
+        name: "sortownia odpadów plastikowych"
+    },
+    {
+        id: "winnica",
+        name: "winnica dwa płomienie"
+    }
+];

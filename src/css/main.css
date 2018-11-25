@@ -1,5 +1,5 @@
 /*** GENERAL STYLES ***/
-html, #root, #app {
+html, #root {
   height: 100% !important; }
 
 #app, #panels {
