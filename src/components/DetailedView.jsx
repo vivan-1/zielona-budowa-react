@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {Modal} from "react-bootstrap";
 import {ScaleLoader} from "react-spinners"; //spinner
+// import "~video-react/dist/video-react.css";
+
 import {concepts} from "../data/constants";
 
 class DetailedView extends Component {
@@ -37,7 +39,7 @@ constructor(props) {
             if (concepts[i].id === this.props.match.params.video) {
                 videoId = concepts[i].id; //change video id
                 videoName = concepts[i].name; //change video name
-                videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mpg"; //change video url based on id
+                videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mp4"; //change video url based on id
             }
         }
 
@@ -67,7 +69,6 @@ constructor(props) {
                         </Modal.Header>
                         <Modal.Body className="detailBody">
                             <div className="detailContentContainer">
-                                {videoUrl}
 
                             </div>
                         </Modal.Body>
