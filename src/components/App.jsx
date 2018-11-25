@@ -17,6 +17,8 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={props => <Home {...props}/>}/>
                         <Route exact path="/portfolio/:section/:project/:view" component={props => <Home {...props}/>}/>
+                        <Route exact path="/koncepcje/" component={props => <Home {...props}/>}/>
+                        <Route exact path="/koncepcje/podglad/:id" component={props => <Home {...props}/>}/>
                         <Route component={props => <Home {...props}/>}/>
                     </Switch>
 
