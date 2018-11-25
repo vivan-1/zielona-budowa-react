@@ -3,7 +3,7 @@ import {Image} from "react-bootstrap";
 import posed from "react-pose";
 import YouTube from "react-youtube";
 
-import {portfolio} from "../data/constants";
+import {portfolio, concepts} from "../data/constants";
 import {Link} from "react-router-dom";
 
 
@@ -203,6 +203,24 @@ class Viewer extends Component {
         //check if the splash screen should be shown (if section in routing is undefined)
         let isSplash = !isConcepts && (this.props.match.params.section === undefined);
 
+        //boolean telling whether a modal with a video for the koncepcje section should be displayed
+        let displayModal = false;
+
+
+        //check if a modal with a video for the koncepcje section should be displayed
+        if (isConcepts) {
+
+            for (let i = 0; i < concepts.length; i++) {
+                console.log (concepts[i].id, this.props.match.params.video);
+                if (concepts[i].id === this.props.match.params.video) {
+                    displayModal = true; //turn on the modal
+                    let videoId = concepts[i].id; //video id
+                    let videoName = concepts[i].name; //video name
+                    let videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mpg"; //video url based on id
+                }
+            }
+
+        }
 
         //video frame content
         // content = <div className="view-content">
@@ -281,6 +299,26 @@ class Viewer extends Component {
                 </div>
 
             );
+        } else if (isConcepts) {
+
+            if (displayModal) {
+                return (
+
+                    <div id="concepts-container">
+                        modal
+                    </div>
+
+                );
+            } else {
+                return (
+
+                    <div id="concepts-container">
+                        koncepcje
+                    </div>
+
+                );
+            }
+
         } else {
             return (
 
