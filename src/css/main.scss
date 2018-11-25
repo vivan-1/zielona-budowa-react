@@ -554,3 +554,204 @@ iframe {
   @include border-radius(0);
   @include no-select;
 }
+
+/*** PLANET GALLERY STYLES ***/
+
+.tileGallery {
+  @include flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: $mainFont;
+  margin: 15px auto;
+}
+
+/*** PLANET TILE STYLES ***/
+
+/* planet tile colour animation on hover */
+@keyframes focusOnTile {
+  from {
+    background-color: setColor(2.5);
+  }
+
+  to {
+    background-color: setColor(-1);
+  }
+}
+
+.planetTileContainer {
+
+  margin: 10px 0;
+  width: 18%; /* display five tiles in a row by default */
+
+  .planetTile {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3px 14px;
+    height: 220px;
+    background-color: setColor(2.5);
+    color: setColor(-4);
+    @include shadow;
+    cursor: pointer;
+
+    &:hover {
+      background-color: setColor(-1);
+      animation-name: focusOnTile;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+    }
+
+    .contentContainer {
+      @include flex;
+      align-items: center;
+      justify-content: center;
+
+      .planetThumbnail {
+        .imageContainer {
+          max-width: 170px;
+          max-height: 170px;
+          @include flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+        }
+
+        .planetName {
+          margin-top: 5px;
+          text-align: center;
+          font-size: 0.9em;
+
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: $smallScreen) {
+    /* for very small screens, display a list with little padding */
+    width: 90% !important;
+    .planetTile {
+
+      height: 200px;
+      padding: 10%;
+
+      .planetName {
+        font-size: 1em !important;
+      }
+
+      .planetTagline {
+        font-size: 0.9em !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: $smallScreen + 1px) and (max-width: $mediumScreen) {
+    /* for small screens, display a list with more padding */
+    width: 70% !important;
+
+    .planetTile {
+
+      height: 200px;
+      padding: 10% 20%;
+
+      .planetName {
+        font-size: 1em !important;
+      }
+
+      .planetTagline {
+        font-size: 0.9em !important;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: $mediumScreen + 1px) and (max-width: $largeScreen) {
+    /* for mid-sized screens, display four tiles */
+    width: 22% !important;
+
+    .planetName {
+      font-size: 0.8em !important;
+    }
+
+    .planetTagline {
+      font-size: 0.8em !important;
+    }
+  }
+
+}
+
+tbody {
+  border-style: hidden;
+}
+
+/* DETAILED VIEW */
+
+.conceptView .modal-content {
+  color: setColor(-4);
+  background-color: setColor(2.5);
+  @include border-radius(0);
+}
+
+.modal-header {
+  border-bottom-color: setColor(-2);
+}
+
+.detailBody {
+  min-height: 250px;
+}
+
+.detailContentContainer {
+
+  padding: 20px;
+  text-align: center;
+
+  .planetLargeView {
+    .imageContainer {
+      max-width: 98%;
+      max-height: 1000px;
+      @include flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: 20px;
+
+    }
+
+  }
+
+}
+
+.conceptView hr {
+  border-top-color: setColor(-2);
+}
+
+/*** LOADER STYLES ***/
+
+/* used when loading the Home component */
+.loaderMainContainer {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* used when loading the Concept Tile component */
+.loaderTileContainer {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* used when loading the Detailed View component */
+.loaderViewContainer {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}

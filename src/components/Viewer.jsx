@@ -206,6 +206,10 @@ class Viewer extends Component {
         //boolean telling whether a modal with a video for the koncepcje section should be displayed
         let displayModal = false;
 
+        //koncepcje modal variables:
+        let videoId = ""; //video id
+        let videoName = ""; //video name
+        let videoUrl = ""; //video url
 
         //check if a modal with a video for the koncepcje section should be displayed
         if (isConcepts) {
@@ -214,9 +218,9 @@ class Viewer extends Component {
                 console.log (concepts[i].id, this.props.match.params.video);
                 if (concepts[i].id === this.props.match.params.video) {
                     displayModal = true; //turn on the modal
-                    let videoId = concepts[i].id; //video id
-                    let videoName = concepts[i].name; //video name
-                    let videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mpg"; //video url based on id
+                    videoId = concepts[i].id; //change video id
+                    videoName = concepts[i].name; //change video name
+                    videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mpg"; //change video url based on id
                 }
             }
 
@@ -305,7 +309,7 @@ class Viewer extends Component {
                 return (
 
                     <div id="concepts-container">
-                        modal
+                        {videoName}
                     </div>
 
                 );
