@@ -397,7 +397,7 @@ iframe {
   -ms-user-select: none;
   user-select: none; }
 
-/*** PLANET GALLERY STYLES ***/
+/* CONCEPT GALLERY */
 .tileGallery {
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -413,18 +413,18 @@ iframe {
   font-family: "Dosis", sans-serif;
   margin: 15px auto; }
 
-/*** PLANET TILE STYLES ***/
-/* planet tile colour animation on hover */
+/* CONCEPT TILE */
+/* concept tile colour animation on hover */
 @keyframes focusOnTile {
   from {
     background-color: #404040; }
   to {
     background-color: black; } }
-.planetTileContainer {
+.conceptTileContainer {
   margin: 10px 0;
   width: 18%;
   /* display five tiles in a row by default */ }
-  .planetTileContainer .planetTile {
+  .conceptTileContainer .conceptTile {
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;
@@ -442,12 +442,12 @@ iframe {
     color: black;
     box-shadow: 4px 3px 10px black;
     cursor: pointer; }
-    .planetTileContainer .planetTile:hover {
+    .conceptTileContainer .conceptTile:hover {
       background-color: black;
       animation-name: focusOnTile;
       animation-duration: 0.8s;
       animation-timing-function: ease-out; }
-    .planetTileContainer .planetTile .contentContainer {
+    .conceptTileContainer .conceptTile .contentContainer {
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;
@@ -458,7 +458,7 @@ iframe {
       /* NEW, Spec - Firefox, Chrome, Opera */
       align-items: center;
       justify-content: center; }
-      .planetTileContainer .planetTile .contentContainer .planetThumbnail .imageContainer {
+      .conceptTileContainer .conceptTile .contentContainer .conceptThumbnail .imageContainer {
         max-width: 170px;
         max-height: 170px;
         display: -webkit-box;
@@ -472,39 +472,37 @@ iframe {
         align-items: center;
         justify-content: center;
         overflow: hidden; }
-      .planetTileContainer .planetTile .contentContainer .planetThumbnail .planetName {
+      .conceptTileContainer .conceptTile .contentContainer .conceptThumbnail .conceptName {
         margin-top: 5px;
         text-align: center;
         font-size: 0.9em; }
   @media screen and (max-width: 480px) {
-    .planetTileContainer {
+    .conceptTileContainer {
       /* for very small screens, display a list with little padding */
       width: 90% !important; }
-      .planetTileContainer .planetTile {
+      .conceptTileContainer .conceptTile {
         height: 200px;
         padding: 10%; }
-        .planetTileContainer .planetTile .planetName {
-          font-size: 1em !important; }
-        .planetTileContainer .planetTile .planetTagline {
-          font-size: 0.9em !important; } }
+        .conceptTileContainer .conceptTile .conceptName {
+          font-size: 1em !important; } }
   @media screen and (min-width: 481px) and (max-width: 920px) {
-    .planetTileContainer {
+    .conceptTileContainer {
       /* for small screens, display a list with more padding */
       width: 70% !important; }
-      .planetTileContainer .planetTile {
+      .conceptTileContainer .conceptTile {
         height: 200px;
         padding: 10% 20%; }
-        .planetTileContainer .planetTile .planetName {
+        .conceptTileContainer .conceptTile .conceptName {
           font-size: 1em !important; }
-        .planetTileContainer .planetTile .planetTagline {
+        .conceptTileContainer .conceptTile .conceptTagline {
           font-size: 0.9em !important; } }
   @media screen and (min-width: 921px) and (max-width: 1000px) {
-    .planetTileContainer {
+    .conceptTileContainer {
       /* for mid-sized screens, display four tiles */
       width: 22% !important; }
-      .planetTileContainer .planetName {
+      .conceptTileContainer .conceptName {
         font-size: 0.8em !important; }
-      .planetTileContainer .planetTagline {
+      .conceptTileContainer .conceptTagline {
         font-size: 0.8em !important; } }
 
 tbody {
@@ -529,7 +527,7 @@ tbody {
 .detailContentContainer {
   padding: 20px;
   text-align: center; }
-  .detailContentContainer .planetLargeView .imageContainer {
+  .detailContentContainer .conceptLargeView .imageContainer {
     max-width: 98%;
     max-height: 1000px;
     display: -webkit-box;

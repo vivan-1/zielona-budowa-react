@@ -555,7 +555,7 @@ iframe {
   @include no-select;
 }
 
-/*** PLANET GALLERY STYLES ***/
+/* CONCEPT GALLERY */
 
 .tileGallery {
   @include flex;
@@ -566,9 +566,9 @@ iframe {
   margin: 15px auto;
 }
 
-/*** PLANET TILE STYLES ***/
+/* CONCEPT TILE */
 
-/* planet tile colour animation on hover */
+/* concept tile colour animation on hover */
 @keyframes focusOnTile {
   from {
     background-color: setColor(2.5);
@@ -579,12 +579,12 @@ iframe {
   }
 }
 
-.planetTileContainer {
+.conceptTileContainer {
 
   margin: 10px 0;
   width: 18%; /* display five tiles in a row by default */
 
-  .planetTile {
+  .conceptTile {
     @include flex;
     align-items: center;
     justify-content: center;
@@ -608,7 +608,7 @@ iframe {
       align-items: center;
       justify-content: center;
 
-      .planetThumbnail {
+      .conceptThumbnail {
         .imageContainer {
           max-width: 170px;
           max-height: 170px;
@@ -619,7 +619,7 @@ iframe {
 
         }
 
-        .planetName {
+        .conceptName {
           margin-top: 5px;
           text-align: center;
           font-size: 0.9em;
@@ -633,18 +633,15 @@ iframe {
   @media screen and (max-width: $smallScreen) {
     /* for very small screens, display a list with little padding */
     width: 90% !important;
-    .planetTile {
+    .conceptTile {
 
       height: 200px;
       padding: 10%;
 
-      .planetName {
+      .conceptName {
         font-size: 1em !important;
       }
 
-      .planetTagline {
-        font-size: 0.9em !important;
-      }
     }
   }
 
@@ -652,16 +649,16 @@ iframe {
     /* for small screens, display a list with more padding */
     width: 70% !important;
 
-    .planetTile {
+    .conceptTile {
 
       height: 200px;
       padding: 10% 20%;
 
-      .planetName {
+      .conceptName {
         font-size: 1em !important;
       }
 
-      .planetTagline {
+      .conceptTagline {
         font-size: 0.9em !important;
       }
     }
@@ -672,11 +669,11 @@ iframe {
     /* for mid-sized screens, display four tiles */
     width: 22% !important;
 
-    .planetName {
+    .conceptName {
       font-size: 0.8em !important;
     }
 
-    .planetTagline {
+    .conceptTagline {
       font-size: 0.8em !important;
     }
   }
@@ -708,7 +705,7 @@ tbody {
   padding: 20px;
   text-align: center;
 
-  .planetLargeView {
+  .conceptLargeView {
     .imageContainer {
       max-width: 98%;
       max-height: 1000px;
