@@ -32,6 +32,7 @@ constructor(props) {
         let videoId = this.props.match.params.video; //video id
         let videoName = ""; //video name
         let videoUrl = ""; //video url based on video id
+        let posterUrl = ""; //video to image serving as a poster
 
         //look through the concepts array to check the video name and url
         for (let i = 0; i < concepts.length; i++) {
@@ -40,6 +41,7 @@ constructor(props) {
                 videoId = concepts[i].id; //change video id
                 videoName = concepts[i].name; //change video name
                 videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mp4"; //change video url based on id
+                posterUrl ="/images/concepts/" + videoId + "jpg";
             }
         }
 
