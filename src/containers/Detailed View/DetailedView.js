@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Modal} from "react-bootstrap";
-import {ScaleLoader} from "react-spinners"; //spinner
+// import {ScaleLoader} from "react-spinners"; //spinner
 // import "~video-react/dist/video-react.css";
 
 import {concepts} from "../../data/constants";
