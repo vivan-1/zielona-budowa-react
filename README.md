@@ -1,6 +1,6 @@
 # Zielona Budowa
 
-Work in progress. **Zielona Budowa** is a website of a small architecture studio showcasing the company’s designs.
+Work in progress. **Zielona Budowa** is a website of a small architecture studio showcasing the company’s designs. A demo of the current version can be seen [here] (https://zielonabudowa.netlify.com).
 
 ## Technologies used
 
