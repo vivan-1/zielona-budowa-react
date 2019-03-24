@@ -1,18 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
 import {Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {Image} from "react-bootstrap";
 
-import {sections, portfolio} from "../data/constants";
-import NavLink from "./NavLink";
+import {sections, portfolio} from "../../../data/constants";
+import NavLink from "../Nav Link/NavLink";
 
-class NavigationBar extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-
+const navigationBar = (props) => {
 
 
         //don't display the names of empty sections
@@ -255,7 +249,6 @@ class NavigationBar extends Component {
                 </div>
             </Navbar>
         );
-    }
 }
 
-export default NavigationBar;
+export default navigationBar;

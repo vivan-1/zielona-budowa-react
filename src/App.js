@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap-theme.css";
 
 
-import Home from "./Home";
-import Viewer from "./Viewer";
+import Home from "./containers/Home/Home";
+import Viewer from "./containers/Viewer/Viewer";
 
 
 class App extends Component {

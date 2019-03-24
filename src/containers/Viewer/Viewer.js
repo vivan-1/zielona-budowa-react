@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {Route} from "react-router-dom";
-import DetailedView from "./DetailedView";
-import {portfolio, concepts} from "../data/constants";
+import DetailedView from "../Detailed View/DetailedView";
+import {portfolio, concepts} from "../../data/constants";
 
 //Image animation properties to remove greyscale on hover
 

@@ -3,9 +3,9 @@ import {Route} from "react-router-dom";
 import {Grid, Row, Image} from "react-bootstrap";
 import {FadeLoader} from "react-spinners";
 
-import NavigationBar from "./NavigationBar";
-import MenuPanel from "./MenuPanel";
-import MainPanel from "./MainPanel";
+import NavigationBar from "../../components/Navigation Bar/Navigation Bar/NavigationBar";
+import MenuPanel from "../../components/Menu Panel/Menu Panel/MenuPanel";
+import MainPanel from "../../components/Main Panel/MainPanel";
 
 class Home extends Component {
 

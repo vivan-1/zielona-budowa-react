@@ -1,22 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
 import {Col, Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
-import {sections, portfolio} from "../data/constants";
-import MenuLink from "./MenuLink";
+import {sections, portfolio} from "../../../data/constants";
+import MenuLink from "../Menu Link/MenuLink";
 
 
-class MenuPanel extends Component {
-    constructor(props) {
-        super(props);
-    }
+const menuPanel = (props) => {
 
 
-    componentDidMount() {
-
-    }
-
-    render() {
 
         //don't display the names of empty sections
         // let classRestauracje = sections.restauracje ? "section-name" : "displayNone";
@@ -35,7 +27,7 @@ class MenuPanel extends Component {
 
         //check displayed project
 
-        let displayedProject = this.props.match.params.project;
+        let displayedProject = props.match.params.project;
 
 
         //create an arrays of section links
@@ -232,7 +224,7 @@ class MenuPanel extends Component {
                 </div>
             </Col>
         );
-    }
-}
+    };
 
-export default MenuPanel;
+
+export default menuPanel;

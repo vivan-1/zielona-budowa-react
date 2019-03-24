@@ -3,7 +3,7 @@ import {Modal} from "react-bootstrap";
 import {ScaleLoader} from "react-spinners"; //spinner
 // import "~video-react/dist/video-react.css";
 
-import {concepts} from "../data/constants";
+import {concepts} from "../../data/constants";
 
 class DetailedView extends Component {
 constructor(props) {
