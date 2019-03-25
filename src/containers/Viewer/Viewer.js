@@ -1,9 +1,7 @@
 import React, {Component} from "react";
 import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {Route} from "react-router-dom";
-import DetailedView from "../Detailed View/DetailedView";
-import {portfolio, concepts} from "../../data/constants";
+import {portfolio} from "../../data/constants";
 
 //Image animation properties to remove greyscale on hover
 
@@ -194,12 +192,9 @@ class Viewer extends Component {
 
         let content; //variable holding the displayed content
 
-        //check if the koncepcje screen should be shown
-
-        let isConcepts = this.props.match.path.includes("koncepcje");
 
         //check if the splash screen should be shown (if section in routing is undefined)
-        let isSplash = !isConcepts && (this.props.match.params.section === undefined);
+        let isSplash = this.props.match.params.section === undefined;
 
         //boolean telling whether a modal with a video for the koncepcje section should be displayed
         let displayModal = false;
@@ -207,21 +202,7 @@ class Viewer extends Component {
         //html for the modal displaying video; empty div if no modal needs to be shown
         let videoModal = <div></div>;
 
-        //check if a modal with a video for the koncepcje section should be displayed
-        if (isConcepts) {
 
-            for (let i = 0; i < concepts.length; i++) {
-
-                if (concepts[i].id === this.props.match.params.video) {
-                    displayModal = true; //turn on the modal
-                    // videoId = concepts[i].id; //change video id
-                    // videoName = concepts[i].name; //change video name
-                    // videoUrl = "http://drobnik.5gbfree.com/zielona/" + videoId + ".mpg"; //change video url based on id
-                    videoModal = <Route component={props => <DetailedView {...props}/>} />;
-                }
-            }
-
-        }
 
         //video frame content
         // content = <div className="view-content">
@@ -300,20 +281,7 @@ class Viewer extends Component {
                 </div>
 
             );
-        } else if (isConcepts) {
-
-
-                return (
-
-                    <div id="concepts-container">
-                        koncepcje
-                        {videoModal}
-                    </div>
-
-                );
-
-
-        } else {
+        }  else {
             return (
 
                 <div id="main-panel-wrapper">

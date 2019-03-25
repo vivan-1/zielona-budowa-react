@@ -8,20 +8,12 @@ import NavLink from "../Nav Link/NavLink";
 
 const navigationBar = (props) => {
 
-
-        //don't display the names of empty sections
-        // let classRestauracje = sections.restauracje ? "" : "displayNone";
-        // let classPrzemyslowe = sections.przemyslowe ? "" : "displayNone";
-        // let classDomy = sections.domy ? "" : "displayNone";
-        // let classRenowacje = sections.renowacje ? "" : "displayNone";
-        // let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
-
         //for the time being don't display any section names
         let classRestauracje = "displayNone";
         let classPrzemyslowe = "displayNone";
         let classDomy = "displayNone";
         let classRenowacje = "displayNone";
-        let classKoncepcje = "displayNone";
+
 
 
         //create an arrays of section links
@@ -110,26 +102,6 @@ const navigationBar = (props) => {
 
         }
 
-        //koncepcje
-
-        let koncepcje = []; //array holding section links
-
-        if (sections.koncepcje) {
-
-            for (let i = 0; i < portfolio.koncepcje.length; i++) {
-
-                //take id and name from the portfolio constant
-                let {id, name} = portfolio.koncepcje[i];
-                let url = "/portfolio/koncepcje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
-                //update the array with a planet tile containing the above details
-                koncepcje.push(<NavLink
-                    name={name}
-                    url={url}
-                    id={id}
-                />);
-            }
-
-        }
 
 
         return (
@@ -210,19 +182,7 @@ const navigationBar = (props) => {
                                     })}
                                 </div>
 
-                                <div className={classKoncepcje}>
-                                    <li className="nav-section-name">koncepcje:</li>
-                                </div>
 
-                                <div>
-                                    {koncepcje.map((link, k) => {
-                                        return (
-                                            <p key={k}>
-                                                {link}
-                                            </p>
-                                        )
-                                    })}
-                                </div>
 
                                 {/*<li className="nav-section-name">&hellip;więcej wkrótce</li>*/}
                             </ul>

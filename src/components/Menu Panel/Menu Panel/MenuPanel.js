@@ -9,20 +9,11 @@ import MenuLink from "../Menu Link/MenuLink";
 const menuPanel = (props) => {
 
 
-
-        //don't display the names of empty sections
-        // let classRestauracje = sections.restauracje ? "section-name" : "displayNone";
-        // let classPrzemyslowe = sections.przemyslowe ? "section-name" : "displayNone";
-        // let classDomy = sections.domy ? "section-name" : "displayNone";
-        // let classRenowacje = sections.renowacje ? "section-name" : "displayNone";
-        // let classKoncepcje = sections.koncepcje ? "section-name" : "displayNone";
-
         //for the time being don't display any section names
         let classRestauracje = "displayNone";
         let classPrzemyslowe = "displayNone";
         let classDomy = "displayNone";
         let classRenowacje = "displayNone";
-        let classKoncepcje = "displayNone";
 
 
         //check displayed project
@@ -120,27 +111,6 @@ const menuPanel = (props) => {
 
         }
 
-        //koncepcje
-
-        let koncepcje = []; //array holding section links
-
-        if (sections.koncepcje) {
-
-            for (let i = 0; i < portfolio.koncepcje.length; i++) {
-
-                //take id and name from the portfolio constant
-                let {id, name} = portfolio.koncepcje[i];
-                let url = "/portfolio/koncepcje/" + id + "/1"; //create url consisting of section name, link id and view number (1st view)
-                //update the array with a planet tile containing the above details
-                koncepcje.push(<MenuLink
-                    id={id}
-                    name={name}
-                    url={url}
-                    project={displayedProject}
-                />);
-            }
-
-        }
 
         return (
             <Col xsHidden sm={3} md={2} id="menu-panel">
@@ -197,17 +167,6 @@ const menuPanel = (props) => {
                             })}
                         </div>
 
-                        <p className={classKoncepcje}>koncepcje:</p>
-
-                        <div>
-                            {koncepcje.map((link, k) => {
-                                return (
-                                    <p key={k}>
-                                        {link}
-                                    </p>
-                                )
-                            })}
-                        </div>
 
                         {/*<p className="section-name">&hellip;więcej wkrótce</p>*/}
                     </div>
