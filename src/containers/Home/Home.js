@@ -56,7 +56,7 @@ class Home extends Component {
 
         return (
 
-            <div id="main-container" id="app">
+            <div id="main-container">
                 <NavigationBar/>
 
                 <div id="panels">
